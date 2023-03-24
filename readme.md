@@ -36,7 +36,7 @@ conda env create -f config.yml
 
 - For more conda commands, check out [conda guidelines document](conda-guidelines.md)
 
-# Bite-Size Python
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 - [Basic](#basic)
 - [Intermediate](#intermediate)
