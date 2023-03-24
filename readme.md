@@ -1,4 +1,3 @@
-# Snippets of Code for Data Science Operations in Python
 
 <div align="center">
   <img alt="Bite Size Python" src="metadata/baking-cookie-monster.gif"><br>
