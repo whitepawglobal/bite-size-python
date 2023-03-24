@@ -363,6 +363,7 @@ and bytearray() returns an object that can be modified (mutable).
 ### Error Handling
 
 - [Native Catching Exception](notebooks/error_handling/catcherror.ipynb)
+  - Catch multiple error: `except (CompileError, ProgrammingError) as e:`
 - [Traceback](notebooks/error_handling/traceback)
 - [Suppress and log error](notebooks/error_handling/suppress_error)
 
