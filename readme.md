@@ -456,6 +456,7 @@ and bytearray() returns an object that can be modified (mutable).
   - [dataclass 2](notebooks/class/dataclass/dataclass_helloworld_2.ipynb)
     - Magic methods `__repr__` and `__dict__` are created when define class with dataclass
 - [Implement Enum in Python](notebooks/class/enumimpl.ipynb)
+  - [Define enum with string](notebooks/class/define_enum_with_str.ipynb)
 - [Serialize class object](notebooks/class/serialize_classobj.ipynb)
 
 #### Magic Method
