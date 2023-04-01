@@ -567,7 +567,12 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 
 - [Class Method @classmethod](notebooks/decorator/classmethod.py)
 - [Static Method @staticmethod](notebooks/decorator/staticmethod.py)
-- dataclass
+    - When to use @classmethod , @staticmethod
+      - Class method can modify the class state,it bound to the class and it contain cls as parameter.  
+        `def test(cls, ): self.variable = ?`
+      - Static method can not modify the class state,it bound to the class and it does't know class or instance  
+        `def test(variable): ...`
+- dataclass @dataclass
   - [dataclass hello world](notebooks/decorator/dataclass_helloworld.ipynb)
 - [Abstract class with ABCMeta and @abstractmethod](notebooks/decorator/abstractmethod.ipynb)
 - [Property Setting](notebooks/decorator/property.ipynb)
