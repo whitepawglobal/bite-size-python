@@ -656,7 +656,8 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
   - [Upload video file with progress counter](notebooks/cloud/aws/uploadvideo2bucketwithprogress.ipynb)
 - [Upload multipart](notebooks/cloud/aws/uploadmultipart.ipynb)
 - [Upload multipart with multiple workers](src/cloud/aws/uploadmultipart_withworkers.py)
-- [Get object from S3](notebooks/cloud/aws/getobject.ipynb)
+- [Get object from S3 with boto](notebooks/cloud/aws/get_s3_object_with_boto.ipynb)
+- [Download s3 public from url with requests](notebooks/cloud/aws/download_s3_file.ipynb)
 
 **Note:**
 
