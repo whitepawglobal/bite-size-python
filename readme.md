@@ -565,8 +565,8 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 
 ### [Built-in Decorators](notebooks/decorator/built-in-decorators.md)
 
-- [Class Method](notebooks/decorator/classmethod.py)
-- [Static Method](notebooks/decorator/staticmethod.py)
+- [Class Method @classmethod](notebooks/decorator/classmethod.py)
+- [Static Method @staticmethod](notebooks/decorator/staticmethod.py)
 - dataclass
   - [dataclass hello world](notebooks/decorator/dataclass_helloworld.ipynb)
 - [Abstract class with ABCMeta and @abstractmethod](notebooks/decorator/abstractmethod.ipynb)
