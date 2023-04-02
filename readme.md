@@ -452,10 +452,13 @@ and bytearray() returns an object that can be modified (mutable).
 - [Check if object is of specified type](notebooks/class/isinstanceimp.ipynb): `isinstance(obj, MyClass)` / `isinstance(obj, (type1, type2) : tuple)`
 - [Deep Copy, Shallow Copy](notebooks/class/deepcopy_shallowcopy.ipynb)
   - Copy list by value: `list_cp = list_ori[:]` (Note: `list_cp = list_ori` copy by reference)
-- Define dataclass
+- Define dataclass @dataclass
   - [dataclass 1](notebooks/class/dataclass/dataclass_helloworld_1.ipynb)
   - [dataclass 2](notebooks/class/dataclass/dataclass_helloworld_2.ipynb)
-    - Magic methods `__repr__` and `__dict__` are created when define class with dataclass
+  - [dataclass 3](notebooks/class/dataclass/dataclass3.ipynb)
+    - Compare normal class definition with dataclass definition
+    - Layout output of __dict__ for dataclass class
+- Magic methods `__repr__` and `__dict__` are created when define class with dataclass
 - Enum
   - Enum get key: `obj.name`
   - Enum get value: `obj.value`
