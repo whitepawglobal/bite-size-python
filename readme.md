@@ -464,8 +464,11 @@ and bytearray() returns an object that can be modified (mutable).
   - Enum get value: `obj.value`
   - [Implement Enum in Python](notebooks/class/enumimpl.ipynb)
   - [Enum with string](notebooks/class/enum_with_str.ipynb)
+- [Implement Enum in Python](notebooks/class/enumimpl.ipynb)
+  - [Define enum with string](notebooks/class/define_enum_with_str.ipynb)
 - [Serialize class object](notebooks/class/serialize_classobj.ipynb)
 - [Function/Module with error handling](notebooks/class/function_with error_handling.ipynb)
+
 #### Magic Method
 
 - [`__dict__` return all attributes of an object(only those defined in __init__): `obj.__dict__`](notebooks/class/values_in_dict.ipynb)
