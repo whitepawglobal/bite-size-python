@@ -363,6 +363,7 @@ and bytearray() returns an object that can be modified (mutable).
 ### Error Handling
 
 - [Native Catching Exception](notebooks/error_handling/catcherror.ipynb)
+  - Catch multiple error: `except (CompileError, ProgrammingError) as e:`
 - [Traceback](notebooks/error_handling/traceback)
 - [Suppress and log error](notebooks/error_handling/suppress_error)
 
@@ -451,13 +452,22 @@ and bytearray() returns an object that can be modified (mutable).
 - [Check if object is of specified type](notebooks/class/isinstanceimp.ipynb): `isinstance(obj, MyClass)` / `isinstance(obj, (type1, type2) : tuple)`
 - [Deep Copy, Shallow Copy](notebooks/class/deepcopy_shallowcopy.ipynb)
   - Copy list by value: `list_cp = list_ori[:]` (Note: `list_cp = list_ori` copy by reference)
-- Define dataclass
+- Define dataclass @dataclass
   - [dataclass 1](notebooks/class/dataclass/dataclass_helloworld_1.ipynb)
   - [dataclass 2](notebooks/class/dataclass/dataclass_helloworld_2.ipynb)
-    - Magic methods `__repr__` and `__dict__` are created when define class with dataclass
+  - [dataclass 3](notebooks/class/dataclass/dataclass3.ipynb)
+    - Compare normal class definition with dataclass definition
+    - Layout output of __dict__ for dataclass class
+- Magic methods `__repr__` and `__dict__` are created when define class with dataclass
+- Enum
+  - Enum get key: `obj.name`
+  - Enum get value: `obj.value`
+  - [Implement Enum in Python](notebooks/class/enumimpl.ipynb)
+  - [Enum with string](notebooks/class/enum_with_str.ipynb)
 - [Implement Enum in Python](notebooks/class/enumimpl.ipynb)
   - [Define enum with string](notebooks/class/define_enum_with_str.ipynb)
 - [Serialize class object](notebooks/class/serialize_classobj.ipynb)
+- [Function/Module with error handling](notebooks/class/function_with error_handling.ipynb)
 
 #### Magic Method
 
@@ -561,9 +571,14 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 
 ### [Built-in Decorators](notebooks/decorator/built-in-decorators.md)
 
-- [Class Method](notebooks/decorator/classmethod.py)
-- [Static Method](notebooks/decorator/staticmethod.py)
-- dataclass
+- [Class Method @classmethod](notebooks/decorator/classmethod.py)
+- [Static Method @staticmethod](notebooks/decorator/staticmethod.py)
+    - When to use @classmethod , @staticmethod
+      - Class method can modify the class state,it bound to the class and it contain cls as parameter.  
+        `def test(cls, ): self.variable = ?`
+      - Static method can not modify the class state,it bound to the class and it does't know class or instance  
+        `def test(variable): ...`
+- dataclass @dataclass
   - [dataclass hello world](notebooks/decorator/dataclass_helloworld.ipynb)
 - [Abstract class with ABCMeta and @abstractmethod](notebooks/decorator/abstractmethod.ipynb)
 - [Property Setting](notebooks/decorator/property.ipynb)
@@ -652,7 +667,8 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
   - [Upload video file with progress counter](notebooks/cloud/aws/uploadvideo2bucketwithprogress.ipynb)
 - [Upload multipart](notebooks/cloud/aws/uploadmultipart.ipynb)
 - [Upload multipart with multiple workers](src/cloud/aws/uploadmultipart_withworkers.py)
-- [Get object from S3](notebooks/cloud/aws/getobject.ipynb)
+- [Get object from S3 with boto](notebooks/cloud/aws/get_s3_object_with_boto.ipynb)
+- [Download s3 public from url with requests](notebooks/cloud/aws/download_s3_file.ipynb)
 
 **Note:**
 
@@ -798,6 +814,9 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - [Audio of .wav -> .flac](notebooks/audio/wav2flac.ipynb)
 - [Get sampling rate of an audio file](notebooks/audio/getsamplingrate.ipynb)
 - [Audio file <> Numpy Array](notebooks/audio/audiofile2array.ipynb)
+  
+## Good To Read
+- [Visual Studio Code Extension for Python](https://lightrun.com/vscode-python-extensions/)
   
 ## Medium Posts
 
