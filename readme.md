@@ -196,6 +196,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Iteration over two lists: `[<operation> for item1, item2 in zip(list1, list2)]```
 - [Count occurence of items in list](notebooks/list/countoccurence.ipynb)
 - Get maximum value in a list of numbers (even strings): `max(samplelist)`
+- Reverse a list: `list(reversed([1, 2, 3, 4])`
   
 #### [Dictionary](notebooks/dictionary)
   
