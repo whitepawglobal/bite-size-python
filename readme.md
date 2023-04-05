@@ -528,6 +528,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 ### ConfigParser
 
 - [Read from config file](notebooks/configparser/testconfig.ipynb)
+   -  How to comment on config file(*.ini): Put `#` sign in front of an empty line
 
 
 ### XML Parser
