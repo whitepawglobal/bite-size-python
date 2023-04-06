@@ -471,6 +471,7 @@ and bytearray() returns an object that can be modified (mutable).
   - [Define enum with string](notebooks/class/define_enum_with_str.ipynb)
 - [Serialize class object](notebooks/class/serialize_classobj.ipynb)
 - [Function/Module with error handling](notebooks/class/function_with error_handling.ipynb)
+- [Identify if function did not return object. TLDR: if not test1()](notebooks/class/test_if_function_returns_object.ipynb)
 
 #### Magic Method
 
