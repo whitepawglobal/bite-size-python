@@ -211,6 +211,8 @@ and bytearray() returns an object that can be modified (mutable).
 - [Save/load dictionary to/from a file](notebooks/dictionary/saveloaddict.ipynb)
 - Revert or inverse a dictionary mapping: `inv_map = {v: k for k, v in my_map.items()}`
 - [Copy by value](notebooks/dictionary/dict_copybyvalue.ipynb): `sampledict.copy()`
+- [Decompose/unpack dictionary when passing as argument](notebooks/dictionary/decompose_dict_when_passing_by_param.ipynb)
+  - Use case: class declaration
   
 #### Named Tuple
 - [NamedTuple](notebooks/collections_imp/namedtupleimp.ipynb)
@@ -601,6 +603,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
   - Set
   - [Any](notebooks/type_checking/anyimp.ipynb)
   - [Union](notebooks/type_checking/unionimp.ipynb)
+  - Annotated (From python 3.9 onwards): <to-be-added>
 - Module _pydantic_: Data parsing and validation library `:TODO`
 
 
