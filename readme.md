@@ -629,6 +629,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 ### Hashing 
  
 - [Password hashing with library bcrypt - saltround](notebooks/hashing/bcrypt_password_hashing.ipynb)
+- [Password hasing with passlib backed with bcrypt (Used in Fast API)](notebooks/hashing/passlib_password_hashing.ipynb)
 
 ### Web
 
