@@ -818,6 +818,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - [Set color to rectangle region](notebooks/cv/setrectangle.ipynb)
 - Color to gray image: `gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)`
 - [Draw rectangle and point on image with mouse activity](src/cv/mouseprompt.py)
+  - [Mouse Events](https://www.tutorialspoint.com/opencv_python/opencv_python_handling_mouse_events.htm)
 - [Remove background](notebooks/cv/remove_bg.ipynb)
 - [Add channel to image](https://stackoverflow.com/questions/32290096/python-opencv-add-alpha-channel-to-rgb-image)
 
