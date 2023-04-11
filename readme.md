@@ -124,6 +124,7 @@ and bytearray() returns an object that can be modified (mutable).
 #### Numpy
   
 - [Numpy basic](notebooks/numpy/npbasic.ipynb)
+- Check if numpy array has true value: `np.any(<np-array>)`
 - Get numpy shape: `nparray.shape`
 - Numpy array to list: `nparray.tolist()`
 - Change datatype: `nparray = nparray.astype(<dtype>)` Example: `nparray = nparray.astype("uint8")`
