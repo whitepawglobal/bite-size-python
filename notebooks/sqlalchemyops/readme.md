@@ -45,6 +45,7 @@ For an introduction to writing SQL for ORM objects in the 2.0 style, start with 
     Text
     Time
    ```
+   - [MySQL Data Types](  - [SQL Alchemy Data Types](https://docs.sqlalchemy.org/en/20/dialects/mysql.html)
    - [Postgresql data types](https://docs.sqlalchemy.org/en/20/dialects/postgresql.html#postgresql-data-types)
 - SQLAlchemy is presented as two distinct APIs.
   - **Core**

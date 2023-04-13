@@ -124,6 +124,7 @@ and bytearray() returns an object that can be modified (mutable).
 #### Numpy
   
 - [Numpy basic](notebooks/numpy/npbasic.ipynb)
+- Check if numpy array has true value: `np.any(<np-array>)`
 - Get numpy shape: `nparray.shape`
 - Numpy array to list: `nparray.tolist()`
 - Change datatype: `nparray = nparray.astype(<dtype>)` Example: `nparray = nparray.astype("uint8")`
@@ -172,6 +173,9 @@ and bytearray() returns an object that can be modified (mutable).
 
 #### Datetime
 - datetime: [datetime.ipynb](notebooks/formatting/datetime.ipynb)
+  - get current local date and time: `datetime.now()`
+  - get utc date and time: `datetime.utcnow()`
+  
 - [find differences of two datetime: use divmod](https://stackoverflow.com/questions/1345827/how-do-i-find-the-time-difference-between-two-datetime-objects-in-python)
 
 ### Data Structure
@@ -196,6 +200,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Iteration over two lists: `[<operation> for item1, item2 in zip(list1, list2)]```
 - [Count occurence of items in list](notebooks/list/countoccurence.ipynb)
 - Get maximum value in a list of numbers (even strings): `max(samplelist)`
+- Reverse a list: `list(reversed([1, 2, 3, 4])`
   
 #### [Dictionary](notebooks/dictionary)
   
@@ -210,6 +215,8 @@ and bytearray() returns an object that can be modified (mutable).
 - [Save/load dictionary to/from a file](notebooks/dictionary/saveloaddict.ipynb)
 - Revert or inverse a dictionary mapping: `inv_map = {v: k for k, v in my_map.items()}`
 - [Copy by value](notebooks/dictionary/dict_copybyvalue.ipynb): `sampledict.copy()`
+- [Decompose/unpack dictionary when passing as argument](notebooks/dictionary/decompose_dict_when_passing_by_param.ipynb)
+  - Use case: class declaration
   
 #### Named Tuple
 - [NamedTuple](notebooks/collections_imp/namedtupleimp.ipynb)
@@ -468,6 +475,7 @@ and bytearray() returns an object that can be modified (mutable).
   - [Define enum with string](notebooks/class/define_enum_with_str.ipynb)
 - [Serialize class object](notebooks/class/serialize_classobj.ipynb)
 - [Function/Module with error handling](notebooks/class/function_with error_handling.ipynb)
+- [Identify if function did not return object. TLDR: if not test1()](notebooks/class/test_if_function_returns_object.ipynb)
 
 #### Magic Method
 
@@ -527,6 +535,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 ### ConfigParser
 
 - [Read from config file](notebooks/configparser/testconfig.ipynb)
+   -  How to comment on config file(*.ini): Put `#` sign in front of an empty line
 
 
 ### XML Parser
@@ -599,6 +608,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
   - Set
   - [Any](notebooks/type_checking/anyimp.ipynb)
   - [Union](notebooks/type_checking/unionimp.ipynb)
+  - Annotated (From python 3.9 onwards): <to-be-added>
 - Module _pydantic_: Data parsing and validation library `:TODO`
 
 
@@ -620,6 +630,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 ### Hashing 
  
 - [Password hashing with library bcrypt - saltround](notebooks/hashing/bcrypt_password_hashing.ipynb)
+- [Password hasing with passlib backed with bcrypt (Used in Fast API)](notebooks/hashing/passlib_password_hashing.ipynb)
 
 ### Web
 
@@ -806,7 +817,10 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - Resizing frame: `outframe = cv2.resize(frame, (w, h))`
 - [Set color to rectangle region](notebooks/cv/setrectangle.ipynb)
 - Color to gray image: `gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)`
+- [Draw rectangle and point on image with mouse activity](src/cv/mouseprompt.py)
+  - [Mouse Events](https://www.tutorialspoint.com/opencv_python/opencv_python_handling_mouse_events.htm)
 - [Remove background](notebooks/cv/remove_bg.ipynb)
+- [Weighted blend two image with `cv2.addWeighted`](notebooks/src/cv/weighted_blend_image.py)
 - [Add channel to image](https://stackoverflow.com/questions/32290096/python-opencv-add-alpha-channel-to-rgb-image)
 - [Draw contour](notebooks/cv/helloworld_contour.ipynb)
 
