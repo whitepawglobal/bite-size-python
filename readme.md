@@ -808,6 +808,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - Color to gray image: `gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)`
 - [Remove background](notebooks/cv/remove_bg.ipynb)
 - [Add channel to image](https://stackoverflow.com/questions/32290096/python-opencv-add-alpha-channel-to-rgb-image)
+- [Draw contour](notebooks/cv/helloworld_contour.ipynb)
 
 ### [Audio](notebooks/audio)
 
