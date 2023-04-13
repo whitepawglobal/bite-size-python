@@ -779,6 +779,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
   - [As base64](notebooks/cv/image_as_base64.ipynb)
 - [Read image from url](notebooks/cv/read_image_from_url.ipynb)
 - [Read in image with Pillow](notebooks/cv/pillow_readimage.ipynb)
+  - Pillow read in image from np.array: ```im = Image.fromarray(nprrayimage)```
 - Pause to display image or wait for an input: `cv2.waitKey(0)`
 - Save an image: `cv2.imwrite(pathtoimg : str, img : numpy.ndarray)`
 - Show an image in window: `cv2.imshow(windowname : str, frame : np.array)`
