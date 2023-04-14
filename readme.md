@@ -389,6 +389,7 @@ and bytearray() returns an object that can be modified (mutable).
 - [ImportError: Trouble loading a module](notebooks/error_handling/metadata/importerror.jpg)
   - Submodule
     - ModuleNotFoundError: the module trying to import can’t be found or try to import something from a module that doesn’t exist in the module
+- AssertionError: Raise when run `assert`
   
 ### [File System](notebooks/filesystem)
 
@@ -599,9 +600,11 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
   - setter: @{variable}.setter
   - deleter: @{variable}.deleter
 
-### Check, Validation
+### Testing
 
-#### Typing
+- Simple check, raise AssertionError if wrong: `assert a == 20` / `assert type(a) == int`
+
+#### Typing: Type Hint
 
 - [Module _typing_: Type hint & annotations](notebooks/type_checking/typingimp.ipynb)
   - [Dict](notebooks/type_checking/anyimp.ipynb)
