@@ -599,7 +599,9 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
   - setter: @{variable}.setter
   - deleter: @{variable}.deleter
 
-### Type Checking, Data Validation
+### Check, Validation
+
+#### Typing
 
 - [Module _typing_: Type hint & annotations](notebooks/type_checking/typingimp.ipynb)
   - [Dict](notebooks/type_checking/anyimp.ipynb)
@@ -612,8 +614,14 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
   - Annotated
     - Before python 3.9: `from typing_extensions import Annotated`
     - Python 3.9 onwards: `from typing import Annotated`
-- Module _pydantic_: Data parsing and validation library `:TODO`
+    
+#### Pydantic : Data parsing and validation library 
 
+`TODO`
+
+#### [Email Validation](notebooks/email-validation)
+
+- [Basic checking of domain existence and email constructed correctly](notebooks/email-validation/helloworld_validate_email.ipynb)
 
 
 ### Others
