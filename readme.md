@@ -608,6 +608,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
   - Set
   - [Any](notebooks/type_checking/anyimp.ipynb)
   - [Union](notebooks/type_checking/unionimp.ipynb)
+    - [Simplification of Union from python 3.10 onwards](src/type_checking/union_evolution.py)
   - Annotated (From python 3.9 onwards): <to-be-added>
 - Module _pydantic_: Data parsing and validation library `:TODO`
 
