@@ -602,7 +602,9 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 
 ### Testing
 
-- Simple check, raise AssertionError if wrong: `assert a == 20` / `assert type(a) == int`
+- Simple check, raise AssertionError if wrong: 
+  - `assert a == 20`
+  - `assert isinstance(a, int)`
 
 #### Typing: Type Hint
 
