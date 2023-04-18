@@ -1,10 +1,11 @@
+## Bite-Size Python
 
-<div align="center">
-  <img alt="Bite Size Python" src="metadata/baking-cookie-monster.gif"><br>
-</div>
-
+<p align="center">
+<img src="https://user-images.githubusercontent.com/33477318/232706095-67eed96e-f834-46c3-b61c-35ab235fa695.jpg" width="600">
+</p>
 <p>
-  <p align="left">
+  
+<p align="left">
 <img alt="project status: active" src="https://img.shields.io/badge/Project%20Status-%F0%9F%94%A5Active-brightgreen">
 
 </p>
