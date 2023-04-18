@@ -1,10 +1,11 @@
+## Bite-Size Python
 
-<div align="center">
-  <img alt="Bite Size Python" src="metadata/baking-cookie-monster.gif"><br>
-</div>
-
+<p align="center">
+<img src="https://user-images.githubusercontent.com/33477318/232706095-67eed96e-f834-46c3-b61c-35ab235fa695.jpg" width="600">
+</p>
 <p>
-  <p align="left">
+  
+<p align="left">
 <img alt="project status: active" src="https://img.shields.io/badge/Project%20Status-%F0%9F%94%A5Active-brightgreen">
 
 </p>
@@ -389,6 +390,7 @@ and bytearray() returns an object that can be modified (mutable).
 - [ImportError: Trouble loading a module](notebooks/error_handling/metadata/importerror.jpg)
   - Submodule
     - ModuleNotFoundError: the module trying to import can’t be found or try to import something from a module that doesn’t exist in the module
+- AssertionError: Raise when run `assert`
   
 ### [File System](notebooks/filesystem)
 
@@ -599,7 +601,13 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
   - setter: @{variable}.setter
   - deleter: @{variable}.deleter
 
-### Type Checking, Data Validation
+### Testing
+
+- Simple check, raise AssertionError if wrong: 
+  - `assert a == 20`
+  - `assert isinstance(a, int)`
+
+#### Typing: Type Hint
 
 - [Module _typing_: Type hint & annotations](notebooks/type_checking/typingimp.ipynb)
   - [Dict](notebooks/type_checking/anyimp.ipynb)
@@ -608,9 +616,18 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
   - Set
   - [Any](notebooks/type_checking/anyimp.ipynb)
   - [Union](notebooks/type_checking/unionimp.ipynb)
-  - Annotated (From python 3.9 onwards): <to-be-added>
-- Module _pydantic_: Data parsing and validation library `:TODO`
+    - [Simplification of Union from python 3.10 onwards](src/type_checking/union_evolution.py)
+  - Annotated
+    - Before python 3.9: `from typing_extensions import Annotated`
+    - Python 3.9 onwards: `from typing import Annotated`
+    
+#### Pydantic : Data parsing and validation library 
 
+`TODO`
+
+#### [Email Validation](notebooks/email-validation)
+
+- [Basic checking of domain existence and email constructed correctly](notebooks/email-validation/helloworld_validate_email.ipynb)
 
 
 ### Others
@@ -778,6 +795,8 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
   - [As Bytearray](notebooks/cv/image_as_bytearray.ipynb)
   - [As base64](notebooks/cv/image_as_base64.ipynb)
 - [Read image from url](notebooks/cv/read_image_from_url.ipynb)
+- [Read in image with Pillow](notebooks/cv/pillow_readimage.ipynb)
+  - Pillow read in image from np.array: ```im = Image.fromarray(nprrayimage)```
 - Pause to display image or wait for an input: `cv2.waitKey(0)`
 - Save an image: `cv2.imwrite(pathtoimg : str, img : numpy.ndarray)`
 - Show an image in window: `cv2.imshow(windowname : str, frame : np.array)`
