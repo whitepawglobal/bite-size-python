@@ -1,4 +1,4 @@
-## Non-Comprehensive Library One-Line Explanation
+## Non-Exhaustive Library One-Line Explanation
 
 ### Rest
 
@@ -33,6 +33,8 @@
 - **[Pytest]**
   - testing framework to write various types of software tests, including unit tests, integration tests, end-to-end tests, and functional tests
 
+- **[mypy**]**
+  - static type checking
 
 ### Type Hint / Type Annotations
 
