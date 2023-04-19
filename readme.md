@@ -629,9 +629,9 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
   values : tuple[int, str, str]
   products : set[bytes]
   ```
-- [Any](notebooks/type_checking/anyimp.ipynb): `from typing import Any; varible : Any`
-- [Union](notebooks/type_checking/unionimp.ipynb)
-  - [Simplification of Union from python 3.10 onwards](src/type_checking/union_evolution.py)
+- [Any](notebooks/type_checking/anyimp.ipynb) : `from typing import Any; varible : Any`
+- [Union](notebooks/type_checking/unionimp.ipynb) / Optional
+  - [Simplification of Union from python 3.10 onwards](src/type_checking/union_evolution.py): `var1 : str | None`
 - Annotated
   - Before python 3.9: `from typing_extensions import Annotated`
   - Python 3.9 onwards: `from typing import Annotated`
