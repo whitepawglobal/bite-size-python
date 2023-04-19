@@ -4,7 +4,10 @@
 
 - **[FastAPI]**
   - a modern Web framework for building RESTful APIs in Python
-  
+ 
+- **[Flask]**
+  - lightweight WSGI web application framework
+ 
 - **[Starlette]**
   - lightweight ASGI framework/toolkit for building async web services
 
