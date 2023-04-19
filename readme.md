@@ -623,7 +623,8 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
     
 #### Pydantic : Data parsing and validation library 
 
-`TODO`
+- [BaseModel to correctly declare type](notebooks/pydanticops/basemodel_helloworld.ipynb)
+
 
 #### [Email Validation](notebooks/email-validation)
 
