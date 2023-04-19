@@ -613,7 +613,6 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - List
 - Tuple
 - Set
-- [Any](notebooks/type_checking/anyimp.ipynb)
   ```
   # Prior to python 3.9
   
@@ -630,7 +629,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
   values : tuple[int, str, str]
   products : set[bytes]
   ```
-
+- [Any](notebooks/type_checking/anyimp.ipynb): `from typing import Any; varible : Any`
 - [Union](notebooks/type_checking/unionimp.ipynb)
   - [Simplification of Union from python 3.10 onwards](src/type_checking/union_evolution.py)
 - Annotated
