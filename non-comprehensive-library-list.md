@@ -34,7 +34,7 @@
   - testing framework to write various types of software tests, including unit tests, integration tests, end-to-end tests, and functional tests
 
 
-### Type Hinting
+### Type Hint / Type Annotations
 
 - **[typing]**
   - Type hint for type variable type annotations.
