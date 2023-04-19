@@ -33,7 +33,7 @@
 - **[Pytest]**
   - testing framework to write various types of software tests, including unit tests, integration tests, end-to-end tests, and functional tests
 
-- **[mypy**]**
+- **[mypy]**
   - static type checking
 
 ### Type Hint / Type Annotations
