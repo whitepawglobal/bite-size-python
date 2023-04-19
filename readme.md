@@ -608,19 +608,34 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
   - `assert a == 20`
   - `assert isinstance(a, int)`
 
-#### Typing: Type Hint
+#### [Module _typing_: Type hint & annotations](notebooks/type_checking/typingimp.ipynb)
 
-- [Module _typing_: Type hint & annotations](notebooks/type_checking/typingimp.ipynb)
-  - [Dict](notebooks/type_checking/anyimp.ipynb)
-  - List
-  - Tuple
-  - Set
-  - [Any](notebooks/type_checking/anyimp.ipynb)
-  - [Union](notebooks/type_checking/unionimp.ipynb)
-    - [Simplification of Union from python 3.10 onwards](src/type_checking/union_evolution.py)
-  - Annotated
-    - Before python 3.9: `from typing_extensions import Annotated`
-    - Python 3.9 onwards: `from typing import Annotated`
+- List
+- Tuple
+- Set
+- [Any](notebooks/type_checking/anyimp.ipynb)
+  ```
+  # Prior to python 3.9
+  
+  from typing import List, Tuple, Set
+
+  items: List[str]
+  values : Tuple[int, str, str]
+  products : Set[bytes]
+  
+  # python 3.9 onwards
+  # no need import 
+
+  items: list[str]
+  values : tuple[int, str, str]
+  products : set[bytes]
+  ```
+
+- [Union](notebooks/type_checking/unionimp.ipynb)
+  - [Simplification of Union from python 3.10 onwards](src/type_checking/union_evolution.py)
+- Annotated
+  - Before python 3.9: `from typing_extensions import Annotated`
+  - Python 3.9 onwards: `from typing import Annotated`
     
 #### Pydantic : Data parsing and validation library 
 
