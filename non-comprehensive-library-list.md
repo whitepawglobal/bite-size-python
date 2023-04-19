@@ -7,6 +7,9 @@
   
 - **[Starlette]**
   - lightweight ASGI framework/toolkit for building async web services
+
+- **[requests]**
+  - Sending of http requests through Python
   
 ### Data Parsing
 
