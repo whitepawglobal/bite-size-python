@@ -2,27 +2,33 @@
 
 ### Rest
 
-- **FastAPI**
+- **[FastAPI]**
   - a modern Web framework for building RESTful APIs in Python
   
-- **Starlette**
+- **[Starlette]**
   - lightweight ASGI framework/toolkit for building async web services
   
 ### Data Parsing
 
-- **Pydantic**
+- **[Pydantic]**
   - Data validation and settings management using Python type annotations.
 
 ### Database
 
-- **psycopg2**
+- **[psycopg2]**
   - PostgreSQL database adapter 
   
-- **sqlalchemy**
+- **sqlalchemy]**
   - database abstraction library that can connects to different dabase
 
 
 ### Test
 
-- **Pytest**
+- **[Pytest]**
   - testing framework to write various types of software tests, including unit tests, integration tests, end-to-end tests, and functional tests
+
+
+### Type Hinting
+
+- **[typing]**
+  - Type hint for type variable type annotations.
