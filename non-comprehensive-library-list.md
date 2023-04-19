@@ -18,7 +18,7 @@
 - **[psycopg2]**
   - PostgreSQL database adapter 
   
-- **sqlalchemy]**
+- **[sqlalchemy]**
   - database abstraction library that can connects to different dabase
 
 
