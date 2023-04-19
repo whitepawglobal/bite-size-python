@@ -14,6 +14,9 @@
 - **[requests]**
   - Sending of http requests through Python
   
+- **[uvicorn]**
+  - Python ASGI HTTP Server, for asynchronous projects. (TLDR. Run Python web app)
+  
 ### Data Parsing
 
 - **[Pydantic]**
@@ -40,3 +43,7 @@
 
 - **[typing]**
   - Type hint for type variable type annotations.
+
+
+### Notes
+- Libraries **fastapi, uvicorn, starlette, pydantic** works together as web backend server
