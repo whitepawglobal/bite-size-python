@@ -539,7 +539,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 
 - [Read from config file](notebooks/configparser/testconfig.ipynb)
    -  How to comment on config file(*.ini): Put `#` sign in front of an empty line
-
+- [Using .env Files for Environment Variables in Python Applications](https://dev.to/jakewitcher/using-env-files-for-environment-variables-in-python-applications-55a1)
 
 ### XML Parser
 - [Read from xml file](notebooks/xmlparser)
