@@ -540,7 +540,21 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - [Read from config file](notebooks/configparser/testconfig.ipynb)
    -  How to comment on config file(*.ini): Put `#` sign in front of an empty line
 - [Using .env Files for Environment Variables in Python Applications](notebooks/envsetting/envsetting_intro.ipynb)
-   
+
+```
+When to use configparser? When to user .env?
+#### TLDR:
+Use .env to save string-variable value which should not at any cost being exposed in code versioning platform/docker
+
+### use .env
+- the . of filename make it hidden
+- already excluded in preset .gitignore
+- Nearly every programming language has a package or library that can be used to read environment variables from the .env file instead of from your local environment. 
+- load_dotenv will find from host environment for variables when .env file is not file (for docker environment)
+
+### use configparser
+- import with more built in variable type (int, string, boolean) and checks to perform upon the value
+```
 
 ### XML Parser
 - [Read from xml file](notebooks/xmlparser)
