@@ -476,6 +476,7 @@ and bytearray() returns an object that can be modified (mutable).
   - Enum get key: `obj.name`
   - Enum get value: `obj.value`
   - [Implement Enum in Python](notebooks/class/enumimpl.ipynb)
+    - Compare enum: `value == EnumObject.OPTION1`
   - [Enum with string](notebooks/class/enum_with_str.ipynb)
 - [Implement Enum in Python](notebooks/class/enumimpl.ipynb)
   - [Define enum with string](notebooks/class/define_enum_with_str.ipynb)
