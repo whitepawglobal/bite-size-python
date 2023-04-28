@@ -219,6 +219,9 @@ and bytearray() returns an object that can be modified (mutable).
 - [Copy by value](notebooks/dictionary/dict_copybyvalue.ipynb): `sampledict.copy()`
 - [Decompose/unpack dictionary when passing as argument](notebooks/dictionary/decompose_dict_when_passing_by_param.ipynb)
   - Use case: class declaration
+
+#### Tuple
+- Build a tuple: `var : tuple[bool, str | None] = tuple([True, "abc"])`
   
 #### Named Tuple
 - [NamedTuple](notebooks/collections_imp/namedtupleimp.ipynb)
