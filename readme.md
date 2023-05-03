@@ -62,6 +62,7 @@ conda env create -f config.yml
 
 ### Boolean Operator
 
+- bool from int (0, 1): `bool(0) / bool(1)`
 - [X and Y](notebooks/boolean_operator/boolean_options.ipynb)
 - [X or Y](notebooks/boolean_operator/boolean_options.ipynb)
 - [if not X](notebooks/boolean_operator/boolean_options.ipynb)
