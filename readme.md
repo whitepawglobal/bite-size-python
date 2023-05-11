@@ -603,8 +603,8 @@ Use .env to save string-variable value which should not at any cost being expose
 
 ### [Built-in Decorators](notebooks/decorator/built-in-decorators.md)
 
-- [Class Method @classmethod](notebooks/decorator/classmethod.py)
-- [Static Method @staticmethod](notebooks/decorator/staticmethod.py)
+- [Class Method @classmethod](notebooks/decorator/classmethod.py): take `cls` as first parameter (have access to internal fields and methods)
+- [Static Method @staticmethod](notebooks/decorator/staticmethod.py): can take no parameters, basically just a function
     - When to use @classmethod , @staticmethod
       - Class method can modify the class state,it bound to the class and it contain cls as parameter.  
         `def test(cls, ): self.variable = ?`
