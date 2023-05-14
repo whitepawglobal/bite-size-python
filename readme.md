@@ -822,7 +822,9 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 **Computer Vision - Video Stream**
 
 - Concat multiple video streams to show side by side: [2 video streams](src/cv/concat2windows.py) [3 video streams](src/cv/concat3windows.py)
-- [Save stream to video output](src/cv/save2video.py)
+- Save stream to video output
+  - [opencv method](src/cv/opencv_save2video.py)
+  - [opencv method](src/cv/imageio_save2video.py)
 - [Read in video stream from a file](src/cv/readvideostream.py)
 - [Read in stream from camera](src/cv/save2video.py)
 - [video arrays (in opencv) -> bytes -> np.array -> video arrays (in opencv)](src/cv/video2bytes2nparray.py)
