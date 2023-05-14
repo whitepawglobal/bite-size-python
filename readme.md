@@ -399,6 +399,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Write file: `f.write(str)`
 - print without new line: `print(..., end="")`
 - Get environment path (second param is optional): `import os; os.getenv(<PATH_NAME> : str, <alternative-return-value>: str)`
+- [Get and set environment path](notebooks/filesystem/environment_setting.ipynb)
 - [Flush out print](notebooks/filesystem/stdoutflush.ipynb)
 - Check if path is a folder: `os.path.isdir(<path>)`
 - [Get file size](notebooks/filesystem/getfilesize.ipynb)
@@ -822,7 +823,9 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 **Computer Vision - Video Stream**
 
 - Concat multiple video streams to show side by side: [2 video streams](src/cv/concat2windows.py) [3 video streams](src/cv/concat3windows.py)
-- [Save stream to video output](src/cv/save2video.py)
+- Save stream to video output
+  - [opencv method](src/cv/opencv_save2video.py) (Face problem when replaying the video generated on AWS cloud services)
+  - [imageio method](src/cv/imageio_save2video.py)
 - [Read in video stream from a file](src/cv/readvideostream.py)
 - [Read in stream from camera](src/cv/save2video.py)
 - [video arrays (in opencv) -> bytes -> np.array -> video arrays (in opencv)](src/cv/video2bytes2nparray.py)
