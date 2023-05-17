@@ -62,6 +62,7 @@ conda env create -f config.yml
 
 ### Boolean Operator
 
+- bool from int (0, 1): `bool(0) / bool(1)`
 - [X and Y](notebooks/boolean_operator/boolean_options.ipynb)
 - [X or Y](notebooks/boolean_operator/boolean_options.ipynb)
 - [if not X](notebooks/boolean_operator/boolean_options.ipynb)
@@ -148,6 +149,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Capitalize a string: `strvar.capitalize()`
 - Uppercase a string: `strvar.upper()`
 - Lowercase a string: `strvar.lower()`
+- Capitalize the beginning of each word: `strvar.title()`
 - Get substring from a string: `strvar[<begin-index>:<end-index>]` / `strvar[<begin-index>:]` / `strvar[:<end-index>]`
 - Remove white spaces in the beginning and end: `strvar.strip()`
 - Swap existing upper and lower case: `strvar.swapcase()`
@@ -218,6 +220,9 @@ and bytearray() returns an object that can be modified (mutable).
 - [Copy by value](notebooks/dictionary/dict_copybyvalue.ipynb): `sampledict.copy()`
 - [Decompose/unpack dictionary when passing as argument](notebooks/dictionary/decompose_dict_when_passing_by_param.ipynb)
   - Use case: class declaration
+
+#### Tuple
+- Build a tuple: `var : tuple[bool, str | None] = tuple([True, "abc"])`
   
 #### Named Tuple
 - [NamedTuple](notebooks/collections_imp/namedtupleimp.ipynb)
@@ -473,9 +478,8 @@ and bytearray() returns an object that can be modified (mutable).
   - Enum get key: `obj.name`
   - Enum get value: `obj.value`
   - [Implement Enum in Python](notebooks/class/enumimpl.ipynb)
-  - [Enum with string](notebooks/class/enum_with_str.ipynb)
-- [Implement Enum in Python](notebooks/class/enumimpl.ipynb)
-  - [Define enum with string](notebooks/class/define_enum_with_str.ipynb)
+    - Compare enum: `value == EnumObject.OPTION1`
+    - [Enum with string](notebooks/class/enum_with_str.ipynb)
 - [Serialize class object](notebooks/class/serialize_classobj.ipynb)
 - [Function/Module with error handling](notebooks/class/function_with error_handling.ipynb)
 - [Identify if function did not return object. TLDR: if not test1()](notebooks/class/test_if_function_returns_object.ipynb)
@@ -535,11 +539,26 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 - [Filename as argument](notebooks/command_line/fileargparse.py)
 
 
-### ConfigParser
+### Environment Setting
 
 - [Read from config file](notebooks/configparser/testconfig.ipynb)
    -  How to comment on config file(*.ini): Put `#` sign in front of an empty line
+- [Using .env Files for Environment Variables in Python Applications](notebooks/envsetting/envsetting_intro.ipynb)
 
+```
+When to use configparser? When to user .env?
+#### TLDR:
+Use .env to save string-variable value which should not at any cost being exposed in code versioning platform/docker
+
+### use .env
+- the . of filename make it hidden
+- already excluded in preset .gitignore
+- Nearly every programming language has a package or library that can be used to read environment variables from the .env file instead of from your local environment. 
+- load_dotenv will find from host environment for variables when .env file is not file (for docker environment)
+
+### use configparser
+- import with more built in variable type (int, string, boolean) and checks to perform upon the value
+```
 
 ### XML Parser
 - [Read from xml file](notebooks/xmlparser)
@@ -583,8 +602,8 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 
 ### [Built-in Decorators](notebooks/decorator/built-in-decorators.md)
 
-- [Class Method @classmethod](notebooks/decorator/classmethod.py)
-- [Static Method @staticmethod](notebooks/decorator/staticmethod.py)
+- [Class Method @classmethod](notebooks/decorator/classmethod.py): take `cls` as first parameter (have access to internal fields and methods)
+- [Static Method @staticmethod](notebooks/decorator/staticmethod.py): can take no parameters, basically just a function
     - When to use @classmethod , @staticmethod
       - Class method can modify the class state,it bound to the class and it contain cls as parameter.  
         `def test(cls, ): self.variable = ?`
@@ -608,23 +627,38 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
   - `assert a == 20`
   - `assert isinstance(a, int)`
 
-#### Typing: Type Hint
+#### [Module _typing_: Type hint & annotations](notebooks/type_checking/typingimp.ipynb)
 
-- [Module _typing_: Type hint & annotations](notebooks/type_checking/typingimp.ipynb)
-  - [Dict](notebooks/type_checking/anyimp.ipynb)
-  - List
-  - Tuple
-  - Set
-  - [Any](notebooks/type_checking/anyimp.ipynb)
-  - [Union](notebooks/type_checking/unionimp.ipynb)
-    - [Simplification of Union from python 3.10 onwards](src/type_checking/union_evolution.py)
-  - Annotated
-    - Before python 3.9: `from typing_extensions import Annotated`
-    - Python 3.9 onwards: `from typing import Annotated`
+- List
+- Tuple
+- Set
+  ```
+  # Prior to python 3.9
+  
+  from typing import List, Tuple, Set
+
+  items: List[str]
+  values : Tuple[int, str, str]
+  products : Set[bytes]
+  
+  # python 3.9 onwards
+  # no need import 
+
+  items: list[str]
+  values : tuple[int, str, str]
+  products : set[bytes]
+  ```
+- [Any](notebooks/type_checking/anyimp.ipynb) : `from typing import Any; varible : Any`
+- [Union](notebooks/type_checking/unionimp.ipynb) / Optional
+  - [Simplification of Union from python 3.10 onwards](src/type_checking/union_evolution.py): `var1 : str | None`
+- [Annotated](notebooks/type_checking/typing_annotated.ipynb)
+  - Before python 3.9: `from typing_extensions import Annotated`
+  - Python 3.9 onwards: `from typing import Annotated`
     
 #### Pydantic : Data parsing and validation library 
 
-`TODO`
+- [BaseModel to correctly declare type](notebooks/pydanticops/basemodel_helloworld.ipynb)
+
 
 #### [Email Validation](notebooks/email-validation)
 
