@@ -116,7 +116,8 @@ and bytearray() returns an object that can be modified (mutable).
 - To Bytes: `bytes(<value>)`
 - Get size of bytes object: `import sys;sys.getsizeof(bytesobject)`
 - [Split bytes to chunks](notebooks/bytesops/bytestochunk.ipynb)
-
+  - The effect is less overhead in transmitting tasks to worker processes and collecting results.
+  
 #### ByteArray
   
 **Notes:**
