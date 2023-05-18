@@ -76,6 +76,16 @@ conda env create -f config.yml
 - [Calculate percentile](notebooks/math/percentile.ipynb)
 - Power of a number: `pow(base_number, exponent_number`
 - Square root of a number: `sqrt(number)`
+- Ceiling
+  ```
+  import math
+  value : int = math.ceil(invalue)
+  ```
+- Floor
+  ```
+  import math
+  value : int = math.floor(invalue)
+  ```
 - Logarithm / Log
   - Log to the base of 2:
     - Numpy: `import numpy as np; np.log2(10)`
