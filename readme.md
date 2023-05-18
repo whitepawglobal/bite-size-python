@@ -26,7 +26,7 @@ conda env create -f config.yml
 
 ## Package Installation
 
-**Install package with pip**  
+**Install package with pip**  Num
 `pip install <package-name>`. Example:`pip install numpy`
 
 - For more pip commands, check out [pip guidelines document](pip-guidelines.md)
@@ -141,6 +141,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Check if numpy array has true value: `np.any(<np-array>)`
 - Get numpy shape: `nparray.shape`
 - Numpy array to list: `nparray.tolist()`
+- List to numpy array: `np.array(listarray)`
 - Change datatype: `nparray = nparray.astype(<dtype>)` Example: `nparray = nparray.astype("uint8")`
 - Numpy NaN (Not A Number): Constant to act as a placeholder for any missing numerical values in the array: `np.NaN / np.nan / np.NAN`
 - Numpy multiply by a value: `nparray = nparray * 255`
