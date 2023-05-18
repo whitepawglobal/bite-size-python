@@ -174,7 +174,8 @@ and bytearray() returns an object that can be modified (mutable).
 - String get substring with index: `str[startindex:endindex]`
 - Replace string/character with intended string/character: `strout = strin.replace(" ", "_")`
 - [Replace multiple string/characters with intended string/character](notebooks/string/replace_multiple_character.ipynb)
-- [Generate random string](https://pynative.com/python-generate-random-string/)
+- [Generate 
+string](https://pynative.com/python-generate-random-string/)
 - List to string: ` <separators>.join(list) example: ', '.join(listbuffer)`
 
 #### Unique Identifer (UUID)
@@ -374,7 +375,7 @@ and bytearray() returns an object that can be modified (mutable).
 </details>
 
 ### Random
-
+- Generate random floating value within 0- 1: `from random import random; random.random()`
 - Generate random integer within (min, max): `from random import randint; randint(0, 100) #within 0 and 100`
 - Generate random floating value: `from random import random; random()`
 - Randomly choosing an item out from a list: `import random; random.choice([123, 456, 378])`
