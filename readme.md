@@ -136,6 +136,7 @@ and bytearray() returns an object that can be modified (mutable).
 #### Numpy
   
 - [Numpy basic](notebooks/numpy/npbasic.ipynb)
+   - numpy array with int random value: `np.random.randint(5, size=(2, 4))`
 - Check if numpy array has true value: `np.any(<np-array>)`
 - Get numpy shape: `nparray.shape`
 - Numpy array to list: `nparray.tolist()`
