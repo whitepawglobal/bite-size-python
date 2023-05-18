@@ -833,7 +833,6 @@ Use .env to save string-variable value which should not at any cost being expose
   - [Read image from url](notebooks/cv/read_image_from_url.ipynb)
   - Read in image with Pillow
     - Pillow read in image from np.array: ```im = Image.fromarray(nprrayimage)```
-  - [Read in from library Imageio
   - [Read in image from imageio](notebooks/cv/imageio_readinimage.ipynb)
 - Pause to display image or wait for an input: `cv2.waitKey(0)`
 - Save an image: `cv2.imwrite(pathtoimg : str, img : numpy.ndarray)`
