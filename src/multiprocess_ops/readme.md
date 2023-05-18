@@ -1,3 +1,11 @@
+### Sample Code
+```
+from multiprocessing import Pool, cpu_count
+cpu_count()
+```
+`map()` to assign task at one time
+`imap()` to assign task in sequential
+
 ### Notes
 
 - Number of worker are of number of cores
