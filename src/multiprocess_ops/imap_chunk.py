@@ -19,6 +19,7 @@ if __name__ == '__main__':
     # create and configure the process pool
     with Pool(4) as pool:
         # issue tasks to the process pool
+        #range(20) is okay and list(range(20)) is okay too
         results = pool.imap(task, range(20), chunksize=10)
         #results = pool.imap_unordered(task, range(40), chunksize=10)
         
