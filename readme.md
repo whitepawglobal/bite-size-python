@@ -861,8 +861,9 @@ Use .env to save string-variable value which should not at any cost being expose
 - Concat multiple video streams to show side by side: [2 video streams](src/cv/concat2windows.py) [3 video streams](src/cv/concat3windows.py)
 - Save stream to video output
   - [opencv method](src/cv/opencv_save2video.py) (Face problem when replaying the video generated on AWS cloud services)
-  - [imageio method](src/cv/imageio_save2video.py)
+  - [imageio method](notebooks/cv/imageio_readin_write_video.ipynb)
 - [Read in video stream from a file](src/cv/readvideostream.py)
+  - [Rread in video stream with imageio](notebooks/cv/imageio_readin_write_video.ipynb)
 - [Read in stream from camera](src/cv/save2video.py)
 - [video arrays (in opencv) -> bytes -> np.array -> video arrays (in opencv)](src/cv/video2bytes2nparray.py)
 - [Merge audio with video](src/cv/savevideowithaudio)
