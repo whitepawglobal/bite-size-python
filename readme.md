@@ -585,6 +585,9 @@ Use .env to save string-variable value which should not at any cost being expose
 ### Multiprocessing
 
 - [Create workers according to number of cores](src/multiprocess_ops/readme.md)
+  - [Create worker with imap](src/multiprocess_ops/createworker.py)
+  - [Create worker with imap passing multiple parameters](src/multiprocess_ops/createworker_multipleparam.py)
+  - [Create worker with chunks of data](src/multiprocess_ops/imap_chunk.py)
 
 ### Logging
 
