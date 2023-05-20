@@ -846,6 +846,7 @@ Use .env to save string-variable value which should not at any cost being expose
   - [As byte](notebooks/cv/image_as_byte.ipynb)
   - [As Bytearray](notebooks/cv/image_as_bytearray.ipynb)
   - [As base64](notebooks/cv/image_as_base64.ipynb)
+  - [From imageio (save with numpy array)](notebooks/cv/imageio_writeimage.ipynb)
 - Read image 
   - [Read image from url](notebooks/cv/read_image_from_url.ipynb)
   - Read in image with Pillow
@@ -859,6 +860,8 @@ Use .env to save string-variable value which should not at any cost being expose
   from IPython.display import Image
   Image(filename=pathtoimg : str)
   ```
+- Crop image
+    - [numpy array](notebooks/cv/imageio_writeimage.ipynb)
 - Flip image: `frame = cv2.flip(frame, flipcode : int)`
   - Positive flip code for flip on y axis (left right flip)
   - 0 for flip on x axis (up down)
