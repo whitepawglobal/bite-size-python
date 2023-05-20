@@ -797,9 +797,11 @@ Use .env to save string-variable value which should not at any cost being expose
 
 - List to torch tensor - `torch.tensor(listimp)`
 - Numpy array to torch tensor - `torch.from_numpy(np_array)`
+- Torch tensor to numpy: `tensorarray.numpy()`
 - [Image to torch tensor](notebooks/pytorch/torchtensor2image.ipynb)
 - [Torch tensor to image](notebooks/pytorch/torchtensor2image.ipynb)
 
+  
 **Torch Tensor Operation**
 
 - [Torch tensor value change by indexing and conditions](notebooks/pytorch/tensorvalue_manipulation.ipynb)
