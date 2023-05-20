@@ -146,6 +146,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Numpy NaN (Not A Number): Constant to act as a placeholder for any missing numerical values in the array: `np.NaN / np.nan / np.NAN`
 - Numpy multiply by a value: `nparray = nparray * 255`
 - [Numpy array to image](notebooks/pytorch/torchtensor2image.ipynb)
+- Numpy array to Torch tensor: `torch.from_numpy(nparray)`
 - [Numpy <> Binary File(.npy)](notebooks/numpy/np2binary.ipynb)
 - [Use of `numpy.where`](notebooks/cv/blur_region.ipynb)
   
