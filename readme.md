@@ -149,7 +149,9 @@ and bytearray() returns an object that can be modified (mutable).
 - Numpy array to Torch tensor: `torch.from_numpy(nparray)`
 - [Numpy <> Binary File(.npy)](notebooks/numpy/np2binary.ipynb)
 - [Use of `numpy.where`](notebooks/cv/blur_region.ipynb)
-  
+- Get minimum value of numpy array: `np.amin(array)` 
+- Get maximum value of numpy array: `np.amax(array)` 
+ 
 #### String
 
 - Generate string with parameter
