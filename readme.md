@@ -26,7 +26,7 @@ conda env create -f config.yml
 
 ## Package Installation
 
-**Install package with pip**  
+**Install package with pip**  Num
 `pip install <package-name>`. Example:`pip install numpy`
 
 - For more pip commands, check out [pip guidelines document](pip-guidelines.md)
@@ -116,7 +116,8 @@ and bytearray() returns an object that can be modified (mutable).
 - To Bytes: `bytes(<value>)`
 - Get size of bytes object: `import sys;sys.getsizeof(bytesobject)`
 - [Split bytes to chunks](notebooks/bytesops/bytestochunk.ipynb)
-
+  - The effect is less overhead in transmitting tasks to worker processes and collecting results.
+  
 #### ByteArray
   
 **Notes:**
@@ -136,16 +137,21 @@ and bytearray() returns an object that can be modified (mutable).
 #### Numpy
   
 - [Numpy basic](notebooks/numpy/npbasic.ipynb)
+   - numpy array with int random value: `np.random.randint(5, size=(2, 4))`
 - Check if numpy array has true value: `np.any(<np-array>)`
 - Get numpy shape: `nparray.shape`
 - Numpy array to list: `nparray.tolist()`
+- List to numpy array: `np.array(listarray)`
 - Change datatype: `nparray = nparray.astype(<dtype>)` Example: `nparray = nparray.astype("uint8")`
 - Numpy NaN (Not A Number): Constant to act as a placeholder for any missing numerical values in the array: `np.NaN / np.nan / np.NAN`
 - Numpy multiply by a value: `nparray = nparray * 255`
 - [Numpy array to image](notebooks/pytorch/torchtensor2image.ipynb)
+- Numpy array to Torch tensor: `torch.from_numpy(nparray)`
 - [Numpy <> Binary File(.npy)](notebooks/numpy/np2binary.ipynb)
 - [Use of `numpy.where`](notebooks/cv/blur_region.ipynb)
-  
+- Get minimum value of numpy array: `np.amin(array)` 
+- Get maximum value of numpy array: `np.amax(array)` 
+ 
 #### String
 
 - Generate string with parameter
@@ -174,7 +180,9 @@ and bytearray() returns an object that can be modified (mutable).
 - String get substring with index: `str[startindex:endindex]`
 - Replace string/character with intended string/character: `strout = strin.replace(" ", "_")`
 - [Replace multiple string/characters with intended string/character](notebooks/string/replace_multiple_character.ipynb)
-- [Generate random string](https://pynative.com/python-generate-random-string/)
+- [Generate 
+string](https://pynative.com/python-generate-random-string/)
+- String to List/Dict: `eval(strinput)`
 - List to string: ` <separators>.join(list) example: ', '.join(listbuffer)`
 
 #### Unique Identifer (UUID)
@@ -374,7 +382,7 @@ and bytearray() returns an object that can be modified (mutable).
 </details>
 
 ### Random
-
+- Generate random floating value within 0- 1: `from random import random; random.random()`
 - Generate random integer within (min, max): `from random import randint; randint(0, 100) #within 0 and 100`
 - Generate random floating value: `from random import random; random()`
 - Randomly choosing an item out from a list: `import random; random.choice([123, 456, 378])`
@@ -584,6 +592,9 @@ Use .env to save string-variable value which should not at any cost being expose
 ### Multiprocessing
 
 - [Create workers according to number of cores](src/multiprocess_ops/readme.md)
+  - [Create worker with imap](src/multiprocess_ops/createworker.py)
+  - [Create worker with imap passing multiple parameters](src/multiprocess_ops/createworker_multipleparam.py)
+  - [Create worker with chunks of data](src/multiprocess_ops/imap_chunk.py)
 
 ### Logging
 
@@ -789,9 +800,11 @@ Use .env to save string-variable value which should not at any cost being expose
 
 - List to torch tensor - `torch.tensor(listimp)`
 - Numpy array to torch tensor - `torch.from_numpy(np_array)`
+- Torch tensor to numpy: `tensorarray.numpy()`
 - [Image to torch tensor](notebooks/pytorch/torchtensor2image.ipynb)
 - [Torch tensor to image](notebooks/pytorch/torchtensor2image.ipynb)
 
+  
 **Torch Tensor Operation**
 
 - [Torch tensor value change by indexing and conditions](notebooks/pytorch/tensorvalue_manipulation.ipynb)
@@ -839,6 +852,7 @@ Use .env to save string-variable value which should not at any cost being expose
   - [As byte](notebooks/cv/image_as_byte.ipynb)
   - [As Bytearray](notebooks/cv/image_as_bytearray.ipynb)
   - [As base64](notebooks/cv/image_as_base64.ipynb)
+  - [From imageio (save with numpy array)](notebooks/cv/imageio_writeimage.ipynb)
 - Read image 
   - [Read image from url](notebooks/cv/read_image_from_url.ipynb)
   - Read in image with Pillow
@@ -852,6 +866,8 @@ Use .env to save string-variable value which should not at any cost being expose
   from IPython.display import Image
   Image(filename=pathtoimg : str)
   ```
+- Crop image
+    - [numpy array](notebooks/cv/imageio_writeimage.ipynb)
 - Flip image: `frame = cv2.flip(frame, flipcode : int)`
   - Positive flip code for flip on y axis (left right flip)
   - 0 for flip on x axis (up down)
