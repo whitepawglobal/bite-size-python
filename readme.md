@@ -590,7 +590,12 @@ Use .env to save string-variable value which should not at any cost being expose
 - [Dataframe - column-major, Numpy - row-major](notebooks/performance/df_numpy_major.ipynb)
 
 ### Multiprocessing
-
+```
+Difference of pool(from multiprocessing) from thread:
+pool spins up different processes while thread stay in the same process
+  
+The goal of pool (multiprocessing) is to maximize the use of cpu cores.
+```
 - [Create workers according to number of cores](src/multiprocess_ops/readme.md)
   - [Create worker with imap](src/multiprocess_ops/createworker.py)
   - [Create worker with imap passing multiple parameters](src/multiprocess_ops/createworker_multipleparam.py)
