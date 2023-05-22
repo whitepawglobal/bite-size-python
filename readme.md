@@ -182,6 +182,7 @@ and bytearray() returns an object that can be modified (mutable).
 - [Replace multiple string/characters with intended string/character](notebooks/string/replace_multiple_character.ipynb)
 - [Generate 
 string](https://pynative.com/python-generate-random-string/)
+- String to List/Dict: `eval(strinput)`
 - List to string: ` <separators>.join(list) example: ', '.join(listbuffer)`
 
 #### Unique Identifer (UUID)
