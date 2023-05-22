@@ -2,6 +2,18 @@ from time import sleep
 from multiprocessing.pool import Pool
 import random
  
+"""
+Setting number of worker to # of logical cpu: 
+
+By default this equals the number of logical CPUs in your system.
+    
+For example, if we had 4 physical CPU cores with hyperthreading, this would mean we would have 8 logical CPU cores and this would be the default number of workers in the process pool.
+
+We can set the “processes” argument to specify the number of child processes to create and use as workers in the process pool.
+Pool(4)
+
+References: https://superfastpython.com/multiprocessing-pool-num-workers/
+"""
 # task executed in a worker process
 def task(task_identifier) -> int:
     
