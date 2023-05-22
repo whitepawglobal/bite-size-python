@@ -788,7 +788,8 @@ Use .env to save string-variable value which should not at any cost being expose
 
 - Given torch.tensor `buffer = tensor(4)`, get the value by - `id = buffer.item()`
 - Given torch.tensor, get the argmax of each row - `torch.argmax(buffer, dim=<(int)dimension_to_reduce>)`
-- Tensor to cuda - `inputs = inputs.to("cuda")`
+- Tensor to cuda - `inputs = inputs.to("cuda:0")` or `inputs = inputs.cuda()`
+- Tensor to cpu - `inputs = inputs.to("cpu")` or `inputs = inputs.cpu()`
 - Tensor shape - `tensor.shape`
 - Tensor data types - `tensor.dtype`
 - Device tensor is stored on - `tensor.device`
