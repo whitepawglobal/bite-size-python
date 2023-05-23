@@ -292,6 +292,14 @@ string](https://pynative.com/python-generate-random-string/)
 - Assign df by copy instead of reference - [`df.copy()`](notebooks/pandas/copybyvalue.ipynb)
 - Shuffle rows of df: `df = df.sample(frac=1).reset_index(drop=True)`
 - [Pandas with multiple index](notebooks/pandas/pd_multiple_index.ipynb)
+- Bytes to dataframe
+  ```
+    from io import BytesIO
+    import pandas as pd
+
+    data = BytesIO(bytesdata)
+    df = pd.read_csv(data)
+  ```
 
 #### Panda Type
 
