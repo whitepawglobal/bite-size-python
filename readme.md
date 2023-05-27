@@ -548,7 +548,7 @@ string](https://pynative.com/python-generate-random-string/)
 - [Produce a single cumulative value from iterable with reduce()](notebooks/functional/reduceimp.ipynb)
 - [Condition checking with any(<iterable>)](notebooks/functional/anyimp.ipynb)
 - [Multiple function declaration with singledispatch)](notebooks/functional/singledispatchimp.ipynb)
-
+- Lambda function: `x = lambda a, b : a * b`
 _Note: Functional style can be replaced with **list comprehension** or **generator expressions**_
 
 ### Inheritance
