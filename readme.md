@@ -212,7 +212,8 @@ string](https://pynative.com/python-generate-random-string/)
 - Get index of a value: `arr.index(value)`
 - Add one more value to existing list: `arr.append(value)`
 - Extend list with values in another list: `arr.extend(arr2)`
-- Remove an item from the list: `arr.remove(item)`
+- Remove an item (the first item found) from the list: `arr.remove(item)`
+- Remove item by index: `del arr[index]` or `del arr[index-start: index-end]`
 - Check for empty list: `arr = []; if not arr: #empty list`
 - Check all items in a list(subset) if exist in another list, returns boolean: `set(b).issubset(v)`
 - Build list of same values: `['100'] * 20 # 20 items of the value '100'`
