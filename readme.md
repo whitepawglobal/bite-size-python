@@ -182,7 +182,7 @@ and bytearray() returns an object that can be modified (mutable).
 - [Replace multiple string/characters with intended string/character](notebooks/string/replace_multiple_character.ipynb)
 - [Generate 
 string](https://pynative.com/python-generate-random-string/)
-- String to List/Dict: `eval(strinput)`
+- [String to List/Dict:](notebooks/string/string2list.ipynb) `eval(strinput)`
 - List to string: ` <separators>.join(list) example: ', '.join(listbuffer)`
 
 #### Unique Identifer (UUID)
@@ -212,7 +212,8 @@ string](https://pynative.com/python-generate-random-string/)
 - Get index of a value: `arr.index(value)`
 - Add one more value to existing list: `arr.append(value)`
 - Extend list with values in another list: `arr.extend(arr2)`
-- Remove an item from the list: `arr.remove(item)`
+- Remove an item (the first item found) from the list: `arr.remove(item)`
+- Remove item by index: `del arr[index]` or `del arr[index-start: index-end]`
 - Check for empty list: `arr = []; if not arr: #empty list`
 - Check all items in a list(subset) if exist in another list, returns boolean: `set(b).issubset(v)`
 - Build list of same values: `['100'] * 20 # 20 items of the value '100'`
@@ -222,6 +223,7 @@ string](https://pynative.com/python-generate-random-string/)
 - [Count occurence of items in list](notebooks/list/countoccurence.ipynb)
 - Get maximum value in a list of numbers (even strings): `max(samplelist)`
 - Reverse a list: `list(reversed([1, 2, 3, 4])`
+- list to string: `",".join(bufferlist)`
   
 #### [Dictionary](notebooks/dictionary)
   
@@ -292,6 +294,14 @@ string](https://pynative.com/python-generate-random-string/)
 - Assign df by copy instead of reference - [`df.copy()`](notebooks/pandas/copybyvalue.ipynb)
 - Shuffle rows of df: `df = df.sample(frac=1).reset_index(drop=True)`
 - [Pandas with multiple index](notebooks/pandas/pd_multiple_index.ipynb)
+- Bytes to dataframe
+  ```
+    from io import BytesIO
+    import pandas as pd
+
+    data = BytesIO(bytesdata)
+    df = pd.read_csv(data)
+  ```
 
 #### Panda Type
 
@@ -543,7 +553,7 @@ string](https://pynative.com/python-generate-random-string/)
 - [Produce a single cumulative value from iterable with reduce()](notebooks/functional/reduceimp.ipynb)
 - [Condition checking with any(<iterable>)](notebooks/functional/anyimp.ipynb)
 - [Multiple function declaration with singledispatch)](notebooks/functional/singledispatchimp.ipynb)
-
+- Lambda function: `x = lambda a, b : a * b`
 _Note: Functional style can be replaced with **list comprehension** or **generator expressions**_
 
 ### Inheritance
@@ -593,7 +603,12 @@ Use .env to save string-variable value which should not at any cost being expose
 - [Dataframe - column-major, Numpy - row-major](notebooks/performance/df_numpy_major.ipynb)
 
 ### Multiprocessing
-
+```
+Difference of pool(from multiprocessing) from thread:
+pool spins up different processes while thread stay in the same process
+  
+The goal of pool (multiprocessing) is to maximize the use of cpu cores.
+```
 - [Create workers according to number of cores](src/multiprocess_ops/readme.md)
   - [Create worker with imap](src/multiprocess_ops/createworker.py)
   - [Create worker with imap passing multiple parameters](src/multiprocess_ops/createworker_multipleparam.py)
@@ -791,7 +806,8 @@ Use .env to save string-variable value which should not at any cost being expose
 
 - Given torch.tensor `buffer = tensor(4)`, get the value by - `id = buffer.item()`
 - Given torch.tensor, get the argmax of each row - `torch.argmax(buffer, dim=<(int)dimension_to_reduce>)`
-- Tensor to cuda - `inputs = inputs.to("cuda")`
+- Tensor to cuda - `inputs = inputs.to("cuda:0")` or `inputs = inputs.cuda()`
+- Tensor to cpu - `inputs = inputs.to("cpu")` or `inputs = inputs.cpu()`
 - Tensor shape - `tensor.shape`
 - Tensor data types - `tensor.dtype`
 - Device tensor is stored on - `tensor.device`
