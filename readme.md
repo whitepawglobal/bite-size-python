@@ -179,9 +179,9 @@ and bytearray() returns an object that can be modified (mutable).
 - Check if string have substring/specific character. Returns -1 if not found: `strvar.find(<substring>)`
 - String get substring with index: `str[startindex:endindex]`
 - Replace string/character with intended string/character: `strout = strin.replace(" ", "_")`
-- [Replace multiple string/characters with intended string/character](notebooks/string/replace_multiple_character.ipynb)
-- [Generate 
-string](https://pynative.com/python-generate-random-string/)
+- [Replace multiple characters with intended character](notebooks/string/replace_multiple_character.ipynb)
+- [Replace multiple string with intended string](notebooks/string/replace_multiple_string.ipynb)
+- [Generate string](https://pynative.com/python-generate-random-string/)
 - [String to List/Dict:](notebooks/string/string2list.ipynb) `eval(strinput)`
 - List to string: ` <separators>.join(list) example: ', '.join(listbuffer)`
 
