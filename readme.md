@@ -490,9 +490,10 @@ string](https://pynative.com/python-generate-random-string/)
 - Define dataclass @dataclass
   - [dataclass 1](notebooks/class/dataclass/dataclass_helloworld_1.ipynb)
   - [dataclass 2](notebooks/class/dataclass/dataclass_helloworld_2.ipynb)
-  - [dataclass 3](notebooks/class/dataclass/dataclass3.ipynb)
+  - [dataclass 3](notebooks/class/dataclass/dataclass3.ipynb
     - Compare normal class definition with dataclass definition
     - Layout output of __dict__ for dataclass class
+  - [dict as constructor input](notebooks/class/dict_as_constructor.ipynb)
 - Magic methods `__repr__` and `__dict__` are created when define class with dataclass
 - Enum
   - Enum get key: `obj.name`
