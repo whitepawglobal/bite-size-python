@@ -771,6 +771,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 - [Upload multipart with multiple workers](src/cloud/aws/uploadmultipart_withworkers.py)
 - [Get object from S3 with boto](notebooks/cloud/aws/get_s3_object_with_boto.ipynb)
 - [Download s3 public from url with requests](notebooks/cloud/aws/download_s3_file.ipynb)
+- [Create subfolder in bucket and upload file](notebooks/cloud/aws/create_subfolder_and_upload_file.ipynb)
 
 **Note:**
 
