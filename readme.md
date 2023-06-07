@@ -255,7 +255,8 @@ and bytearray() returns an object that can be modified (mutable).
 - [Zip multiple iterables](notebooks/zipops/zipops.ipynb)
 
 #### JSON
-- [Build json](notebooks/json/write2json.ipynb)
+- [Write dict to json file](notebooks/json/write2json_readfromjson.ipynb)
+- [Read dict from json file](notebooks/json/write2json_readfromjson.ipynb)
 
 ### [Pandas](https://pandas.pydata.org/docs/reference/)
 
