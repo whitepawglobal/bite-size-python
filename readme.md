@@ -254,6 +254,9 @@ and bytearray() returns an object that can be modified (mutable).
 - To identify if any items in the iterables has True/1 values: `any(sample_list) #returns single value True/False`
 - [Zip multiple iterables](notebooks/zipops/zipops.ipynb)
 
+#### JSON
+- [Build json](notebooks/json/write2json.ipynb)
+
 ### [Pandas](https://pandas.pydata.org/docs/reference/)
 
 <details>
