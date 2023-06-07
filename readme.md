@@ -373,12 +373,8 @@ and bytearray() returns an object that can be modified (mutable).
 - Save to csv `df.to_csv('file name', index = False)`
   - Note: Put `index = False` is important to prevent an extra column of index being saved.
 - Save to csv with encoding `df.to_csv('file name', encoding = 'utf-8')`
-
-#### Panda JSON In/Out
-
-- [Read in json](notebooks/json/readfromjson.ipynb)
-- [Write to json](notebooks/json/write2json.ipynb)
-
+  
+  
 #### Panda [Parquet In/Out](notebooks/pandas/readwriteparquet.ipynb)
 
 - Read in parquet: `pd.read_parquet(...)`
