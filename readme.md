@@ -74,7 +74,10 @@ conda env create -f config.yml
 - Sum up an array: `sum(arr)`
 - Max, returns maximum between two value: `max(a, b)`
 - Min, returns minimum between two value: `min(a, b)`
-- Atan2, `import math; math.atan2(90, 15)`
+- Atan2: `import math; math.atan2(90, 15)`
+- Asin: `import math; math.asin(0.5)`
+- Sin: `import math; math.sin(1)`
+- Cos:`import math; math.cos(1)`
 - Round up a number to a certain decimal point: `round(value, 1)`
 - [Calculate percentile](notebooks/math/percentile.ipynb)
 - Power of a number: `pow(base_number, exponent_number`
