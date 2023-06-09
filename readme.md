@@ -709,6 +709,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 ### Others
 
 - [Kill after x amount of time if process not complete](src/error_handling/timeout)
+- [match<>case syntax (Supports after python 3.10)](notebooks/condition/match_case.ipynb)
 
 ### Networking
   
