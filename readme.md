@@ -72,6 +72,7 @@ conda env create -f config.yml
 
 - [Define Nan, Infinite](notebooks/math/define_nan_infinite.ipynb)
 - Sum up an array: `sum(arr)`
+- Max, returns maximum between two value: `max(a, b)`
 - Round up a number to a certain decimal point: `round(value, 1)`
 - [Calculate percentile](notebooks/math/percentile.ipynb)
 - Power of a number: `pow(base_number, exponent_number`
