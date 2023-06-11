@@ -72,6 +72,12 @@ conda env create -f config.yml
 
 - [Define Nan, Infinite](notebooks/math/define_nan_infinite.ipynb)
 - Sum up an array: `sum(arr)`
+- Max, returns maximum between two value: `max(a, b)`
+- Min, returns minimum between two value: `min(a, b)`
+- Atan2: `import math; math.atan2(90, 15)`
+- Asin: `import math; math.asin(0.5)`
+- Sin: `import math; math.sin(1)`
+- Cos:`import math; math.cos(1)`
 - Round up a number to a certain decimal point: `round(value, 1)`
 - [Calculate percentile](notebooks/math/percentile.ipynb)
 - Power of a number: `pow(base_number, exponent_number`
@@ -179,9 +185,9 @@ and bytearray() returns an object that can be modified (mutable).
 - Check if string have substring/specific character. Returns -1 if not found: `strvar.find(<substring>)`
 - String get substring with index: `str[startindex:endindex]`
 - Replace string/character with intended string/character: `strout = strin.replace(" ", "_")`
-- [Replace multiple string/characters with intended string/character](notebooks/string/replace_multiple_character.ipynb)
-- [Generate 
-string](https://pynative.com/python-generate-random-string/)
+- [Replace multiple characters with intended character](notebooks/string/replace_multiple_character.ipynb)
+- [Replace multiple string with intended string](notebooks/string/replace_multiple_string.ipynb)
+- [Generate string](https://pynative.com/python-generate-random-string/)
 - [String to List/Dict:](notebooks/string/string2list.ipynb) `eval(strinput)`
 - List to string: ` <separators>.join(list) example: ', '.join(listbuffer)`
 
@@ -222,7 +228,7 @@ string](https://pynative.com/python-generate-random-string/)
 - Iteration over two lists: `[<operation> for item1, item2 in zip(list1, list2)]```
 - [Count occurence of items in list](notebooks/list/countoccurence.ipynb)
 - Get maximum value in a list of numbers (even strings): `max(samplelist)`
-- Reverse a list: `list(reversed([1, 2, 3, 4])`
+- Reverse a list: `list(reversed([1, 2, 3, 4])` / `listinput.reverse()`
 - list to string: `",".join(bufferlist)`
   
 #### [Dictionary](notebooks/dictionary)
@@ -240,6 +246,8 @@ string](https://pynative.com/python-generate-random-string/)
 - [Copy by value](notebooks/dictionary/dict_copybyvalue.ipynb): `sampledict.copy()`
 - [Decompose/unpack dictionary when passing as argument](notebooks/dictionary/decompose_dict_when_passing_by_param.ipynb)
   - Use case: class declaration
+- [Reverse key value pair to build inverse key value pair with zip](notebooks/dictionary/reverse_dict_for_inverse_keyvaluepair.ipynb)
+- [Dictionary to decide class to call with class as value](notebooks/dictionary/dict_to_decide_class_to_call.ipynb)
 
 #### Tuple
 - Build a tuple: `var : tuple[bool, str | None] = tuple([True, "abc"])`
@@ -251,6 +259,10 @@ string](https://pynative.com/python-generate-random-string/)
 
 - To identify if any items in the iterables has True/1 values: `any(sample_list) #returns single value True/False`
 - [Zip multiple iterables](notebooks/zipops/zipops.ipynb)
+
+#### JSON
+- [Write dict to json file](notebooks/json/write2json_readfromjson.ipynb)
+- [Read dict from json file](notebooks/json/write2json_readfromjson.ipynb)
 
 ### [Pandas](https://pandas.pydata.org/docs/reference/)
 
@@ -367,12 +379,8 @@ string](https://pynative.com/python-generate-random-string/)
 - Save to csv `df.to_csv('file name', index = False)`
   - Note: Put `index = False` is important to prevent an extra column of index being saved.
 - Save to csv with encoding `df.to_csv('file name', encoding = 'utf-8')`
-
-#### Panda JSON In/Out
-
-- [Read in json](notebooks/json/readfromjson.ipynb)
-- [Write to json](notebooks/json/write2json.ipynb)
-
+  
+  
 #### Panda [Parquet In/Out](notebooks/pandas/readwriteparquet.ipynb)
 
 - Read in parquet: `pd.read_parquet(...)`
@@ -707,6 +715,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 ### Others
 
 - [Kill after x amount of time if process not complete](src/error_handling/timeout)
+- [match<>case syntax (Supports after python 3.10)](notebooks/condition/match_case.ipynb)
 
 ### Networking
   
@@ -771,6 +780,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 - [Upload multipart with multiple workers](src/cloud/aws/uploadmultipart_withworkers.py)
 - [Get object from S3 with boto](notebooks/cloud/aws/get_s3_object_with_boto.ipynb)
 - [Download s3 public from url with requests](notebooks/cloud/aws/download_s3_file.ipynb)
+- [Create subfolder in bucket and upload file](notebooks/cloud/aws/create_subfolder_and_upload_file.ipynb)
 
 **Note:**
 
