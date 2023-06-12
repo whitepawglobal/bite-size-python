@@ -222,6 +222,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Remove item by index: `del arr[index]` or `del arr[index-start: index-end]`
 - Check for empty list: `arr = []; if not arr: #empty list`
 - Check all items in a list(subset) if exist in another list, returns boolean: `set(b).issubset(v)`
+- Check unordered list to have the same items, returns boolean: `set(a) == set(b)`
 - Build list of same values: `['100'] * 20 # 20 items of the value '100'`
 - Change values of list with **List Comprehension**: `[func(a) for a in sample_list]`
 - Iteration of list with index: `for index, value in enumerate(inlist):`
