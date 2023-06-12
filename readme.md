@@ -103,7 +103,7 @@ conda env create -f config.yml
     
 #### Floating Value (float, double)
 
-- Format floating value to n decimal: `"%.2f" % floating_var`
+- Format floating value to n decimal: `"%.2f" % floating_var` / `print("{:.2f}".format(a))`
 
 #### Bytes
 
