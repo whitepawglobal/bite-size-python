@@ -756,6 +756,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
   
   
 - [Connect to db with sqlalchemy](notebooks/sqlalchemyops/readme.md)
+  - Silence the log: `create_engine(..., echo = False)`
 
 #### [PostgreSQL](notebooks/postgresql-python/readme.md)
 
