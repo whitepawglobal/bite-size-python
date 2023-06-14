@@ -78,6 +78,7 @@ conda env create -f config.yml
 - Asin: `import math; math.asin(0.5)`
 - Sin: `import math; math.sin(1)`
 - Cos:`import math; math.cos(1)`
+- Factorial: `import math: math.factorial(1)`
 - Round up a number to a certain decimal point: `round(value, 1)`
 - [Calculate percentile](notebooks/math/percentile.ipynb)
 - Power of a number: `pow(base_number, exponent_number`
