@@ -253,7 +253,7 @@ and bytearray() returns an object that can be modified (mutable).
 - [Dictionary to decide class to call with class as value](notebooks/dictionary/dict_to_decide_class_to_call.ipynb)
 
 #### Set
-- Set initialization: `setsample = {1,2,3,4,5} 
+- Set initialization: `setsample = {1,2,3,4,5}`
 - Add item: `setsample.add(<value>)`
 - Add multiple items: `setsample.update(<another-set>)`
 
