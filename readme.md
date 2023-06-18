@@ -104,7 +104,7 @@ conda env create -f config.yml
     
 #### Floating Value (float, double)
 
-- Format floating value to n decimal: `"%.2f" % floating_var` / `print("{:.2f}".format(a))`
+- Format floating value to n decimal: `"%.2f" % floating_var` / `print("{:.2f}".format(a))` 
 
 #### Bytes
 
@@ -164,7 +164,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Generate string with parameter
   - [Using template literal](notebooks/string/paramwithstring.ipynb): `print(f'Completed part {id}')`
   - [Generate string with templates](notebooks/string/stringtemplate.ipynb)
-  - String formatting method: `print('Completed part {part_id}'.format(part_id))`
+  - String formatting method: `print('Completed part %d' % part_id)`
   - create string in the raw format: `varname="world"; print(f"Hello {varname!r}")
 - Check if string is empty, len = 0: `if not strvar:`
 - Check if string contains digit: `any(chr.isdigit() for chr in str1) #return True if there's digit`
