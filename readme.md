@@ -387,7 +387,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Save to csv `df.to_csv('file name', index = False)`
   - Note: Put `index = False` is important to prevent an extra column of index being saved.
 - Save to csv with encoding `df.to_csv('file name', encoding = 'utf-8')`
-  
+- [Write list/dict to csv file](https://www.geeksforgeeks.org/writing-data-from-a-python-list-to-csv-row-wise/) (Note: to not affected by the comma in the collection)
   
 #### Panda [Parquet In/Out](notebooks/pandas/readwriteparquet.ipynb)
 
@@ -490,6 +490,7 @@ and bytearray() returns an object that can be modified (mutable).
   - `.close()`: close file iterator
     
   </details>
+
 
 ### System
 
