@@ -235,7 +235,7 @@ and bytearray() returns an object that can be modified (mutable).
 **Build list**
 
 - Build list of same values: `['100'] * 20 # 20 items of the value '100'`
-- Build multiple list into one: `lista + listb + listc"
+- Build multiple list into one: `lista + listb + listc`
 
   
 #### [Dictionary](notebooks/dictionary)
