@@ -224,7 +224,6 @@ and bytearray() returns an object that can be modified (mutable).
 - Check for empty list: `arr = []; if not arr: #empty list`
 - Check all items in a list(subset) if exist in another list, returns boolean: `set(b).issubset(v)`
 - Check unordered list to have the same items, returns boolean: `set(a) == set(b)`
-- Build list of same values: `['100'] * 20 # 20 items of the value '100'`
 - Change values of list with **List Comprehension**: `[func(a) for a in sample_list]`
 - Iteration of list with index: `for index, value in enumerate(inlist):`
 - Iteration over two lists: `[<operation> for item1, item2 in zip(list1, list2)]```
@@ -232,6 +231,12 @@ and bytearray() returns an object that can be modified (mutable).
 - Get maximum value in a list of numbers (even strings): `max(samplelist)`
 - Reverse a list: `list(reversed([1, 2, 3, 4])` / `listinput.reverse()`
 - list to string: `",".join(bufferlist)`
+
+**Build list**
+
+- Build list of same values: `['100'] * 20 # 20 items of the value '100'`
+- Build multiple list into one: `lista + listb + listc"
+
   
 #### [Dictionary](notebooks/dictionary)
   
@@ -409,7 +414,7 @@ and bytearray() returns an object that can be modified (mutable).
 
 ### Random
 - Generate random floating value within 0- 1: `from random import random; random.random()`
-- Generate random integer within (min, max): `from random import randint; randint(0, 100) #within 0 and 100`
+- Generate random integer within (min, max). Both bound included: `from random import randint; randint(0, 100) #within 0 and 100`
 - Generate random floating value: `from random import random; random()`
 - Randomly choosing an item out from a list: `import random; random.choice([123, 456, 378])`
 - Generate list with random number: `import random; random.sample(range(10, 30), 5)`
