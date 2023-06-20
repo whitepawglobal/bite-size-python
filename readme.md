@@ -233,6 +233,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Get maximum value in a list of numbers (even strings): `max(samplelist)`
 - Reverse a list: `list(reversed([1, 2, 3, 4])` / `listinput.reverse()`
 - list to string: `",".join(bufferlist)`
+- Remove a value in list by index: `returnedvalue = listarray.pop(index)` (Note: Invoke IndexError if index not valid)
 
 **Build list**
 
