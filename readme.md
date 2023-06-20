@@ -78,6 +78,7 @@ conda env create -f config.yml
 - Asin: `import math; math.asin(0.5)`
 - Sin: `import math; math.sin(1)`
 - Cos:`import math; math.cos(1)`
+- Factorial: `import math: math.factorial(1)`
 - Round up a number to a certain decimal point: `round(value, 1)`
 - [Calculate percentile](notebooks/math/percentile.ipynb)
 - Power of a number: `pow(base_number, exponent_number`
@@ -98,12 +99,17 @@ conda env create -f config.yml
     - Math: `import math; math.log2(10)`
     - [Plotting of log to the to the base of 2](notebooks/math/logn_plotting.ipynb)
 
+### Math-others
+- [Unique combination pair](notebooks/math/unique_combination_pair.ipynb)
+
+### Sorting
+- [Quick Sort](notebooks/sorting/quicksort.ipynb)
 
 ### Data Types
     
 #### Floating Value (float, double)
 
-- Format floating value to n decimal: `"%.2f" % floating_var`
+- Format floating value to n decimal: `"%.2f" % floating_var` / `print("{:.2f}".format(a))` 
 
 #### Bytes
 
@@ -163,7 +169,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Generate string with parameter
   - [Using template literal](notebooks/string/paramwithstring.ipynb): `print(f'Completed part {id}')`
   - [Generate string with templates](notebooks/string/stringtemplate.ipynb)
-  - String formatting method: `print('Completed part {part_id}'.format(part_id))`
+  - String formatting method: `print('Completed part %d' % part_id)`
   - create string in the raw format: `varname="world"; print(f"Hello {varname!r}")
 - Check if string is empty, len = 0: `if not strvar:`
 - Check if string contains digit: `any(chr.isdigit() for chr in str1) #return True if there's digit`
@@ -222,7 +228,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Remove item by index: `del arr[index]` or `del arr[index-start: index-end]`
 - Check for empty list: `arr = []; if not arr: #empty list`
 - Check all items in a list(subset) if exist in another list, returns boolean: `set(b).issubset(v)`
-- Build list of same values: `['100'] * 20 # 20 items of the value '100'`
+- Check unordered list to have the same items, returns boolean: `set(a) == set(b)`
 - Change values of list with **List Comprehension**: `[func(a) for a in sample_list]`
 - Iteration of list with index: `for index, value in enumerate(inlist):`
 - Iteration over two lists: `[<operation> for item1, item2 in zip(list1, list2)]```
@@ -230,6 +236,13 @@ and bytearray() returns an object that can be modified (mutable).
 - Get maximum value in a list of numbers (even strings): `max(samplelist)`
 - Reverse a list: `list(reversed([1, 2, 3, 4])` / `listinput.reverse()`
 - list to string: `",".join(bufferlist)`
+- Remove a value in list by index: `returnedvalue = listarray.pop(index)` (Note: Invoke IndexError if index not valid)
+
+**Build list**
+
+- Build list of same values: `['100'] * 20 # 20 items of the value '100'`
+- Build multiple list into one: `lista + listb + listc`
+
   
 #### [Dictionary](notebooks/dictionary)
   
@@ -239,6 +252,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Get keys as list: `list(lut.keys())`
 - Get values as list: `list(lut.values())`
 - Create dict from list: `{i: 0 for i in arr}`
+- Remove key<>value: `value = keyvalue.pop(key, alternative-value-if-key-not-present)`
 - [Handling missing items in dict](notebooks/dictionary/nativedict_handlemissingkey.ipynb)
 - [Iteration to dict to get keys and values](notebooks/dictionary/dict_iteration.ipynb)
 - [Save/load dictionary to/from a file](notebooks/dictionary/saveloaddict.ipynb)
@@ -248,6 +262,12 @@ and bytearray() returns an object that can be modified (mutable).
   - Use case: class declaration
 - [Reverse key value pair to build inverse key value pair with zip](notebooks/dictionary/reverse_dict_for_inverse_keyvaluepair.ipynb)
 - [Dictionary to decide class to call with class as value](notebooks/dictionary/dict_to_decide_class_to_call.ipynb)
+
+#### Set
+- Set initialization: `setsample = {1,2,3,4,5}`
+- Add item: `setsample.add(<value>)`
+- Add multiple items: `setsample.update(<another-set>)`
+- [Set with multiple-value input as set](notebooks/set/set_with_multiple_value_input.ipynb)
 
 #### Tuple
 - Build a tuple: `var : tuple[bool, str | None] = tuple([True, "abc"])`
@@ -379,7 +399,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Save to csv `df.to_csv('file name', index = False)`
   - Note: Put `index = False` is important to prevent an extra column of index being saved.
 - Save to csv with encoding `df.to_csv('file name', encoding = 'utf-8')`
-  
+- [Write list/dict to csv file](https://www.geeksforgeeks.org/writing-data-from-a-python-list-to-csv-row-wise/) (Note: to not affected by the comma in the collection)
   
 #### Panda [Parquet In/Out](notebooks/pandas/readwriteparquet.ipynb)
 
@@ -401,11 +421,12 @@ and bytearray() returns an object that can be modified (mutable).
 
 ### Random
 - Generate random floating value within 0- 1: `from random import random; random.random()`
-- Generate random integer within (min, max): `from random import randint; randint(0, 100) #within 0 and 100`
+- Generate random integer within (min, max). Both bound included: `from random import randint; randint(0, 100) #within 0 and 100`
 - Generate random floating value: `from random import random; random()`
 - Randomly choosing an item out from a list: `import random; random.choice([123, 456, 378])`
 - Generate list with random number: `import random; random.sample(range(10, 30), 5)`
   - Example shown where 5 random numbers are generated in between 10 to 30
+- Choose a random value in an array: `random.choice([1,2,3]`
 
 ## Intermediate
   
@@ -482,6 +503,7 @@ and bytearray() returns an object that can be modified (mutable).
   - `.close()`: close file iterator
     
   </details>
+
 
 ### System
 
@@ -755,6 +777,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
   
   
 - [Connect to db with sqlalchemy](notebooks/sqlalchemyops/readme.md)
+  - Silence the log: `create_engine(..., echo = False)`
 
 #### [PostgreSQL](notebooks/postgresql-python/readme.md)
 
