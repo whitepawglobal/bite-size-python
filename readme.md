@@ -99,6 +99,9 @@ conda env create -f config.yml
     - Math: `import math; math.log2(10)`
     - [Plotting of log to the to the base of 2](notebooks/math/logn_plotting.ipynb)
 
+### Math-others
+- [Unique combination pair](notebooks/math/unique_combination_pair.ipynb)
+
 ### Sorting
 - [Quick Sort](notebooks/sorting/quicksort.ipynb)
 
