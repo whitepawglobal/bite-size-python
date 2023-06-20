@@ -422,6 +422,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Randomly choosing an item out from a list: `import random; random.choice([123, 456, 378])`
 - Generate list with random number: `import random; random.sample(range(10, 30), 5)`
   - Example shown where 5 random numbers are generated in between 10 to 30
+- Choose a random value in an array: `random.choice([1,2,3]`
 
 ## Intermediate
   
