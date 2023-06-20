@@ -100,7 +100,7 @@ conda env create -f config.yml
     - [Plotting of log to the to the base of 2](notebooks/math/logn_plotting.ipynb)
 
 ### Sorting
-- [Quick Sort](sorting/quicksort.ipynb)
+- [Quick Sort](notebooks/sorting/quicksort.ipynb)
 
 ### Data Types
     
