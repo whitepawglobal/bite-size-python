@@ -98,6 +98,7 @@ conda env create -f config.yml
     - Numpy: `import numpy as np; np.log2(10)`
     - Math: `import math; math.log2(10)`
     - [Plotting of log to the to the base of 2](notebooks/math/logn_plotting.ipynb)
+- [Exclusive Or (XOR)](notebooks/math/xor.ipynb)
 
 ### Math-others
 - [Unique combination pair](notebooks/math/unique_combination_pair.ipynb)
