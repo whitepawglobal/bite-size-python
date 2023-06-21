@@ -270,6 +270,7 @@ and bytearray() returns an object that can be modified (mutable).
 - [Set with multiple-value input as set](notebooks/set/set_with_multiple_value_input.ipynb)
 - Remove value by index: `setsample.pop(<index>)`
 - Remove value by value: `setsample.remove(<index>)`
+- Check if value exist in set: `if value in setsample:`
 
 #### Tuple
 - Build a tuple: `var : tuple[bool, str | None] = tuple([True, "abc"])`
