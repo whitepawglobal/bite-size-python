@@ -239,7 +239,8 @@ and bytearray() returns an object that can be modified (mutable).
 - Reverse a list: `list(reversed([1, 2, 3, 4])` / `listinput.reverse()`
 - list to string: `",".join(bufferlist)`
 - Remove a value in list by index: `returnedvalue = listarray.pop(index)` (Note: Invoke IndexError if index not valid)
-  - Remove last value: `listarray.pop()` [Stack Implementation with list](notebooks/list/stack.ipynb)
+  - Remove last value: `listarray.pop()`
+    - [Stack Implementation with list](notebooks/list/stack.ipynb)
   
 **Build list**
 
