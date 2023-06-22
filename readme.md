@@ -240,6 +240,7 @@ and bytearray() returns an object that can be modified (mutable).
 - list to string: `",".join(bufferlist)`
 - Remove a value in list by index: `returnedvalue = listarray.pop(index)` (Note: Invoke IndexError if index not valid)
   - Remove last value: `listarray.pop()` [Stack Implementation with list](notebooks/list/stack.ipynb)
+  
 **Build list**
 
 - Build list of same values: `['100'] * 20 # 20 items of the value '100'`
