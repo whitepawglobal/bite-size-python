@@ -241,6 +241,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Remove a value in list by index: `returnedvalue = listarray.pop(index)` (Note: Invoke IndexError if index not valid)
   - Remove last value: `listarray.pop()`
     - [Stack Implementation with list](notebooks/list/stack.ipynb)
+    - [Queue Implementation with list](notebooks/list/queue.ipynb)
   
 **Build list**
 
