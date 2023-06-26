@@ -95,9 +95,11 @@ conda env create -f config.yml
   ```
 - Logarithm / Log
   - Log to the base of 2:
-    - Numpy: `import numpy as np; np.log2(10)`
+    - Numpy: `import numpy as np; np.log2(10)` 
     - Math: `import math; math.log2(10)`
     - [Plotting of log to the to the base of 2](notebooks/math/logn_plotting.ipynb)
+  - Log to the base of 10:
+    - Math: `import math; math.log10(10)`
 - [Exclusive Or (XOR)](notebooks/math/xor.ipynb)
   - [Swap two numbers with XOR](notebooks/math/xor_swapping.ipynb)
 
@@ -524,6 +526,10 @@ and bytearray() returns an object that can be modified (mutable).
 - [Measure time prior and after](notebooks/performance/count_time.ipynb)
 - Add delay to execution of the program by pausing: `import time;time.sleep(seconds)`
   - Note: stops the execution of current thread only
+
+### Plotting
+- Matplotlib
+  - [Plot with lines & dots](notebooks/matplotlib/matplotlib_plotting.ipynb)
   
 ## Advanced
 
