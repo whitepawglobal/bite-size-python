@@ -110,6 +110,9 @@ conda env create -f config.yml
 - [Quick Sort](notebooks/sorting/quicksort.ipynb)
 
 ### Data Types
+
+#### Integer
+- Get maximum: `import sys; sys.maxsize`
     
 #### Floating Value (float, double)
 
@@ -175,7 +178,7 @@ and bytearray() returns an object that can be modified (mutable).
   - [Generate string with templates](notebooks/string/stringtemplate.ipynb)
   - String formatting method: `print('Completed part %d' % part_id)`
   - create string in the raw format: `varname="world"; print(f"Hello {varname!r}")
-- Check if string is empty, len = 0: `if not strvar:`
+- Check if string is empty, len = 0: `strvar = ""; if not strvar:`
 - Check if string contains digit: `any(chr.isdigit() for chr in str1) #return True if there's digit`
 - Check file extension: [notebooks/string/check_file_extension.ipynb](notebooks/string/check_file_extension.ipynb)
 - Capitalize a string: `strvar.capitalize()`
