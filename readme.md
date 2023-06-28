@@ -597,6 +597,7 @@ and bytearray() returns an object that can be modified (mutable).
 
 ### Data Structure - Processing iterables with a functional style
 
+- [yield instead of return](notebooks/functional/yield/yieldimp.py)
 - [Produce a new iterable with map()](notebooks/functional/mapimp.ipynb)
 - [Generate a new iterable with Boolean-return function with filter()](notebooks/functional/filterimp.ipynb)
 - [Produce a single cumulative value from iterable with reduce()](notebooks/functional/reduceimp.ipynb)
@@ -604,6 +605,10 @@ and bytearray() returns an object that can be modified (mutable).
 - [Multiple function declaration with singledispatch)](notebooks/functional/singledispatchimp.ipynb)
 - Lambda function: `x = lambda a, b : a * b`
 _Note: Functional style can be replaced with **list comprehension** or **generator expressions**_
+
+### Algorithm
+- [Number swapping](notebooks/algorithm/number_swapping.ipynb)
+- [Fibonacci](notebooks/algorithm/fibonacci.ipynb)
 
 ### Inheritance
 
