@@ -514,7 +514,7 @@ and bytearray() returns an object that can be modified (mutable).
   - `readlines()`: read all the lines of the text file into a list of strings.
   - `write(<param> : str)`: write in param. Need to explicitly add `\n` to split line.
   - `.close()`: close file iterator
-    
+  - check if file iterator is closed: `closed`
   </details>
 
 
