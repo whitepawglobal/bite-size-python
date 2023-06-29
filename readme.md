@@ -230,6 +230,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Sort an array in place: `arr.sort()` / Return a sorted array: `sorted(arr)`
 - Get index of a value: `arr.index(value)`
 - Add one more value to existing list: `arr.append(value)`
+- Insert at index: `arr.insert(index, value)`
 - Extend list with values in another list: `arr.extend(arr2)`
 - Remove an item (the first item found) from the list: `arr.remove(item)`
 - Remove item by index: `del arr[index]` or `del arr[index-start: index-end]`
