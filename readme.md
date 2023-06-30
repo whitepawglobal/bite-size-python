@@ -764,6 +764,11 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 - [Kill after x amount of time if process not complete](src/error_handling/timeout)
 - [match<>case syntax (Supports after python 3.10)](notebooks/condition/match_case.ipynb)
 
+### Webbrowser
+- Open url with webbrowser module
+  - [In script](notebooks/webbrowser/open_browser.ipynb)
+  - In command: `python -m webbrowser -t "https://www.python.org"`
+
 ### Networking
   
 - Get IP from domain name: `import socket;socker.gethostbyname("www.google.com");`
