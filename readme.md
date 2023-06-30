@@ -656,6 +656,7 @@ Use .env to save string-variable value which should not at any cost being expose
 ### Performance
 
 - [Dataframe - column-major, Numpy - row-major](notebooks/performance/df_numpy_major.ipynb)
+- [Memory Profiling](src/memory_profiling)
 
 ### Multiprocessing
 ```
