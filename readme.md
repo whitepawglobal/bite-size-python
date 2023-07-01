@@ -610,7 +610,10 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 ### Algorithm
 - [Number swapping](notebooks/algorithm/number_swapping.ipynb)
 - [Fibonacci](notebooks/algorithm/fibonacci.ipynb)
-
+- Tree
+  - [Breadth First Print](notebooks/tree/breadth_depth_print.ipynb)
+  - [Depth First Print](notebooks/tree/breadth_depth_print.ipynb)
+  - 
 ### Inheritance
 
 - [from abs import ABC](notebooks/error_handling/error_types/notimplementederror.ipynb)
