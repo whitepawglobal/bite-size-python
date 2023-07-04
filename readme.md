@@ -95,9 +95,13 @@ conda env create -f config.yml
   ```
 - Logarithm / Log
   - Log to the base of 2:
-    - Numpy: `import numpy as np; np.log2(10)`
+    - Numpy: `import numpy as np; np.log2(10)` 
     - Math: `import math; math.log2(10)`
     - [Plotting of log to the to the base of 2](notebooks/math/logn_plotting.ipynb)
+  - Log to the base of 10:
+    - Math: `import math; math.log10(10)`
+- [Exclusive Or (XOR)](notebooks/math/xor.ipynb)
+  - [Swap two numbers with XOR](notebooks/math/xor_swapping.ipynb)
 
 ### Math-others
 - [Unique combination pair](notebooks/math/unique_combination_pair.ipynb)
@@ -106,6 +110,9 @@ conda env create -f config.yml
 - [Quick Sort](notebooks/sorting/quicksort.ipynb)
 
 ### Data Types
+
+#### Integer
+- Get maximum: `import sys; sys.maxsize`
     
 #### Floating Value (float, double)
 
@@ -171,7 +178,7 @@ and bytearray() returns an object that can be modified (mutable).
   - [Generate string with templates](notebooks/string/stringtemplate.ipynb)
   - String formatting method: `print('Completed part %d' % part_id)`
   - create string in the raw format: `varname="world"; print(f"Hello {varname!r}")
-- Check if string is empty, len = 0: `if not strvar:`
+- Check if string is empty, len = 0: `strvar = ""; if not strvar:`
 - Check if string contains digit: `any(chr.isdigit() for chr in str1) #return True if there's digit`
 - Check file extension: [notebooks/string/check_file_extension.ipynb](notebooks/string/check_file_extension.ipynb)
 - Capitalize a string: `strvar.capitalize()`
@@ -223,6 +230,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Sort an array in place: `arr.sort()` / Return a sorted array: `sorted(arr)`
 - Get index of a value: `arr.index(value)`
 - Add one more value to existing list: `arr.append(value)`
+- Insert at index: `arr.insert(index, value)`
 - Extend list with values in another list: `arr.extend(arr2)`
 - Remove an item (the first item found) from the list: `arr.remove(item)`
 - Remove item by index: `del arr[index]` or `del arr[index-start: index-end]`
@@ -231,18 +239,22 @@ and bytearray() returns an object that can be modified (mutable).
 - Check unordered list to have the same items, returns boolean: `set(a) == set(b)`
 - Change values of list with **List Comprehension**: `[func(a) for a in sample_list]`
 - Iteration of list with index: `for index, value in enumerate(inlist):`
-- Iteration over two lists: `[<operation> for item1, item2 in zip(list1, list2)]```
+  - Enumerate with a beginning index: `for index, value in enumerate(inlist, 2):` (Index comes as second parameter)
+- Iteration over two lists: `[<operation> for item1, item2 in zip(list1, list2)]`
 - [Count occurence of items in list](notebooks/list/countoccurence.ipynb)
 - Get maximum value in a list of numbers (even strings): `max(samplelist)`
 - Reverse a list: `list(reversed([1, 2, 3, 4])` / `listinput.reverse()`
 - list to string: `",".join(bufferlist)`
 - Remove a value in list by index: `returnedvalue = listarray.pop(index)` (Note: Invoke IndexError if index not valid)
-
+  - Remove last value: `listarray.pop()`
+    - [Stack Implementation with list](notebooks/list/stack.ipynb)
+    - [Queue Implementation with list](notebooks/list/queue.ipynb)
+  
 **Build list**
 
 - Build list of same values: `['100'] * 20 # 20 items of the value '100'`
 - Build multiple list into one: `lista + listb + listc`
-
+- Build list by breaking down every character of a string: `[*'abcdef']`
   
 #### [Dictionary](notebooks/dictionary)
   
@@ -268,6 +280,9 @@ and bytearray() returns an object that can be modified (mutable).
 - Add item: `setsample.add(<value>)`
 - Add multiple items: `setsample.update(<another-set>)`
 - [Set with multiple-value input as set](notebooks/set/set_with_multiple_value_input.ipynb)
+- Remove value by index: `setsample.pop(<index>)`
+- Remove value by value: `setsample.remove(<index>)`
+- Check if value exist in set: `if value in setsample:`
 
 #### Tuple
 - Build a tuple: `var : tuple[bool, str | None] = tuple([True, "abc"])`
@@ -501,7 +516,7 @@ and bytearray() returns an object that can be modified (mutable).
   - `readlines()`: read all the lines of the text file into a list of strings.
   - `write(<param> : str)`: write in param. Need to explicitly add `\n` to split line.
   - `.close()`: close file iterator
-    
+  - check if file iterator is closed: `closed`
   </details>
 
 
@@ -516,6 +531,10 @@ and bytearray() returns an object that can be modified (mutable).
 - [Measure time prior and after](notebooks/performance/count_time.ipynb)
 - Add delay to execution of the program by pausing: `import time;time.sleep(seconds)`
   - Note: stops the execution of current thread only
+
+### Plotting
+- Matplotlib
+  - [Plot with lines & dots](notebooks/matplotlib/matplotlib_plotting.ipynb)
   
 ## Advanced
 
@@ -544,6 +563,7 @@ and bytearray() returns an object that can be modified (mutable).
 - [Serialize class object](notebooks/class/serialize_classobj.ipynb)
 - [Function/Module with error handling](notebooks/class/function_with error_handling.ipynb)
 - [Identify if function did not return object. TLDR: if not test1()](notebooks/class/test_if_function_returns_object.ipynb)
+- [Compare class object](notebooks/class/compare_class_object.ipynb)
 
 #### Magic Method
 
@@ -578,6 +598,7 @@ and bytearray() returns an object that can be modified (mutable).
 
 ### Data Structure - Processing iterables with a functional style
 
+- [yield instead of return](notebooks/functional/yield/yieldimp.py)
 - [Produce a new iterable with map()](notebooks/functional/mapimp.ipynb)
 - [Generate a new iterable with Boolean-return function with filter()](notebooks/functional/filterimp.ipynb)
 - [Produce a single cumulative value from iterable with reduce()](notebooks/functional/reduceimp.ipynb)
@@ -586,6 +607,13 @@ and bytearray() returns an object that can be modified (mutable).
 - Lambda function: `x = lambda a, b : a * b`
 _Note: Functional style can be replaced with **list comprehension** or **generator expressions**_
 
+### Algorithm
+- [Number swapping](notebooks/algorithm/number_swapping.ipynb)
+- [Fibonacci](notebooks/algorithm/fibonacci.ipynb)
+- Tree
+  - [Breadth First Print](notebooks/tree/breadth_depth_print.ipynb)
+  - [Depth First Print](notebooks/tree/breadth_depth_print.ipynb)
+  - 
 ### Inheritance
 
 - [from abs import ABC](notebooks/error_handling/error_types/notimplementederror.ipynb)
@@ -631,6 +659,7 @@ Use .env to save string-variable value which should not at any cost being expose
 ### Performance
 
 - [Dataframe - column-major, Numpy - row-major](notebooks/performance/df_numpy_major.ipynb)
+- [Memory Profiling](src/memory_profiling)
 
 ### Multiprocessing
 ```
@@ -738,6 +767,11 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 
 - [Kill after x amount of time if process not complete](src/error_handling/timeout)
 - [match<>case syntax (Supports after python 3.10)](notebooks/condition/match_case.ipynb)
+
+### Webbrowser
+- Open url with webbrowser module
+  - [In script](notebooks/webbrowser/open_browser.ipynb)
+  - In command: `python -m webbrowser -t "https://www.python.org"`
 
 ### Networking
   
