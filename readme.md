@@ -225,7 +225,6 @@ and bytearray() returns an object that can be modified (mutable).
 - List of str to int: `list(map(int, arr))`
 - List with range of values: `list(range(...))`
 - Split str to list of str: `arr.split(" ")`
-- Check for empty list: `if not mylist:`
 - Find if a value in a list: `if value in mylist:` / `if value not in mylist:`
 - Sort an array in place: `arr.sort()` / Return a sorted array: `sorted(arr)`
 - Get index of a value: `arr.index(value)`
@@ -235,6 +234,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Remove an item (the first item found) from the list: `arr.remove(item)`
 - Remove item by index: `del arr[index]` or `del arr[index-start: index-end]`
 - Check for empty list: `arr = []; if not arr: #empty list`
+- Clear a list: `arr.clear()`
 - Check all items in a list(subset) if exist in another list, returns boolean: `set(b).issubset(v)`
 - Check unordered list to have the same items, returns boolean: `set(a) == set(b)`
 - Change values of list with **List Comprehension**: `[func(a) for a in sample_list]`
