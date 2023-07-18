@@ -988,6 +988,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 - Resizing frame: `outframe = cv2.resize(frame, (w, h))`
 - [Set color to rectangle region](notebooks/cv/setrectangle.ipynb)
 - Color to gray image: `gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)`
+- bgr to rgb channel: `img = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)`
 - [Draw rectangle and point on image with mouse activity](src/cv/mouseprompt.py)
   - [Mouse Events](https://www.tutorialspoint.com/opencv_python/opencv_python_handling_mouse_events.htm)
 - [Draw rectangle on image in jupyter](notebooks/cv/draw_rectangle_on_image(jupyter).ipynb)
