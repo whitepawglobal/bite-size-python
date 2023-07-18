@@ -990,6 +990,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 - Color to gray image: `gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)`
 - [Draw rectangle and point on image with mouse activity](src/cv/mouseprompt.py)
   - [Mouse Events](https://www.tutorialspoint.com/opencv_python/opencv_python_handling_mouse_events.htm)
+- [Draw rectangle on image in jupyter](notebooks/cv/draw_rectangle_on_image(jupyter).ipynb)
 - [Remove background](notebooks/cv/remove_bg.ipynb)
 - [Weighted blend two image with `cv2.addWeighted`](notebooks/src/cv/weighted_blend_image.py)
 - [Add channel to image](https://stackoverflow.com/questions/32290096/python-opencv-add-alpha-channel-to-rgb-image)
