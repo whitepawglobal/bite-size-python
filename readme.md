@@ -609,6 +609,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 
 ### Algorithm
 - [Number swapping](notebooks/algorithm/number_swapping.ipynb)
+- [Reverse value](notebooks/algorithm/reverse_value.ipynb)
 - [Fibonacci](notebooks/algorithm/fibonacci.ipynb)
 - Tree
   - [Breadth First Print](notebooks/tree/breadth_depth_print.ipynb)
