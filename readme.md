@@ -113,6 +113,7 @@ conda env create -f config.yml
 
 #### Integer
 - Get maximum: `import sys; sys.maxsize`
+- Get minimum: `import sys: -sys.maxsize - 1`
     
 #### Floating Value (float, double)
 
