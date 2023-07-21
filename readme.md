@@ -276,6 +276,10 @@ and bytearray() returns an object that can be modified (mutable).
 - [Reverse key value pair to build inverse key value pair with zip](notebooks/dictionary/reverse_dict_for_inverse_keyvaluepair.ipynb)
 - [Dictionary to decide class to call with class as value](notebooks/dictionary/dict_to_decide_class_to_call.ipynb)
 
+#### [collections.defaultdict]
+
+- [defaultdict introduction](notebooks/default_dict/default_dict_intro.ipynb)
+
 #### Set
 - Set initialization: `setsample = {1,2,3,4,5}`
 - Add item: `setsample.add(<value>)`
