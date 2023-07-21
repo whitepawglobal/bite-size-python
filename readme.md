@@ -764,11 +764,14 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 
 - [Basic checking of domain existence and email constructed correctly](notebooks/email-validation/helloworld_validate_email.ipynb)
 
-
+#### Keywords
+- [continue](notebooks/condition/continue_keywords.ipynb)
+- [match<>case syntax (Supports after python 3.10)](notebooks/condition/match_case.ipynb)
+  
 ### Others
 
 - [Kill after x amount of time if process not complete](src/error_handling/timeout)
-- [match<>case syntax (Supports after python 3.10)](notebooks/condition/match_case.ipynb)
+
 
 ### Webbrowser
 - Open url with webbrowser module
