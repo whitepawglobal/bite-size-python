@@ -260,6 +260,7 @@ and bytearray() returns an object that can be modified (mutable).
 #### [Dictionary](notebooks/dictionary)
   
 - [Define dict with str keys](notebooks/dictionary/definedict.ipynb)
+- Define dict from two lists: `dict(zip(list1, list2))`
 - Add new key value pair: `dict.update({"key2":"value2"})`
 - [Remove key<> value pair by referring to specific key](notebooks/dictionary/remove_key.ipynb)
 - Get keys as list: `list(lut.keys())`
