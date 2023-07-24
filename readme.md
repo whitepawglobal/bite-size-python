@@ -355,6 +355,9 @@ and bytearray() returns an object that can be modified (mutable).
     data = BytesIO(bytesdata)
     df = pd.read_csv(data)
   ```
+- Sort values according to particular column
+  ```df = df.sort_values(by=['frame'])```
+  
 
 #### Panda Type
 
