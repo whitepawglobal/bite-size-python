@@ -357,7 +357,7 @@ and bytearray() returns an object that can be modified (mutable).
   ```
 - Sort values according to particular column
   ```df = df.sort_values(by=['frame'])```
-  
+- [Rearrange dataframe column sequence](notebooks/pandas/arrange_cols_sequence.ipynb)  
 
 #### Panda Type
 
