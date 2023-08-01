@@ -507,7 +507,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Remove a file: `os.remove()`
 - Get size of current file in byte: `os.path.getsize(<path>)` or `from pathlib import Path; Path(<path>).stat().st_size`
 - Removes an empty directory: `os.rmdir()`
-- Deletes a directory and all its contents: `shutil.rmtree()`
+- Deletes a directory and all its contents: `import shutil;shutil.rmtree(<path-to-directory>)`
 - [Copy a file to another path](notebooks/filesystem/copyfile.ipynb)
 - [Unzip file](notebooks/filesystem/uncompresszip.ipynb)
 - [Readfile](notebooks/filesystem/readfile.ipynb)
