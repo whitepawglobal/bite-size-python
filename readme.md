@@ -170,7 +170,8 @@ and bytearray() returns an object that can be modified (mutable).
 - [Numpy <> Binary File(.npy)](notebooks/numpy/np2binary.ipynb)
 - [Use of `numpy.where`](notebooks/cv/blur_region.ipynb)
 - Get minimum value of numpy array: `np.amin(array)` 
-- Get maximum value of numpy array: `np.amax(array)` 
+- Get maximum value of numpy array: `np.amax(array)`
+- [Calculate euclidean distance with numpy](https://www.geeksforgeeks.org/calculate-the-euclidean-distance-using-numpy/)
  
 #### String
 
