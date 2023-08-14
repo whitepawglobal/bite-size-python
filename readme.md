@@ -113,6 +113,7 @@ conda env create -f config.yml
 
 #### Integer
 - Get maximum: `import sys; sys.maxsize`
+- Get minimum: `import sys: -sys.maxsize - 1`
     
 #### Floating Value (float, double)
 
@@ -169,7 +170,8 @@ and bytearray() returns an object that can be modified (mutable).
 - [Numpy <> Binary File(.npy)](notebooks/numpy/np2binary.ipynb)
 - [Use of `numpy.where`](notebooks/cv/blur_region.ipynb)
 - Get minimum value of numpy array: `np.amin(array)` 
-- Get maximum value of numpy array: `np.amax(array)` 
+- Get maximum value of numpy array: `np.amax(array)`
+- [Calculate euclidean distance with numpy](https://www.geeksforgeeks.org/calculate-the-euclidean-distance-using-numpy/)
  
 #### String
 
@@ -259,6 +261,7 @@ and bytearray() returns an object that can be modified (mutable).
 #### [Dictionary](notebooks/dictionary)
   
 - [Define dict with str keys](notebooks/dictionary/definedict.ipynb)
+- Define dict from two lists: `dict(zip(list1, list2))`
 - Add new key value pair: `dict.update({"key2":"value2"})`
 - [Remove key<> value pair by referring to specific key](notebooks/dictionary/remove_key.ipynb)
 - Get keys as list: `list(lut.keys())`
@@ -274,6 +277,10 @@ and bytearray() returns an object that can be modified (mutable).
   - Use case: class declaration
 - [Reverse key value pair to build inverse key value pair with zip](notebooks/dictionary/reverse_dict_for_inverse_keyvaluepair.ipynb)
 - [Dictionary to decide class to call with class as value](notebooks/dictionary/dict_to_decide_class_to_call.ipynb)
+
+#### [collections.defaultdict]
+
+- [defaultdict introduction](notebooks/default_dict/default_dict_intro.ipynb)
 
 #### Set
 - Set initialization: `setsample = {1,2,3,4,5}`
@@ -349,6 +356,10 @@ and bytearray() returns an object that can be modified (mutable).
     data = BytesIO(bytesdata)
     df = pd.read_csv(data)
   ```
+- Sort values according to particular column
+  ```df = df.sort_values(by=['frame'])```
+  
+- [Rearrange dataframe column sequence](notebooks/pandas/arrange_cols_sequence.ipynb)  
 
 #### Panda Type
 
@@ -392,6 +403,7 @@ and bytearray() returns an object that can be modified (mutable).
   - `df.loc[df['address'].eq('johndoe@gmail.com')] #filter with one value`
   - `df.loc[df.a.eq(123) & df.b.eq("helloworld")] #filter with one value in multiple columns`
   - `df.loc[df.a.isin(valuelist)] #filter with a few values in a list`
+  - Filter by substring: `df.loc[df['folder'].eq(folderkey) & df['id'].str.contains(videokey)]`
 - [Assign value to specific column(s) by matching value](notebooks/pandas/df_assign_col_values.ipynb)
 - Get a subset of dataframe by rows - `df.iloc[<from_rows>:<to_rows>, :]`
 - [Count items and filter by counter values](notebooks/pandas/filter&valuecount.ipynb)
@@ -496,7 +508,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Remove a file: `os.remove()`
 - Get size of current file in byte: `os.path.getsize(<path>)` or `from pathlib import Path; Path(<path>).stat().st_size`
 - Removes an empty directory: `os.rmdir()`
-- Deletes a directory and all its contents: `shutil.rmtree()`
+- Deletes a directory and all its contents: `import shutil;shutil.rmtree(<path-to-directory>)`
 - [Copy a file to another path](notebooks/filesystem/copyfile.ipynb)
 - [Unzip file](notebooks/filesystem/uncompresszip.ipynb)
 - [Readfile](notebooks/filesystem/readfile.ipynb)
@@ -609,6 +621,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 
 ### Algorithm
 - [Number swapping](notebooks/algorithm/number_swapping.ipynb)
+- [Reverse value](notebooks/algorithm/reverse_value.ipynb)
 - [Fibonacci](notebooks/algorithm/fibonacci.ipynb)
 - Tree
   - [Breadth First Print](notebooks/tree/breadth_depth_print.ipynb)
@@ -762,11 +775,14 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 
 - [Basic checking of domain existence and email constructed correctly](notebooks/email-validation/helloworld_validate_email.ipynb)
 
-
+#### Keywords
+- [continue](notebooks/condition/continue_keywords.ipynb)
+- [match<>case syntax (Supports after python 3.10)](notebooks/condition/match_case.ipynb)
+  
 ### Others
 
 - [Kill after x amount of time if process not complete](src/error_handling/timeout)
-- [match<>case syntax (Supports after python 3.10)](notebooks/condition/match_case.ipynb)
+
 
 ### Webbrowser
 - Open url with webbrowser module
@@ -988,8 +1004,11 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 - Resizing frame: `outframe = cv2.resize(frame, (w, h))`
 - [Set color to rectangle region](notebooks/cv/setrectangle.ipynb)
 - Color to gray image: `gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)`
+- bgr to rgb channel: `img = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)`
 - [Draw rectangle and point on image with mouse activity](src/cv/mouseprompt.py)
   - [Mouse Events](https://www.tutorialspoint.com/opencv_python/opencv_python_handling_mouse_events.htm)
+- [Draw rectangle on image in jupyter](notebooks/cv/draw_rectangle_on_image(jupyter).ipynb)
+- [Write text on image](src/cv/writetext.py)
 - [Remove background](notebooks/cv/remove_bg.ipynb)
 - [Weighted blend two image with `cv2.addWeighted`](notebooks/src/cv/weighted_blend_image.py)
 - [Add channel to image](https://stackoverflow.com/questions/32290096/python-opencv-add-alpha-channel-to-rgb-image)
