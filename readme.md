@@ -948,7 +948,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 
 #### Computer Vision - Basic
 
-- Get image shape: `img.shape`
+- Get image shape: `img.shape` (**Important:** shape[0] = height, shape[1] = width)
 - Create a color image: `image = np.zeros((h,w,3), np.uint8)`
 - Read/Write image:
   - [As byte](notebooks/cv/image_as_byte.ipynb)
