@@ -986,6 +986,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 
 **Computer Vision - Video Stream**
 
+- Get total number of frames in the video: `int(cap.get(cv2.CAP_PROP_FRAME_COUNT))`
 - Concat multiple video streams to show side by side: [2 video streams](src/cv/concat2windows.py) [3 video streams](src/cv/concat3windows.py)
 - Save stream to video output
   - [opencv method](src/cv/opencv_save2video.py) (Face problem when replaying the video generated on AWS cloud services)
