@@ -108,6 +108,7 @@ conda env create -f config.yml
 
 ### Sorting
 - [Quick Sort](notebooks/sorting/quicksort.ipynb)
+- [Sort and get the index](notebooks/sorting/sort_and_get_index.ipynb)
 
 ### Data Types
 
