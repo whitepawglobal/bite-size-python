@@ -970,7 +970,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
   Image(filename=pathtoimg : str)
   ```
 - Crop image
-    - [numpy array](notebooks/cv/imageio_writeimage.ipynb)
+    - numpy array: `image[y0:y1, x0: x1, :]`
 - Flip image: `frame = cv2.flip(frame, flipcode : int)`
   - Positive flip code for flip on y axis (left right flip)
   - 0 for flip on x axis (up down)
