@@ -108,6 +108,7 @@ conda env create -f config.yml
 
 ### Sorting
 - [Quick Sort](notebooks/sorting/quicksort.ipynb)
+- [Sort and get the index](notebooks/sorting/sort_and_get_index.ipynb)
 
 ### Data Types
 
@@ -969,7 +970,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
   Image(filename=pathtoimg : str)
   ```
 - Crop image
-    - [numpy array](notebooks/cv/imageio_writeimage.ipynb)
+    - numpy array: `image[y0:y1, x0: x1, :]`
 - Flip image: `frame = cv2.flip(frame, flipcode : int)`
   - Positive flip code for flip on y axis (left right flip)
   - 0 for flip on x axis (up down)
@@ -987,6 +988,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 **Computer Vision - Video Stream**
 
 - Get total number of frames in the video: `int(cap.get(cv2.CAP_PROP_FRAME_COUNT))`
+- [change video frame curent count to desired frame count](src/cv/video_forward_to_frame_count.py)
 - Concat multiple video streams to show side by side: [2 video streams](src/cv/concat2windows.py) [3 video streams](src/cv/concat3windows.py)
 - Save stream to video output
   - [opencv method](src/cv/opencv_save2video.py) (Face problem when replaying the video generated on AWS cloud services)
