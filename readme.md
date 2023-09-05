@@ -956,6 +956,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
   - [As Bytearray](notebooks/cv/image_as_bytearray.ipynb)
   - [As base64](notebooks/cv/image_as_base64.ipynb)
   - [From imageio (save with numpy array)](notebooks/cv/imageio_writeimage.ipynb)
+    - Read only 3 channels: `im3d = imageio.imread('path/to/some/singlechannelimage.png', pilmode='RGB')`
 - Read image 
   - [Read image from url](notebooks/cv/read_image_from_url.ipynb)
   - Read in image with Pillow
