@@ -198,7 +198,7 @@ and bytearray() returns an object that can be modified (mutable).
   - If split with every character, do this instead: `[*"ABCDE"]` Result: `["A", "B", "C", "D", "E"]`
 - Check if string starts with a substring: `strvar.startswith(<substring>)`
 - Check if string ends with a substring: `strvar.endswith(<substring>)`
-- Check if string have substring/specific character. Returns -1 if not found: `strvar.find(<substring>)`
+- Check if string have substring/specific character. Returns -1 if not found: `strvar.find(input : str)`, `strvar.find(input: str, start_index : int)`
 - String get substring with index: `str[startindex:endindex]`
 - Replace string/character with intended string/character: `strout = strin.replace(" ", "_")`
 - [Replace multiple characters with intended character](notebooks/string/replace_multiple_character.ipynb)
