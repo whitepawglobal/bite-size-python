@@ -8,6 +8,9 @@ cpu_count()
 - `map_unordered()` to assign task at one time. (return results in arbitrary order, not the order that the task have been submitted)
 - `imap_unordered()` to assign task in sequential
 
+<img width="400" alt="Screenshot 2023-09-10 at 12 57 24 PM" src="https://github.com/whitepawglobal/bite-size-python/assets/33477318/250c113c-cae0-49aa-9ebd-d6b1bc9d5b7c">
+
+
 
 
 ### Notes
