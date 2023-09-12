@@ -578,7 +578,8 @@ and bytearray() returns an object that can be modified (mutable).
 - [Function/Module with error handling](notebooks/class/function_with error_handling.ipynb)
 - [Identify if function did not return object. TLDR: if not test1()](notebooks/class/test_if_function_returns_object.ipynb)
 - [Compare class object](notebooks/class/compare_class_object.ipynb)
-
+- [Static Variable](https://favtutor.com/blogs/static-variable-python)
+  
 #### Magic Method
 
 - [`__dict__` return all attributes of an object(only those defined in __init__): `obj.__dict__`](notebooks/class/values_in_dict.ipynb)
