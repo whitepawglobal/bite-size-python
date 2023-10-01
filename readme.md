@@ -215,12 +215,13 @@ and bytearray() returns an object that can be modified (mutable).
 - UUID to string: `str(uuidparam)`
 
 #### Datetime
+- [date, datetime create](notebooks/formatting/datetime_comparison.ipynb)
 - datetime: [datetime.ipynb](notebooks/formatting/datetime.ipynb)
   - get current local date and time: `datetime.now()`
   - get utc date and time: `datetime.utcnow()`
   
 - [find differences of two datetime: use divmod](https://stackoverflow.com/questions/1345827/how-do-i-find-the-time-difference-between-two-datetime-objects-in-python)
-
+- [date, datetime comparison](notebooks/formatting/datetime_comparison.ipynb))
 ### Data Structure
 
 #### [List](notebooks/list)
