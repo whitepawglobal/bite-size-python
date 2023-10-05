@@ -215,12 +215,13 @@ and bytearray() returns an object that can be modified (mutable).
 - UUID to string: `str(uuidparam)`
 
 #### Datetime
+- [date, datetime create](notebooks/formatting/datetime_comparison.ipynb)
 - datetime: [datetime.ipynb](notebooks/formatting/datetime.ipynb)
   - get current local date and time: `datetime.now()`
   - get utc date and time: `datetime.utcnow()`
   
 - [find differences of two datetime: use divmod](https://stackoverflow.com/questions/1345827/how-do-i-find-the-time-difference-between-two-datetime-objects-in-python)
-
+- [date, datetime comparison](notebooks/formatting/datetime_comparison.ipynb))
 ### Data Structure
 
 #### [List](notebooks/list)
@@ -578,7 +579,8 @@ and bytearray() returns an object that can be modified (mutable).
 - [Function/Module with error handling](notebooks/class/function_with error_handling.ipynb)
 - [Identify if function did not return object. TLDR: if not test1()](notebooks/class/test_if_function_returns_object.ipynb)
 - [Compare class object](notebooks/class/compare_class_object.ipynb)
-
+- [Static Variable](https://favtutor.com/blogs/static-variable-python)
+  
 #### Magic Method
 
 - [`__dict__` return all attributes of an object(only those defined in __init__): `obj.__dict__`](notebooks/class/values_in_dict.ipynb)
@@ -830,6 +832,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
   
 - [Connect to db with sqlalchemy](notebooks/sqlalchemyops/readme.md)
   - Silence the log: `create_engine(..., echo = False)`
+  - [SQLAlchemy query with name and value insertion](notebooks/sqlalchemyops/param_insertion.ipynb)
 
 #### [PostgreSQL](notebooks/postgresql-python/readme.md)
 
