@@ -492,6 +492,7 @@ and bytearray() returns an object that can be modified (mutable).
 - print without new line: `print(..., end="")`
 - Get environment path (second param is optional): `import os; os.getenv(<PATH_NAME> : str, <alternative-return-value>: str)`
 - [Get and set environment path](notebooks/filesystem/environment_setting.ipynb)
+  - Get value with key: ```import os; os.environ["HOMEDIR"]```
 - [Flush out print](notebooks/filesystem/stdoutflush.ipynb)
 - Check if path is a folder: `os.path.isdir(<path>)`
 - [Get file size](notebooks/filesystem/getfilesize.ipynb)
