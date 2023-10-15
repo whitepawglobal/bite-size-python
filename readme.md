@@ -493,6 +493,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Get environment path (second param is optional): `import os; os.getenv(<PATH_NAME> : str, <alternative-return-value>: str)`
 - [Get and set environment path](notebooks/filesystem/environment_setting.ipynb)
   - Get value with key: ```import os; os.environ["HOMEDIR"]```
+  - Get value with default value: ```database_url = os.environ.get("DATABASE_URL", "default-value")```
 - [Flush out print](notebooks/filesystem/stdoutflush.ipynb)
 - Check if path is a folder: `os.path.isdir(<path>)`
 - [Get file size](notebooks/filesystem/getfilesize.ipynb)
