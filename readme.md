@@ -501,6 +501,7 @@ and bytearray() returns an object that can be modified (mutable).
   - `import os; outsize : int = os.path.getsize(inputfilepath)`
 - Create folder: `os.mkdir(<path>`
 - Create folders recursively: `os.makedirs(<path>)`
+- Rename file: `os.rename(<filepath-from>, <filepath-to>)` / `os.rename(<dirpath-from>, <dirpath-to>)`
 - Get folder path out of given path with filename: `os.path.dirname(<path-to-file>)`
 - Expand home directory: `os.path.expanduser('~')`
 - Get current running script path: `os.getcwd()`
