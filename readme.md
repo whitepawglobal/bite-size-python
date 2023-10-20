@@ -707,6 +707,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 - [Advanced configuration log to file](notebooks/logging/builtinlogging/log2file.ipynb)
 - Log with variables: `logging.error(f"Keys {a} is missing")`
 - [Log exception](notebooks/error_handling/suppress_error/urlcaller_logger.py)
+- [Logging write to both stdout and file](notebooks/logging/builtinlogging/write_2_multiple_outputs.py)
 
 #### Logging Others
 
