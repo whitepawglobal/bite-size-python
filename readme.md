@@ -995,7 +995,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 - [Blurring region of image](notebooks/cv/blur_region.ipynb)
 
 **Computer Vision - Video Stream**
-
+- [Play video in jupyter notebook/lab](notebooks/media/play_video.ipynb)
 - Get total number of frames in the video: `int(cap.get(cv2.CAP_PROP_FRAME_COUNT))`
 - [change video frame curent count to desired frame count](src/cv/video_forward_to_frame_count.py)
 - Concat multiple video streams to show side by side: [2 video streams](src/cv/concat2windows.py) [3 video streams](src/cv/concat3windows.py)
