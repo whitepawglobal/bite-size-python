@@ -790,7 +790,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 ### Others
 
 - [Kill after x amount of time if process not complete](src/error_handling/timeout)
-
+- [yield, iterators, generators](notebooks/yield/yield_imp.ipynb)
 
 ### Webbrowser
 - Open url with webbrowser module
