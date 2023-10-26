@@ -617,7 +617,7 @@ and bytearray() returns an object that can be modified (mutable).
 
 ### Data Structure - Processing iterables with a functional style
 
-- [yield instead of return](notebooks/functional/yield/yieldimp.py)
+- yield instead of return [link1](notebooks/functional/yield/yieldimp.py) [yield, iterators, generators](notebooks/yield/yield_imp.ipynb)
 - [Produce a new iterable with map()](notebooks/functional/mapimp.ipynb)
 - [Generate a new iterable with Boolean-return function with filter()](notebooks/functional/filterimp.ipynb)
 - [Produce a single cumulative value from iterable with reduce()](notebooks/functional/reduceimp.ipynb)
@@ -790,8 +790,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 ### Others
 
 - [Kill after x amount of time if process not complete](src/error_handling/timeout)
-- [yield, iterators, generators](notebooks/yield/yield_imp.ipynb)
-
+- [Context Managers](notebooks/yield/context_manager.ipynb)
 ### Webbrowser
 - Open url with webbrowser module
   - [In script](notebooks/webbrowser/open_browser.ipynb)
