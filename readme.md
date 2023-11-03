@@ -680,7 +680,7 @@ Use .env to save string-variable value which should not at any cost being expose
 
 - [Dataframe - column-major, Numpy - row-major](notebooks/performance/df_numpy_major.ipynb)
 - [Memory Profiling](src/memory_profiling)
-
+- [Execution Time Profiling with line_profiler](src/time_profiling)
 ### Multiprocessing
 ```
 Difference of pool(from multiprocessing) from thread:
