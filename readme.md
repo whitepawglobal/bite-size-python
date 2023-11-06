@@ -10,20 +10,6 @@
 
 </p>
 
-## Environment Setup
-
-**Create environment (Only for the first time)**
-
-```
-git clone https://github.com/whitepawglobal/bite-size-python.git
-cd <path-to>/bite-size-python
-conda env create -f config.yml
-```
-
-**Activate environment**
-
-`conda activate pyplayground`
-
 ## Package Installation
 
 **Install package with pip**  Num
@@ -492,6 +478,7 @@ and bytearray() returns an object that can be modified (mutable).
 - print without new line: `print(..., end="")`
 - Get environment path (second param is optional): `import os; os.getenv(<PATH_NAME> : str, <alternative-return-value>: str)`
 - [Get and set environment path](notebooks/filesystem/environment_setting.ipynb)
+  - Set variable: `os.environ['redis'] = "localhost:6379"`
   - Get value with key: ```import os; os.environ["HOMEDIR"]```
   - Get value with default value: ```database_url = os.environ.get("DATABASE_URL", "default-value")```
 - [Flush out print](notebooks/filesystem/stdoutflush.ipynb)
