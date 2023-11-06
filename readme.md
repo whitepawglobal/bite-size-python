@@ -617,7 +617,7 @@ and bytearray() returns an object that can be modified (mutable).
 
 ### Data Structure - Processing iterables with a functional style
 
-- [yield instead of return](notebooks/functional/yield/yieldimp.py)
+- yield instead of return [link1](notebooks/functional/yield/yieldimp.py) [yield, iterators, generators](notebooks/yield/yield_imp.ipynb)
 - [Produce a new iterable with map()](notebooks/functional/mapimp.ipynb)
 - [Generate a new iterable with Boolean-return function with filter()](notebooks/functional/filterimp.ipynb)
 - [Produce a single cumulative value from iterable with reduce()](notebooks/functional/reduceimp.ipynb)
@@ -680,7 +680,7 @@ Use .env to save string-variable value which should not at any cost being expose
 
 - [Dataframe - column-major, Numpy - row-major](notebooks/performance/df_numpy_major.ipynb)
 - [Memory Profiling](src/memory_profiling)
-
+- [Execution Time Profiling with line_profiler](src/time_profiling)
 ### Multiprocessing
 ```
 Difference of pool(from multiprocessing) from thread:
@@ -790,8 +790,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 ### Others
 
 - [Kill after x amount of time if process not complete](src/error_handling/timeout)
-
-
+- [Context Managers](notebooks/yield/context_manager.ipynb)
 ### Webbrowser
 - Open url with webbrowser module
   - [In script](notebooks/webbrowser/open_browser.ipynb)
@@ -995,7 +994,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 - [Blurring region of image](notebooks/cv/blur_region.ipynb)
 
 **Computer Vision - Video Stream**
-
+- [Play video in jupyter notebook/lab](notebooks/media/play_video.ipynb)
 - Get total number of frames in the video: `int(cap.get(cv2.CAP_PROP_FRAME_COUNT))`
 - [change video frame curent count to desired frame count](src/cv/video_forward_to_frame_count.py)
 - Concat multiple video streams to show side by side: [2 video streams](src/cv/concat2windows.py) [3 video streams](src/cv/concat3windows.py)
