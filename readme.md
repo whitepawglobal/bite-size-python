@@ -726,7 +726,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
   - getter: @property
   - setter: @{variable}.setter
   - deleter: @{variable}.deleter
-
+- [@lru_cache](notebooks/decorator/lru_cache.ipynb)
 ### Testing
 
 - Simple check, raise AssertionError if wrong: 
