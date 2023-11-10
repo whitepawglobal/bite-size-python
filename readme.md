@@ -304,6 +304,10 @@ and bytearray() returns an object that can be modified (mutable).
 pip install "modin[all]"
 ```
 
+#### Import 
+```
+import modin.pandas as pd
+```
   
 </details>
 
