@@ -295,6 +295,18 @@ and bytearray() returns an object that can be modified (mutable).
 - [Write dict to json file](notebooks/json/write2json_readfromjson.ipynb)
 - [Read dict from json file](notebooks/json/write2json_readfromjson.ipynb)
 
+### Modin
+
+<details>
+
+#### Install
+```
+pip install "modin[all]"
+```
+
+  
+</details>
+
 ### [Pandas](https://pandas.pydata.org/docs/reference/)
 
 <details>
