@@ -295,6 +295,11 @@ and bytearray() returns an object that can be modified (mutable).
 - [Write dict to json file](notebooks/json/write2json_readfromjson.ipynb)
 - [Read dict from json file](notebooks/json/write2json_readfromjson.ipynb)
 
+### Polars
+
+- [Dataframe from dict](notebooks/polars/dataframe_from_dict.ipynb)
+
+
 ### Modin
 
 <details>
