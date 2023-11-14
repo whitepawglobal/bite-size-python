@@ -175,6 +175,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Lowercase a string: `strvar.lower()`
 - Capitalize the beginning of each word: `strvar.title()`
 - Get substring from a string: `strvar[<begin-index>:<end-index>]` / `strvar[<begin-index>:]` / `strvar[:<end-index>]`
+- [Strip multiple white spaces into only one](notebooks/string/strip_multiple_white_space.ipynb)
 - Remove white spaces in the beginning and end: `strvar.strip()`
 - Swap existing upper and lower case: `strvar.swapcase()`
 - Capitalize every first letter of a word: `strvar.title()`
