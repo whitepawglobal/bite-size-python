@@ -300,6 +300,10 @@ and bytearray() returns an object that can be modified (mutable).
 #### File IO
 - [Dataframe from dict](notebooks/polars/dataframe_from_dict.ipynb)
 - Read in csv: `import polars as pl; pl.read_csv(...)`
+- Write to csv: `write_csv(file : str, has_header: bool = True, separator : str = ",")`
+
+#### Data Manipulation
+
 - Apply function to a column: `df=df.with_columns([(pl.col("<column-name>").map_elements(<function-to-apply>).alias("<new-column-name>"))])`
 
 ### Modin
