@@ -304,6 +304,8 @@ and bytearray() returns an object that can be modified (mutable).
 - Write to csv: `write_csv(file : str, has_header: bool = True, separator : str = ",")`
 
 #### Data Manipulation
+- Concatenate dataframe
+  -  default concatenate on rows: `pl.concat([df1, df2])` / `pl.concat([df1, df2], how="vertical"`
 - Change sequence of columns in dataframe: `df = df[['PRODUCT', 'PROGRAM', 'MFG_AREA']]`
 - Add a new column with list: `df.with_columns(pl.Series(name="column-name", values=prediction_list)) `
 - Apply function to a column: `df=df.with_columns([(pl.col("<column-name>").map_elements(<function-to-apply>).alias("<new-column-name>"))])`
