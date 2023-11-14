@@ -306,7 +306,7 @@ and bytearray() returns an object that can be modified (mutable).
 #### Data Manipulation
 
 - Apply function to a column: `df=df.with_columns([(pl.col("<column-name>").map_elements(<function-to-apply>).alias("<new-column-name>"))])`
-- Drop nulls: `df.drop_nulls()` [More](https://pola-rs.github.io/polars/py-polars/html/reference/dataframe/api/polars.DataFrame.drop_nulls.html)
+- Drop nulls: `df = df.drop_nulls()` [More](https://pola-rs.github.io/polars/py-polars/html/reference/dataframe/api/polars.DataFrame.drop_nulls.html)
   
 ### Modin
 
