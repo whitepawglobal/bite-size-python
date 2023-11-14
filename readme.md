@@ -297,7 +297,9 @@ and bytearray() returns an object that can be modified (mutable).
 
 ### Polars
 
+#### File IO
 - [Dataframe from dict](notebooks/polars/dataframe_from_dict.ipynb)
+- Read in csv: `import polars as pl; pl.read_csv(...)`
 
 
 ### Modin
