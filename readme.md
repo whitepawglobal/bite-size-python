@@ -305,6 +305,10 @@ and bytearray() returns an object that can be modified (mutable).
     - `data_pl = pl.read_csv('file.csv').with_column_types({'col1': pl.Utf8, 'col2': pl.Utf8})`
 - Write to csv: `write_csv(file : str, has_header: bool = True, separator : str = ",")`
 
+#### View
+- Get header of dataframe: `df.columns`
+
+
 #### Data Manipulation
 - Concatenate dataframe
   -  default concatenate on rows: `pl.concat([df1, df2])` / `pl.concat([df1, df2], how="vertical"`
