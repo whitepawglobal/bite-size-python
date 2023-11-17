@@ -298,15 +298,19 @@ and bytearray() returns an object that can be modified (mutable).
 
 ### Polars
 
-#### File IO
-- [Dataframe from dict](notebooks/polars/dataframe_from_dict.ipynb)
-- Read in csv: `import polars as pl; pl.read_csv(...)`
-  - read in csv changing column [file type](https://pola-rs.github.io/polars/py-polars/html/reference/datatypes.html)
-    - `data_pl = pl.read_csv('file.csv').with_column_types({'col1': pl.Utf8, 'col2': pl.Utf8})`
-- Write to csv: `write_csv(file : str, has_header: bool = True, separator : str = ",")`
+- Import: `import polars as pl`
 
 #### View
 - Get header of dataframe: `df.columns`
+- View first n rows: `df.head(n)`
+#### File IO
+- [Dataframe from dict](notebooks/polars/dataframe_from_dict.ipynb)
+- Read in csv: `pl.read_csv(...)`
+  - read in csv changing column [file type](https://pola-rs.github.io/polars/py-polars/html/reference/datatypes.html)
+    - `data_pl = pl.read_csv('file.csv').with_column_types({'col1': pl.Utf8, 'col2': pl.Utf8})`
+- Write to csv: `write_csv(file : str, has_header: bool = True, separator : str = ",")`
+- Read excel: `pl.read_excel(source : str |..., sheet_name : str, engine = "openpyxl")`
+
 
 
 #### Data Manipulation
