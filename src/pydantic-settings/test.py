@@ -23,4 +23,4 @@ if __name__ == "__main__":
     print(config.DB_USER)
 
 
-    print(config.model_dump())
+    print(config.model_dump()) #dict 
