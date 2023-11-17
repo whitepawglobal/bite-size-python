@@ -619,6 +619,7 @@ import modin.pandas as pd
   - [Implement Enum in Python](notebooks/class/enumimpl.ipynb)
     - Compare enum: `value == EnumObject.OPTION1`
     - [Enum with string](notebooks/class/enum_with_str.ipynb)
+  - Get all the values of enum: `[e.value for e in Directions]`
 - [Serialize class object](notebooks/class/serialize_classobj.ipynb)
 - [Function/Module with error handling](notebooks/class/function_with error_handling.ipynb)
 - [Identify if function did not return object. TLDR: if not test1()](notebooks/class/test_if_function_returns_object.ipynb)
