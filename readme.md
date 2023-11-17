@@ -319,6 +319,7 @@ and bytearray() returns an object that can be modified (mutable).
 #### Data Manipulation
 - Create empty data frame: `pl.DataFrame()`
 - Change header: `outdf = df.rename({"foo": "apple"}) # foo is previous title, apple is new title`
+- Get unique values of one/a few columns: `df[['column_name']].unique()`
 - Concatenate dataframe
   -  default concatenate on rows: `pl.concat([df1, df2])` equivalent to `pl.concat([df1, df2], how="diagonal")`/ `pl.concat([df1, df2], how="vertical"`
 - Change sequence of columns in dataframe: `df = df[['PRODUCT', 'PROGRAM', 'MFG_AREA']]`
