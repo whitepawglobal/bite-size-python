@@ -314,9 +314,10 @@ and bytearray() returns an object that can be modified (mutable).
 
 
 #### Data Manipulation
+- Create empty data frame: `pl.DataFrame()`
 - Change header: `outdf = df.rename({"foo": "apple"}) # foo is previous title, apple is new title`
 - Concatenate dataframe
-  -  default concatenate on rows: `pl.concat([df1, df2])` / `pl.concat([df1, df2], how="vertical"`
+  -  default concatenate on rows: `pl.concat([df1, df2])` equivalent to `pl.concat([df1, df2], how="diagonal")`/ `pl.concat([df1, df2], how="vertical"`
 - Change sequence of columns in dataframe: `df = df[['PRODUCT', 'PROGRAM', 'MFG_AREA']]`
 - Add a new column with list: `df.with_columns(pl.Series(name="column-name", values=prediction_list)) `
 - Apply function to a column: `df=df.with_columns([(pl.col("<column-name>").map_elements(<function-to-apply>).alias("<new-column-name>"))])`
