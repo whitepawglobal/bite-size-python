@@ -314,12 +314,14 @@ and bytearray() returns an object that can be modified (mutable).
 
 
 #### Data Manipulation
+- Change header: `outdf = df.rename({"foo": "apple"}) # foo is previous title, apple is new title`
 - Concatenate dataframe
   -  default concatenate on rows: `pl.concat([df1, df2])` / `pl.concat([df1, df2], how="vertical"`
 - Change sequence of columns in dataframe: `df = df[['PRODUCT', 'PROGRAM', 'MFG_AREA']]`
 - Add a new column with list: `df.with_columns(pl.Series(name="column-name", values=prediction_list)) `
 - Apply function to a column: `df=df.with_columns([(pl.col("<column-name>").map_elements(<function-to-apply>).alias("<new-column-name>"))])`
 - Drop nulls: `df = df.drop_nulls()` [More](https://pola-rs.github.io/polars/py-polars/html/reference/dataframe/api/polars.DataFrame.drop_nulls.html)
+
 
 #### Note
 - [Pandas to Polars Cheatsheet](https://www.rhosignal.com/posts/polars-pandas-cheatsheet/)
