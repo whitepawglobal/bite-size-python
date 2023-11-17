@@ -327,6 +327,8 @@ and bytearray() returns an object that can be modified (mutable).
 - Drop nulls: `df = df.drop_nulls()` [More](https://pola-rs.github.io/polars/py-polars/html/reference/dataframe/api/polars.DataFrame.drop_nulls.html)
   - Drop a row if all value is null: `df.filter(~pl.all_horizontal(pl.all().is_null()))`
 - [Replace column values](notebooks/polars/replace_column_value.ipynb)
+- Apply function to value:
+  - [String operations](notebooks/polars/apply_value_string.ipynb)
   
 #### Note
 - [Pandas to Polars Cheatsheet](https://www.rhosignal.com/posts/polars-pandas-cheatsheet/)
