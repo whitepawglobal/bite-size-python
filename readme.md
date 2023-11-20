@@ -326,6 +326,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Reorder column: `df = df[['PRODUCT', 'PROGRAM', 'MFG_AREA']]`
 - Drop Column: `df.drop("<column-name>")`
 - Casting: `out = df.select(pl.cols("<col-name>").cast(pl.Int32))`
+- [Sort column value by order](https://pola-rs.github.io/polars/py-polars/html/reference/dataframe/api/polars.DataFrame.sort.html)
 - Concatenate dataframe
   -  default concatenate on rows: `pl.concat([df1, df2])` equivalent to `pl.concat([df1, df2], how="diagonal")`/ `pl.concat([df1, df2], how="vertical"`
 - [Drop duplicates whole /subset](notebooks/polars/drop_duplicates.ipynb)
