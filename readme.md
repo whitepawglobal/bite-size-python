@@ -323,6 +323,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Get unique values of one/a few columns: `df[['column_name']].unique()`
 - [Conversion](notebooks/polars/conversion.ipynb)
 - Column to list: `df["a"].to_list()`
+- Drop Column: `df.drop("<column-name>")`
 - Casting: `out = df.select(pl.cols("<col-name>").cast(pl.Int32))`
 - Concatenate dataframe
   -  default concatenate on rows: `pl.concat([df1, df2])` equivalent to `pl.concat([df1, df2], how="diagonal")`/ `pl.concat([df1, df2], how="vertical"`
