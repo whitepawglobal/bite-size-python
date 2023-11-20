@@ -336,6 +336,9 @@ and bytearray() returns an object that can be modified (mutable).
   - [Apply uppercase to column with string](notebooks/polars/uppercase_to_column.ipynb)
   - [Replace value in column](notebooks/polars/replace_column_value.ipynb)
 - [Check if duplicated value in a column](notebooks/polars/check_if_duplicates.ipynb)
+
+#### Series
+- Check if any value in a Boolean Series is true: `df.select(pl.col("a").is_duplicated())['a'].any()`
   
 #### Note
 - [Pandas to Polars Cheatsheet](https://www.rhosignal.com/posts/polars-pandas-cheatsheet/)
