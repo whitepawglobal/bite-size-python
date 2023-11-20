@@ -338,7 +338,7 @@ and bytearray() returns an object that can be modified (mutable).
 - [Check if duplicated value in a column](notebooks/polars/check_if_duplicates.ipynb)
 
 #### Series
-- Check if any value in a Boolean Series is true: `df.select(pl.col("a").is_duplicated())['a'].any()`
+- [Check if any value in a Boolean Series is true](https://pola-rs.github.io/polars/py-polars/html/reference/series/api/polars.Series.any.html#polars.Series.any): `df.select(pl.col("a").is_duplicated())['a'].any()`
   
 #### Note
 - [Pandas to Polars Cheatsheet](https://www.rhosignal.com/posts/polars-pandas-cheatsheet/)
