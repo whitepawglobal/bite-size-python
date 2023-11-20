@@ -306,6 +306,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Get header of dataframe: `df.columns`
 - View first n rows: `df.head(n)`
 - View random rows: `df.sample(n)`
+- Get number of rows: `row_count = df.select(pl.count()).item()`
 
 #### File IO
 - [Dataframe from dict](notebooks/polars/dataframe_from_dict.ipynb)
@@ -323,6 +324,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Column to list: `df["a"].to_list()`
 - Concatenate dataframe
   -  default concatenate on rows: `pl.concat([df1, df2])` equivalent to `pl.concat([df1, df2], how="diagonal")`/ `pl.concat([df1, df2], how="vertical"`
+- [Drop duplicates whole /subset](notebooks/polars/drop_duplicates.ipynb)
 - Change sequence of columns in dataframe: `df = df[['PRODUCT', 'PROGRAM', 'MFG_AREA']]`
 - Add a new column with list: `df.with_columns(pl.Series(name="column-name", values=prediction_list)) `
 - Apply function to a column: `df=df.with_columns([(pl.col("<column-name>").map_elements(<function-to-apply>).alias("<new-column-name>"))])`
