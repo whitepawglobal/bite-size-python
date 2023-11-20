@@ -321,6 +321,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Create empty data frame: `pl.DataFrame()`
 - Change header: `outdf = df.rename({"foo": "apple"}) # foo is previous title, apple is new title`
 - Get unique values of one/a few columns: `df[['column_name']].unique()`
+- [Conversion](notebooks/polars/conversion.ipynb)
 - Column to list: `df["a"].to_list()`
 - Casting: `out = df.select(pl.cols("<col-name>").cast(pl.Int32))`
 - Concatenate dataframe
