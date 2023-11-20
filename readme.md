@@ -322,6 +322,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Change header: `outdf = df.rename({"foo": "apple"}) # foo is previous title, apple is new title`
 - Get unique values of one/a few columns: `df[['column_name']].unique()`
 - Column to list: `df["a"].to_list()`
+- Casting: `out = df.select(pl.cols("<col-name>").cast(pl.Int32))`
 - Concatenate dataframe
   -  default concatenate on rows: `pl.concat([df1, df2])` equivalent to `pl.concat([df1, df2], how="diagonal")`/ `pl.concat([df1, df2], how="vertical"`
 - [Drop duplicates whole /subset](notebooks/polars/drop_duplicates.ipynb)
