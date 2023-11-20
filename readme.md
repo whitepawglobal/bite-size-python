@@ -340,6 +340,11 @@ and bytearray() returns an object that can be modified (mutable).
   - [String operations](notebooks/polars/apply_value_string.ipynb)
   - [Apply uppercase to column with string](notebooks/polars/uppercase_to_column.ipynb)
   - [Replace value in column](notebooks/polars/replace_column_value.ipynb)
+  - String remove whitespace front and back and in between
+    ```
+    df = df.select(pl.col(pl.Utf8).str.strip_chars())
+    df = df.select(pl.col(pl.Utf8).str.replace(" ", ""))
+    ```
 - [Check if duplicated value in a column](notebooks/polars/check_if_duplicates.ipynb)
 
 #### Series
