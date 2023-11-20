@@ -320,6 +320,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Create empty data frame: `pl.DataFrame()`
 - Change header: `outdf = df.rename({"foo": "apple"}) # foo is previous title, apple is new title`
 - Get unique values of one/a few columns: `df[['column_name']].unique()`
+- Column to list: `df["a"].to_list()`
 - Concatenate dataframe
   -  default concatenate on rows: `pl.concat([df1, df2])` equivalent to `pl.concat([df1, df2], how="diagonal")`/ `pl.concat([df1, df2], how="vertical"`
 - Change sequence of columns in dataframe: `df = df[['PRODUCT', 'PROGRAM', 'MFG_AREA']]`
@@ -330,6 +331,7 @@ and bytearray() returns an object that can be modified (mutable).
 - [Replace column values](notebooks/polars/replace_column_value.ipynb)
 - Apply function to value:
   - [String operations](notebooks/polars/apply_value_string.ipynb)
+- [Check if duplicated value in a column](notebooks/polars/check_if_duplicates.ipynb)
   
 #### Note
 - [Pandas to Polars Cheatsheet](https://www.rhosignal.com/posts/polars-pandas-cheatsheet/)
