@@ -331,6 +331,8 @@ and bytearray() returns an object that can be modified (mutable).
 - [Replace column values](notebooks/polars/replace_column_value.ipynb)
 - Apply function to value:
   - [String operations](notebooks/polars/apply_value_string.ipynb)
+  - [Apply uppercase to column with string](notebooks/polars/uppercase_to_column.ipynb)
+  - [Replace value in column](notebooks/polars/replace_column_value.ipynb)
 - [Check if duplicated value in a column](notebooks/polars/check_if_duplicates.ipynb)
   
 #### Note
