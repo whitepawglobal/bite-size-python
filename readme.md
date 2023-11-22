@@ -324,7 +324,7 @@ and bytearray() returns an object that can be modified (mutable).
 - [Conversion](notebooks/polars/conversion.ipynb)
 - Column to list: `df["a"].to_list()`
 - Reorder column: `df = df[['PRODUCT', 'PROGRAM', 'MFG_AREA']]`
-- Drop Column: `df.drop("<column-name>")` / `df.drop(["<column-name1>", "<column-name2>"])
+- Drop Column: `df.drop("<column-name>")` / `df.drop(["<column-name1>", "<column-name2>"])`
 - Casting: `out = df.select(pl.cols("<col-name>").cast(pl.Int32))`
 - [Sort column value by order](https://pola-rs.github.io/polars/py-polars/html/reference/dataframe/api/polars.DataFrame.sort.html)
 - Concatenate dataframe
