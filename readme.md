@@ -330,6 +330,7 @@ and bytearray() returns an object that can be modified (mutable).
 - [Sort column value by order](https://pola-rs.github.io/polars/py-polars/html/reference/dataframe/api/polars.DataFrame.sort.html)
 - Concatenate dataframe
   -  default concatenate on rows: `pl.concat([df1, df2])` equivalent to `pl.concat([df1, df2], how="diagonal")`/ `pl.concat([df1, df2], how="vertical"`
+- [Group By](notebooks/polars/group_by.ipynb)
 - [Drop duplicates whole /subset](notebooks/polars/drop_duplicates.ipynb)
 - Change sequence of columns in dataframe: `df = df[['PRODUCT', 'PROGRAM', 'MFG_AREA']]`
 - Add a new column with list: `df.with_columns(pl.Series(name="column-name", values=prediction_list)) `
