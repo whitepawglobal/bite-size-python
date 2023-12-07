@@ -1,9 +1,11 @@
 ## Bite-Size Python
 
+```
 <p align="center">
 <img src="https://user-images.githubusercontent.com/33477318/232706095-67eed96e-f834-46c3-b61c-35ab235fa695.jpg" width="600">
 </p>
 <p>
+```
   
 <p align="left">
 <img alt="project status: active" src="https://img.shields.io/badge/Project%20Status-%F0%9F%94%A5Active-brightgreen">
@@ -175,6 +177,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Lowercase a string: `strvar.lower()`
 - Capitalize the beginning of each word: `strvar.title()`
 - Get substring from a string: `strvar[<begin-index>:<end-index>]` / `strvar[<begin-index>:]` / `strvar[:<end-index>]`
+- [Strip multiple white spaces into only one](notebooks/string/strip_multiple_white_space.ipynb)
 - Remove white spaces in the beginning and end: `strvar.strip()`
 - Swap existing upper and lower case: `strvar.swapcase()`
 - Capitalize every first letter of a word: `strvar.title()`
@@ -295,6 +298,63 @@ and bytearray() returns an object that can be modified (mutable).
 - [Write dict to json file](notebooks/json/write2json_readfromjson.ipynb)
 - [Read dict from json file](notebooks/json/write2json_readfromjson.ipynb)
 
+### Polars
+
+- Import: `import polars as pl`
+
+#### View
+- Get header of dataframe: `df.columns`
+- View first n rows: `df.head(n)`
+- View random rows: `df.sample(n)`
+- Get number of rows: `row_count = df.select(pl.count()).item()`
+
+#### File IO
+- [Dataframe from dict](notebooks/polars/dataframe_from_dict.ipynb)
+- Read in csv: `pl.read_csv(...)`
+  - read in csv changing column [file type](https://pola-rs.github.io/polars/py-polars/html/reference/datatypes.html)
+    - `data_pl = pl.read_csv('file.csv').with_column_types({'col1': pl.Utf8, 'col2': pl.Utf8})`
+- Write to csv: `write_csv(file : str, has_header: bool = True, separator : str = ",")`
+- Read excel: `pl.read_excel(source : str |..., sheet_name : str, engine = "openpyxl")
+
+
+#### Data Manipulation
+- Create empty data frame: `pl.DataFrame()`
+- Change header: `outdf = df.rename({"foo": "apple"}) # foo is previous title, apple is new title`
+- Get unique values of one/a few columns: `df[['column_name']].unique()`
+- [Conversion](notebooks/polars/conversion.ipynb)
+- Column to list: `df["a"].to_list()`
+- Reorder column: `df = df[['PRODUCT', 'PROGRAM', 'MFG_AREA']]`
+- Drop Column: `df.drop("<column-name>")` / `df.drop(["<column-name1>", "<column-name2>"])`
+- Casting: `out = df.select(pl.col("<col-name>").cast(pl.Int32))`
+- [Remove rows with conditions using filter](notebooks/polars/remove_row_with_column_value.ipynb)
+- [Sort column value by order](https://pola-rs.github.io/polars/py-polars/html/reference/dataframe/api/polars.DataFrame.sort.html)
+- Concatenate dataframe
+  -  default concatenate on rows: `pl.concat([df1, df2])` equivalent to `pl.concat([df1, df2], how="diagonal")`/ `pl.concat([df1, df2], how="vertical"`
+- [Group By](notebooks/polars/group_by.ipynb)
+- [Drop duplicates whole /subset](notebooks/polars/drop_duplicates.ipynb)
+- Change sequence of columns in dataframe: `df = df[['PRODUCT', 'PROGRAM', 'MFG_AREA']]`
+- Add a new column with list: `df.with_columns(pl.Series(name="column-name", values=prediction_list)) `
+- Apply function to a column: `df=df.with_columns([(pl.col("<column-name>").map_elements(<function-to-apply>).alias("<new-column-name>"))])`
+- Drop nulls: `df = df.drop_nulls()` [More](https://pola-rs.github.io/polars/py-polars/html/reference/dataframe/api/polars.DataFrame.drop_nulls.html)
+  - Drop a row if all value is null: `df.filter(~pl.all_horizontal(pl.all().is_null()))`
+- [Replace column values](notebooks/polars/replace_column_value.ipynb)
+- Apply function to value:
+  - [String operations](notebooks/polars/apply_value_string.ipynb)
+  - [Apply uppercase to column with string](notebooks/polars/uppercase_to_column.ipynb)
+  - [Replace value in column](notebooks/polars/replace_column_value.ipynb)
+  - String remove whitespace front and back and in between
+    ```
+    df = df.select(pl.col(pl.Utf8).str.strip_chars())
+    df = df.select(pl.col(pl.Utf8).str.replace(" ", ""))
+    ```
+- [Check if duplicated value in a column](notebooks/polars/check_if_duplicates.ipynb)
+
+#### Series
+- [Check if any value in a Boolean Series is true](https://pola-rs.github.io/polars/py-polars/html/reference/series/api/polars.Series.any.html#polars.Series.any): `df.select(pl.col("a").is_duplicated())['a'].any()`
+  
+#### Note
+- [Pandas to Polars Cheatsheet](https://www.rhosignal.com/posts/polars-pandas-cheatsheet/)
+  
 ### Modin
 
 <details>
@@ -581,6 +641,7 @@ import modin.pandas as pd
   - [Implement Enum in Python](notebooks/class/enumimpl.ipynb)
     - Compare enum: `value == EnumObject.OPTION1`
     - [Enum with string](notebooks/class/enum_with_str.ipynb)
+  - Get all the values of enum: `[e.value for e in Directions]`
 - [Serialize class object](notebooks/class/serialize_classobj.ipynb)
 - [Function/Module with error handling](notebooks/class/function_with error_handling.ipynb)
 - [Identify if function did not return object. TLDR: if not test1()](notebooks/class/test_if_function_returns_object.ipynb)
@@ -780,7 +841,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 #### Pydantic : Data parsing and validation library 
 
 - [BaseModel to correctly declare type](notebooks/pydanticops/basemodel_helloworld.ipynb)
-
+- [Pydantic Settings](src/pydantic-settings/test.py)
 
 #### [Email Validation](notebooks/email-validation)
 
