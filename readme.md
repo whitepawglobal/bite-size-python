@@ -855,10 +855,17 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 
 - [Kill after x amount of time if process not complete](src/error_handling/timeout)
 - [Context Managers](notebooks/yield/context_manager.ipynb)
+
 ### Webbrowser
 - Open url with webbrowser module
   - [In script](notebooks/webbrowser/open_browser.ipynb)
   - In command: `python -m webbrowser -t "https://www.python.org"`
+
+### [Redis](https://redis.io/docs/connect/clients/python/)
+- Declare redis: `r = redis.Redis(host='redis', port=6379)`
+- Set key: `r.set('counter', 1)`
+- Get key: `value : int = r.get('counter')`
+- Check if key exist: `r.exists(<key>)`
 
 ### Networking
   
