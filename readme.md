@@ -862,7 +862,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
   - In command: `python -m webbrowser -t "https://www.python.org"`
 
 ### [Redis](https://redis.io/docs/connect/clients/python/)
-- Declare redis: `r = redis.Redis(host='redis', port=6379)`
+- Declare redis: `r = redis.Redis(host='127.0.0.1', port=6379)`
 - Set key: `r.set('counter', 1)`
 - Get key: `value : int = r.get('counter')`
 - Check if key exist: `r.exists(<key>)`
