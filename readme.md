@@ -866,6 +866,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 - Set key: `r.set('counter', 1)`
 - Get key: `value : int = r.get('counter')`
 - Check if key exist: `r.exists(<key>)`
+- [Set expiry and check ttl](https://koalatea.io/python-redis-expire/)
 
 ### Networking
   
