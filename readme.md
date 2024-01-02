@@ -326,6 +326,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Reorder column: `df = df[['PRODUCT', 'PROGRAM', 'MFG_AREA']]`
 - Drop Column: `df.drop("<column-name>")` / `df.drop(["<column-name1>", "<column-name2>"])`
 - Casting: `out = df.select(pl.col("<col-name>").cast(pl.Int32))`
+- Fill null with value: `df.with_columns(pl.col("b").fill_null(99))`
 - [Remove rows with conditions using filter](notebooks/polars/remove_row_with_column_value.ipynb)
 - [Sort column value by order](https://pola-rs.github.io/polars/py-polars/html/reference/dataframe/api/polars.DataFrame.sort.html)
 - Concatenate dataframe
