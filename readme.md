@@ -208,7 +208,7 @@ and bytearray() returns an object that can be modified (mutable).
 - datetime: [datetime.ipynb](notebooks/formatting/datetime.ipynb)
   - get current local date and time: `datetime.now()`
   - get utc date and time: `datetime.utcnow()`
-  
+  - [time to str and reverse](notebooks/formatting/time_to_str.ipynb)
 - [find differences of two datetime: use divmod](https://stackoverflow.com/questions/1345827/how-do-i-find-the-time-difference-between-two-datetime-objects-in-python)
 - [date, datetime comparison](notebooks/formatting/datetime_comparison.ipynb))
 
