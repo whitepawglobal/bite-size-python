@@ -17,6 +17,7 @@
 **Install package with pip**  Num
 `pip install <package-name>`. Example:`pip install numpy`
 
+
 - For more pip commands, check out [pip guidelines document](pip-guidelines.md)
 
 **Install package with conda**
@@ -522,6 +523,7 @@ import modin.pandas as pd
 - Generate list with random number: `import random; random.sample(range(10, 30), 5)`
   - Example shown where 5 random numbers are generated in between 10 to 30
 - Choose a random value in an array: `random.choice([1,2,3]`
+- Shuffle an array: `random.shuffle(array)`
 
 ## Intermediate
   
