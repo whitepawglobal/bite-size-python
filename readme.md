@@ -516,6 +516,7 @@ import modin.pandas as pd
 </details>
 
 ### Random
+- Fixed Random Seed Number (Generate same pattern) : `random.seed(integer_value)` Randomize everytime: `random.seed()`
 - Generate random floating value within 0- 1: `from random import random; random.random()`
 - Generate random integer within (min, max). Both bound included: `from random import randint; randint(0, 100) #within 0 and 100`
 - Generate random floating value: `from random import random; random()`
