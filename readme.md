@@ -203,6 +203,7 @@ and bytearray() returns an object that can be modified (mutable).
 - [Validate if a string is UUID](notebooks/uuid/uuidops.ipynb)
 - [Compare if both UUID are the same](notebooks/uuid/uuidops.ipynb)
 - UUID to string: `str(uuidparam)`
+- string to UUID: `uuid.UUID(uuid_in_str)`
 
 #### Datetime
 - [date, datetime create](notebooks/formatting/datetime_comparison.ipynb)
