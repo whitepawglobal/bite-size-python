@@ -162,7 +162,14 @@ and bytearray() returns an object that can be modified (mutable).
 - Get minimum value of numpy array: `np.amin(array)` 
 - Get maximum value of numpy array: `np.amax(array)`
 - [Calculate euclidean distance with numpy](https://www.geeksforgeeks.org/calculate-the-euclidean-distance-using-numpy/)
- 
+- Opencv Numpy array to bytes
+  ```
+  targetimage : np.array
+  success, encoded_targetimage = cv2.imencode(".png", targetimage)
+  encoded_targetimage.tobytes()
+  ```
+
+  
 #### String
 
 - Generate string with parameter
