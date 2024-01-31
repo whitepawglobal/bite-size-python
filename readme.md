@@ -334,6 +334,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Get unique values of one/a few columns: `df[['column_name']].unique()`
 - [Conversion](notebooks/polars/conversion.ipynb)
 - Column to list: `df["a"].to_list()`
+- Check if dataframe is empty: `df.is_empty()`
 - Reorder column: `df = df[['PRODUCT', 'PROGRAM', 'MFG_AREA']]`
 - Drop Column: `df.drop("<column-name>")` / `df.drop(["<column-name1>", "<column-name2>"])`
 - Rename column name: `df = df.rename(dict(zip(["column_name1_ori", "column_name2_ori"], ["column_name1", "column_name2"])))`
