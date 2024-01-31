@@ -336,6 +336,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Column to list: `df["a"].to_list()`
 - Reorder column: `df = df[['PRODUCT', 'PROGRAM', 'MFG_AREA']]`
 - Drop Column: `df.drop("<column-name>")` / `df.drop(["<column-name1>", "<column-name2>"])`
+- Rename column name: `df = df.rename(dict(zip(["column_name1_ori", "column_name2_ori"], ["column_name1", "column_name2"])))`
 - Casting: `out = df.select(pl.col("<col-name>").cast(pl.Int32))`
 - Fill null with value: `df.with_columns(pl.col("b").fill_null(99))`
 - [Remove rows with conditions using filter](notebooks/polars/remove_row_with_column_value.ipynb)
