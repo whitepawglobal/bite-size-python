@@ -330,6 +330,7 @@ and bytearray() returns an object that can be modified (mutable).
 
 #### Data Manipulation
 - Create empty data frame: `pl.DataFrame()`
+- Dataframe from dict: `df = pl.from_dict({"name": name_list, "id": id_list})`
 - Change header: `outdf = df.rename({"foo": "apple"}) # foo is previous title, apple is new title`
 - Get unique values of one/a few columns: `df[['column_name']].unique()`
 - [Conversion](notebooks/polars/conversion.ipynb)
