@@ -270,6 +270,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Get keys as list: `list(lut.keys())`
 - Get values as list: `list(lut.values())`
 - Create dict from list: `{i: 0 for i in arr}`
+- Remove existing key: `del keyvalue['key']`
 - Remove key<>value: `value = keyvalue.pop(key, alternative-value-if-key-not-present)`
 - [Handling missing items in dict](notebooks/dictionary/nativedict_handlemissingkey.ipynb)
 - [Iteration to dict to get keys and values](notebooks/dictionary/dict_iteration.ipynb)
