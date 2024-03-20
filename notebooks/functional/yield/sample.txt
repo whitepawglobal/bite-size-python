@@ -1,5 +1,0 @@
-test: this is line 1
-test: this is line 2
-test: this is line 3
-test: this is line 4
-test: this is line 5
