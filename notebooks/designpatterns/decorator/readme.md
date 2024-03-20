@@ -25,3 +25,5 @@ def decorator(func):
 <img src="sample.png">
 
 ## Sample Application
+
+- [Check time performance](time_perforamnce.ipynb)
