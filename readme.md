@@ -2,13 +2,13 @@
 
 ```
 <p align="center">
-<img src="https://user-images.githubusercontent.com/33477318/232706095-67eed96e-f834-46c3-b61c-35ab235fa695.jpg" width="600">
+<img notes="https://user-images.githubusercontent.com/33477318/232706095-67eed96e-f834-46c3-b61c-35ab235fa695.jpg" width="600">
 </p>
 <p>
 ```
   
 <p align="left">
-<img alt="project status: active" src="https://img.shields.io/badge/Project%20Status-%F0%9F%94%A5Active-brightgreen">
+<img alt="project status: active" notes="https://img.shields.io/badge/Project%20Status-%F0%9F%94%A5Active-brightgreen">
 
 </p>
 
@@ -52,14 +52,14 @@
 ### Boolean Operator
 
 - bool from int (0, 1): `bool(0) / bool(1)`
-- [X and Y](notebooks/boolean_operator/boolean_options.ipynb)
-- [X or Y](notebooks/boolean_operator/boolean_options.ipynb)
-- [if not X](notebooks/boolean_operator/boolean_options.ipynb)
-- [custom object boolean](notebooks/boolean_operator/boolean_for_object.ipynb)
+- [X and Y](notes/boolean_operator/boolean_options.ipynb)
+- [X or Y](notes/boolean_operator/boolean_options.ipynb)
+- [if not X](notes/boolean_operator/boolean_options.ipynb)
+- [custom object boolean](notes/boolean_operator/boolean_for_object.ipynb)
 
-### [Maths](notebooks/math)
+### [Maths](notes/math)
 
-- [Define Nan, Infinite](notebooks/math/define_nan_infinite.ipynb)
+- [Define Nan, Infinite](notes/math/define_nan_infinite.ipynb)
 - Sum up an array: `sum(arr)`
 - Max, returns maximum between two value: `max(a, b)`
 - Min, returns minimum between two value: `min(a, b)`
@@ -69,7 +69,7 @@
 - Cos:`import math; math.cos(1)`
 - Factorial: `import math: math.factorial(1)`
 - Round up a number to a certain decimal point: `round(value, 1)`
-- [Calculate percentile](notebooks/math/percentile.ipynb)
+- [Calculate percentile](notes/math/percentile.ipynb)
 - Power of a number: `pow(base_number, exponent_number`
 - Square root of a number: `sqrt(number)`
 - Ceiling
@@ -86,18 +86,18 @@
   - Log to the base of 2:
     - Numpy: `import numpy as np; np.log2(10)` 
     - Math: `import math; math.log2(10)`
-    - [Plotting of log to the to the base of 2](notebooks/math/logn_plotting.ipynb)
+    - [Plotting of log to the to the base of 2](notes/math/logn_plotting.ipynb)
   - Log to the base of 10:
     - Math: `import math; math.log10(10)`
-- [Exclusive Or (XOR)](notebooks/math/xor.ipynb)
-  - [Swap two numbers with XOR](notebooks/math/xor_swapping.ipynb)
+- [Exclusive Or (XOR)](notes/math/xor.ipynb)
+  - [Swap two numbers with XOR](notes/math/xor_swapping.ipynb)
 
 ### Math-others
-- [Unique combination pair](notebooks/math/unique_combination_pair.ipynb)
+- [Unique combination pair](notes/math/unique_combination_pair.ipynb)
 
 ### Sorting
-- [Quick Sort](notebooks/sorting/quicksort.ipynb)
-- [Sort and get the index](notebooks/sorting/sort_and_get_index.ipynb)
+- [Quick Sort](notes/sorting/quicksort.ipynb)
+- [Sort and get the index](notes/sorting/sort_and_get_index.ipynb)
 
 ### Data Types
 
@@ -118,14 +118,14 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 and bytearray() returns an object that can be modified (mutable).
 ```
 
-- [Numpy <> Bytes, Bytes <> Numpy](notebooks/numpy/np2bytes.ipynb)
-- [Bytes -> String](notebooks/string/bytes2string.ipynb): `bytesobj.decode("utf-8")`
+- [Numpy <> Bytes, Bytes <> Numpy](notes/numpy/np2bytes.ipynb)
+- [Bytes -> String](notes/string/bytes2string.ipynb): `bytesobj.decode("utf-8")`
 - String -> Bytes: `strobj.encode("utf-8")`
-- [Bytes -> Multimedia file (video/audio))](src/bytesops/readme.md)
-- [Check bytes encoding](notebooks/bytearrayops/checkbytesarrayencoding.ipynb)
+- [Bytes -> Multimedia file (video/audio))](notes/bytesops/readme.md)
+- [Check bytes encoding](notes/bytearrayops/checkbytesarrayencoding.ipynb)
 - To Bytes: `bytes(<value>)`
 - Get size of bytes object: `import sys;sys.getsizeof(bytesobject)`
-- [Split bytes to chunks](notebooks/bytesops/bytestochunk.ipynb)
+- [Split bytes to chunks](notes/bytesops/bytestochunk.ipynb)
   - The effect is less overhead in transmitting tasks to worker processes and collecting results.
   
 #### ByteArray
@@ -137,16 +137,16 @@ Difference between bytes() and bytearray() is that bytes() returns an object tha
 and bytearray() returns an object that can be modified (mutable).
 ```
 
-- [Integer to Bytearray](notebooks/bytearrayops/bytearraybasic.ipynb)
-- [Native Array to Bytearray](notebooks/bytearrayops/bytearraybasic.ipynb)
-- [Numpy Array to Bytearray](notebooks/bytearrayops/bytearraybasic.ipynb)
-- [Image as Bytearray](notebooks/cv/image_as bytearray.ipynb)
-- [Check bytes array encoding](notebooks/bytearrayops/checkbytesarrayencoding.ipynb)
+- [Integer to Bytearray](notes/bytearrayops/bytearraybasic.ipynb)
+- [Native Array to Bytearray](notes/bytearrayops/bytearraybasic.ipynb)
+- [Numpy Array to Bytearray](notes/bytearrayops/bytearraybasic.ipynb)
+- [Image as Bytearray](notes/cv/image_as bytearray.ipynb)
+- [Check bytes array encoding](notes/bytearrayops/checkbytesarrayencoding.ipynb)
 - To ByteArray: `bytearray(<value>)`
   
 #### Numpy
   
-- [Numpy basic](notebooks/numpy/npbasic.ipynb)
+- [Numpy basic](notes/numpy/npbasic.ipynb)
    - numpy array with int random value: `np.random.randint(5, size=(2, 4))`
 - Check if numpy array has true value: `np.any(<np-array>)`
 - Get numpy shape: `nparray.shape`
@@ -155,10 +155,10 @@ and bytearray() returns an object that can be modified (mutable).
 - Change datatype: `nparray = nparray.astype(<dtype>)` Example: `nparray = nparray.astype("uint8")`
 - Numpy NaN (Not A Number): Constant to act as a placeholder for any missing numerical values in the array: `np.NaN / np.nan / np.NAN`
 - Numpy multiply by a value: `nparray = nparray * 255`
-- [Numpy array to image](notebooks/pytorch/torchtensor2image.ipynb)
+- [Numpy array to image](notes/pytorch/torchtensor2image.ipynb)
 - Numpy array to Torch tensor: `torch.from_numpy(nparray)`
-- [Numpy <> Binary File(.npy)](notebooks/numpy/np2binary.ipynb)
-- [Use of `numpy.where`](notebooks/cv/blur_region.ipynb)
+- [Numpy <> Binary File(.npy)](notes/numpy/np2binary.ipynb)
+- [Use of `numpy.where`](notes/cv/blur_region.ipynb)
 - Get minimum value of numpy array: `np.amin(array)` 
 - Get maximum value of numpy array: `np.amax(array)`
 - [Calculate euclidean distance with numpy](https://www.geeksforgeeks.org/calculate-the-euclidean-distance-using-numpy/)
@@ -173,19 +173,19 @@ and bytearray() returns an object that can be modified (mutable).
 #### String
 
 - Generate string with parameter
-  - [Using template literal](notebooks/string/paramwithstring.ipynb): `print(f'Completed part {id}')`
-  - [Generate string with templates](notebooks/string/stringtemplate.ipynb)
+  - [Using template literal](notes/string/paramwithstring.ipynb): `print(f'Completed part {id}')`
+  - [Generate string with templates](notes/string/stringtemplate.ipynb)
   - String formatting method: `print('Completed part %d' % part_id)`
   - create string in the raw format: `varname="world"; print(f"Hello {varname!r}")
 - Check if string is empty, len = 0: `strvar = ""; if not strvar:`
 - Check if string contains digit: `any(chr.isdigit() for chr in str1) #return True if there's digit`
-- Check file extension: [notebooks/string/check_file_extension.ipynb](notebooks/string/check_file_extension.ipynb)
+- Check file extension: [notes/string/check_file_extension.ipynb](notes/string/check_file_extension.ipynb)
 - Capitalize a string: `strvar.capitalize()`
 - Uppercase a string: `strvar.upper()`
 - Lowercase a string: `strvar.lower()`
 - Capitalize the beginning of each word: `strvar.title()`
 - Get substring from a string: `strvar[<begin-index>:<end-index>]` / `strvar[<begin-index>:]` / `strvar[:<end-index>]`
-- [Strip multiple white spaces into only one](notebooks/string/strip_multiple_white_space.ipynb)
+- [Strip multiple white spaces into only one](notes/string/strip_multiple_white_space.ipynb)
 - Remove white spaces in the beginning and end: `strvar.strip()`
 - Swap existing upper and lower case: `strvar.swapcase()`
 - Capitalize every first letter of a word: `strvar.title()`
@@ -198,33 +198,33 @@ and bytearray() returns an object that can be modified (mutable).
 - Check if string have substring/specific character. Returns -1 if not found: `strvar.find(input : str)`, `strvar.find(input: str, start_index : int)`
 - String get substring with index: `str[startindex:endindex]`
 - Replace string/character with intended string/character: `strout = strin.replace(" ", "_")`
-- [Replace multiple characters with intended character](notebooks/string/replace_multiple_character.ipynb)
-- [Replace multiple string with intended string](notebooks/string/replace_multiple_string.ipynb)
+- [Replace multiple characters with intended character](notes/string/replace_multiple_character.ipynb)
+- [Replace multiple string with intended string](notes/string/replace_multiple_string.ipynb)
 - [Generate string](https://pynative.com/python-generate-random-string/)
-- [String to List/Dict:](notebooks/string/string2list.ipynb) `eval(strinput)`
+- [String to List/Dict:](notes/string/string2list.ipynb) `eval(strinput)`
 - List to string: ` <separators>.join(list) example: ', '.join(listbuffer)`
 
 #### Unique Identifer (UUID)
 
-- [Generate unique identifer UUID](notebooks/uuid/uuidops.ipynb)
-- [Validate if a string is UUID](notebooks/uuid/uuidops.ipynb)
-- [Compare if both UUID are the same](notebooks/uuid/uuidops.ipynb)
+- [Generate unique identifer UUID](notes/uuid/uuidops.ipynb)
+- [Validate if a string is UUID](notes/uuid/uuidops.ipynb)
+- [Compare if both UUID are the same](notes/uuid/uuidops.ipynb)
 - UUID to string: `str(uuidparam)`
 - string to UUID: `uuid.UUID(uuid_in_str)`
 
 #### Datetime
-- [date, datetime create](notebooks/formatting/datetime_comparison.ipynb)
-- datetime: [datetime.ipynb](notebooks/formatting/datetime.ipynb)
+- [date, datetime create](notes/formatting/datetime_comparison.ipynb)
+- datetime: [datetime.ipynb](notes/formatting/datetime.ipynb)
   - get current local date and time: `datetime.now()`
   - get utc date and time: `datetime.utcnow()`
-  - [time to str and reverse](notebooks/formatting/time_to_str.ipynb)
+  - [time to str and reverse](notes/formatting/time_to_str.ipynb)
 - [find differences of two datetime: use divmod](https://stackoverflow.com/questions/1345827/how-do-i-find-the-time-difference-between-two-datetime-objects-in-python)
-- [date, datetime comparison](notebooks/formatting/datetime_comparison.ipynb))
+- [date, datetime comparison](notes/formatting/datetime_comparison.ipynb))
 
   
 ### Data Structure
 
-#### [List](notebooks/list)
+#### [List](notes/list)
   
 - List of str to int: `list(map(int, arr))`
 - List with range of values: `list(range(...))`
@@ -245,15 +245,15 @@ and bytearray() returns an object that can be modified (mutable).
 - Iteration of list with index: `for index, value in enumerate(inlist):`
   - Enumerate with a beginning index: `for index, value in enumerate(inlist, 2):` (Index comes as second parameter)
 - Iteration over two lists: `[<operation> for item1, item2 in zip(list1, list2)]`
-- [Count occurence of items in list](notebooks/list/countoccurence.ipynb)
+- [Count occurence of items in list](notes/list/countoccurence.ipynb)
 - Get maximum value in a list of numbers (even strings): `max(samplelist)`
-- [Get argument of minimum / maximum value](notebooks/list/argument_min_max.ipynb)
+- [Get argument of minimum / maximum value](notes/list/argument_min_max.ipynb)
 - Reverse a list: `list(reversed([1, 2, 3, 4])` / `listinput.reverse()`
 - list to string: `",".join(bufferlist)`
 - Remove a value in list by index: `returnedvalue = listarray.pop(index)` (Note: Invoke IndexError if index not valid)
   - Remove last value: `listarray.pop()`
-    - [Stack Implementation with list](notebooks/list/stack.ipynb)
-    - [Queue Implementation with list](notebooks/list/queue.ipynb)
+    - [Stack Implementation with list](notes/list/stack.ipynb)
+    - [Queue Implementation with list](notes/list/queue.ipynb)
   
 **Build list**
 
@@ -261,36 +261,36 @@ and bytearray() returns an object that can be modified (mutable).
 - Build multiple list into one: `lista + listb + listc`
 - Build list by breaking down every character of a string: `[*'abcdef']`
   
-#### [Dictionary](notebooks/dictionary)
+#### [Dictionary](notes/dictionary)
   
-- [Define dict with str keys](notebooks/dictionary/definedict.ipynb)
+- [Define dict with str keys](notes/dictionary/definedict.ipynb)
 - Define dict from two lists: `dict(zip(list1, list2))`
 - Add new key value pair: `dict.update({"key2":"value2"})`
-- [Remove key<> value pair by referring to specific key](notebooks/dictionary/remove_key.ipynb)
+- [Remove key<> value pair by referring to specific key](notes/dictionary/remove_key.ipynb)
 - Get keys as list: `list(lut.keys())`
 - Get values as list: `list(lut.values())`
 - Create dict from list: `{i: 0 for i in arr}`
 - Remove existing key: `del keyvalue['key']`
 - Remove key<>value: `value = keyvalue.pop(key, alternative-value-if-key-not-present)`
-- [Handling missing items in dict](notebooks/dictionary/nativedict_handlemissingkey.ipynb)
-- [Iteration to dict to get keys and values](notebooks/dictionary/dict_iteration.ipynb)
-- [Save/load dictionary to/from a file](notebooks/dictionary/saveloaddict.ipynb)
+- [Handling missing items in dict](notes/dictionary/nativedict_handlemissingkey.ipynb)
+- [Iteration to dict to get keys and values](notes/dictionary/dict_iteration.ipynb)
+- [Save/load dictionary to/from a file](notes/dictionary/saveloaddict.ipynb)
 - Revert or inverse a dictionary mapping: `inv_map = {v: k for k, v in my_map.items()}`
-- [Copy by value](notebooks/dictionary/dict_copybyvalue.ipynb): `sampledict.copy()`
-- [Decompose/unpack dictionary when passing as argument](notebooks/dictionary/decompose_dict_when_passing_by_param.ipynb)
+- [Copy by value](notes/dictionary/dict_copybyvalue.ipynb): `sampledict.copy()`
+- [Decompose/unpack dictionary when passing as argument](notes/dictionary/decompose_dict_when_passing_by_param.ipynb)
   - Use case: class declaration
-- [Reverse key value pair to build inverse key value pair with zip](notebooks/dictionary/reverse_dict_for_inverse_keyvaluepair.ipynb)
-- [Dictionary to decide class to call with class as value](notebooks/dictionary/dict_to_decide_class_to_call.ipynb)
+- [Reverse key value pair to build inverse key value pair with zip](notes/dictionary/reverse_dict_for_inverse_keyvaluepair.ipynb)
+- [Dictionary to decide class to call with class as value](notes/dictionary/dict_to_decide_class_to_call.ipynb)
 
 #### [collections.defaultdict]
 
-- [defaultdict introduction](notebooks/default_dict/default_dict_intro.ipynb)
+- [defaultdict introduction](notes/default_dict/default_dict_intro.ipynb)
 
 #### Set
 - Set initialization: `setsample = {1,2,3,4,5}`
 - Add item: `setsample.add(<value>)`
 - Add multiple items: `setsample.update(<another-set>)`
-- [Set with multiple-value input as set](notebooks/set/set_with_multiple_value_input.ipynb)
+- [Set with multiple-value input as set](notes/set/set_with_multiple_value_input.ipynb)
 - Remove value by index: `setsample.pop(<index>)`
 - Remove value by value: `setsample.remove(<index>)`
 - Check if value exist in set: `if value in setsample:`
@@ -299,16 +299,16 @@ and bytearray() returns an object that can be modified (mutable).
 - Build a tuple: `var : tuple[bool, str | None] = tuple([True, "abc"])`
   
 #### Named Tuple
-- [NamedTuple](notebooks/collections_imp/namedtupleimp.ipynb)
+- [NamedTuple](notes/collections_imp/namedtupleimp.ipynb)
 
 #### Applicable to Python Iterables (List, Set,...)
 
 - To identify if any items in the iterables has True/1 values: `any(sample_list) #returns single value True/False`
-- [Zip multiple iterables](notebooks/zipops/zipops.ipynb)
+- [Zip multiple iterables](notes/zipops/zipops.ipynb)
 
 #### JSON
-- [Write dict to json file](notebooks/json/write2json_readfromjson.ipynb)
-- [Read dict from json file](notebooks/json/write2json_readfromjson.ipynb)
+- [Write dict to json file](notes/json/write2json_readfromjson.ipynb)
+- [Read dict from json file](notes/json/write2json_readfromjson.ipynb)
 
 ### Polars
 
@@ -321,7 +321,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Get number of rows: `row_count = df.select(pl.count()).item()`
 
 #### File IO
-- [Dataframe from dict](notebooks/polars/dataframe_from_dict.ipynb)
+- [Dataframe from dict](notes/polars/dataframe_from_dict.ipynb)
 - Read in csv: `pl.read_csv(...)`
   - read in csv changing column [file type](https://pola-rs.github.io/polars/py-polars/html/reference/datatypes.html)
     - `data_pl = pl.read_csv('file.csv').with_column_types({'col1': pl.Utf8, 'col2': pl.Utf8})`
@@ -334,7 +334,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Dataframe from dict: `df = pl.from_dict({"name": name_list, "id": id_list})`
 - Change header: `outdf = df.rename({"foo": "apple"}) # foo is previous title, apple is new title`
 - Get unique values of one/a few columns: `df[['column_name']].unique()`
-- [Conversion](notebooks/polars/conversion.ipynb)
+- [Conversion](notes/polars/conversion.ipynb)
 - Column to list: `df["a"].to_list()`
 - Check if dataframe is empty: `df.is_empty()`
 - Reorder column: `df = df[['PRODUCT', 'PROGRAM', 'MFG_AREA']]`
@@ -342,28 +342,28 @@ and bytearray() returns an object that can be modified (mutable).
 - Rename column name: `df = df.rename(dict(zip(["column_name1_ori", "column_name2_ori"], ["column_name1", "column_name2"])))`
 - Casting: `out = df.select(pl.col("<col-name>").cast(pl.Int32))`
 - Fill null with value: `df.with_columns(pl.col("b").fill_null(99))`
-- [Remove rows with conditions using filter](notebooks/polars/remove_row_with_column_value.ipynb)
+- [Remove rows with conditions using filter](notes/polars/remove_row_with_column_value.ipynb)
 - [Sort column value by order](https://pola-rs.github.io/polars/py-polars/html/reference/dataframe/api/polars.DataFrame.sort.html)
 - Concatenate dataframe
   -  default concatenate on rows: `pl.concat([df1, df2])` equivalent to `pl.concat([df1, df2], how="diagonal")`/ `pl.concat([df1, df2], how="vertical"`
-- [Group By](notebooks/polars/group_by.ipynb)
-- [Drop duplicates whole /subset](notebooks/polars/drop_duplicates.ipynb)
+- [Group By](notes/polars/group_by.ipynb)
+- [Drop duplicates whole /subset](notes/polars/drop_duplicates.ipynb)
 - Change sequence of columns in dataframe: `df = df[['PRODUCT', 'PROGRAM', 'MFG_AREA']]`
 - Add a new column with list: `df.with_columns(pl.Series(name="column-name", values=prediction_list)) `
 - Apply function to a column: `df=df.with_columns([(pl.col("<column-name>").map_elements(<function-to-apply>).alias("<new-column-name>"))])`
 - Drop nulls: `df = df.drop_nulls()` [More](https://pola-rs.github.io/polars/py-polars/html/reference/dataframe/api/polars.DataFrame.drop_nulls.html)
   - Drop a row if all value is null: `df.filter(~pl.all_horizontal(pl.all().is_null()))`
-- [Replace column values](notebooks/polars/replace_column_value.ipynb)
+- [Replace column values](notes/polars/replace_column_value.ipynb)
 - Apply function to value:
-  - [String operations](notebooks/polars/apply_value_string.ipynb)
-  - [Apply uppercase to column with string](notebooks/polars/uppercase_to_column.ipynb)
-  - [Replace value in column](notebooks/polars/replace_column_value.ipynb)
+  - [String operations](notes/polars/apply_value_string.ipynb)
+  - [Apply uppercase to column with string](notes/polars/uppercase_to_column.ipynb)
+  - [Replace value in column](notes/polars/replace_column_value.ipynb)
   - String remove whitespace front and back and in between
     ```
     df = df.select(pl.col(pl.Utf8).str.strip_chars())
     df = df.select(pl.col(pl.Utf8).str.replace(" ", ""))
     ```
-- [Check if duplicated value in a column](notebooks/polars/check_if_duplicates.ipynb)
+- [Check if duplicated value in a column](notes/polars/check_if_duplicates.ipynb)
 
 #### Series
 - [Check if any value in a Boolean Series is true](https://pola-rs.github.io/polars/py-polars/html/reference/series/api/polars.Series.any.html#polars.Series.any): `df.select(pl.col("a").is_duplicated())['a'].any()`
@@ -393,42 +393,42 @@ import modin.pandas as pd
  
 #### Panda Infos
 
-- [Dataframe basic](notebooks/pandas/info_basic.ipynb)
+- [Dataframe basic](notes/pandas/info_basic.ipynb)
   - Get # rows and columns
   - Get summary/infos about dataframe
-- [Get data types](notebooks/pandas/column_types.ipynb)
-- [Dataframe/Series Min, Max, Median, General Description](notebooks/pandas/series_min_max.ipynb)
-- [Get rows name (index) and columns name (column)](notebooks/pandas/info_rows_columns.ipynb)
-- [Get a glimpse of dataframe](notebooks/pandas/info_glimpse.ipynb)
-- [Get subset of a dataframe by rows/by columns](notebooks/pandas/df_subset.ipynb)
-- [Get rows by finding matching values from a specific column](notebooks/pandas/df_find_rows.ipynb)
+- [Get data types](notes/pandas/column_types.ipynb)
+- [Dataframe/Series Min, Max, Median, General Description](notes/pandas/series_min_max.ipynb)
+- [Get rows name (index) and columns name (column)](notes/pandas/info_rows_columns.ipynb)
+- [Get a glimpse of dataframe](notes/pandas/info_glimpse.ipynb)
+- [Get subset of a dataframe by rows/by columns](notes/pandas/df_subset.ipynb)
+- [Get rows by finding matching values from a specific column](notes/pandas/df_find_rows.ipynb)
 - Check if a column name exist in dataframe - `if 'code' in df.columns:`
-- [Iteration of each rows in a dataframe](notebooks/pandas/iterrows.ipynb)
+- [Iteration of each rows in a dataframe](notes/pandas/iterrows.ipynb)
 
 #### Panda Operations
 
 - Check if dataframe is empty: `df.empty #return boolean`
-- [Get dataframe from list](notebooks/pandas/list2df.ipynb)
+- [Get dataframe from list](notes/pandas/list2df.ipynb)
 - Build dataframe with columns name
   ```
   column_list = ["a", "b"]
   df = pd.DataFrame(columns = column_list)
   ```
-- [Build a new dataframe from a subset of columns from another dataframe](notebooks/pandas/series_subset.ipynb)
-- [Get subset of dataframe, sample columns with specific criteria](notebooks/pandas/sample_df.ipynb)
+- [Build a new dataframe from a subset of columns from another dataframe](notes/pandas/series_subset.ipynb)
+- [Get subset of dataframe, sample columns with specific criteria](notes/pandas/sample_df.ipynb)
   - Sample by percentage
   - Sample by # of rows specified
   - Sample by matching to a value
-- Column to list: [`df.columns.tolist()`](notebooks/pandas/columns2list.ipynb)
+- Column to list: [`df.columns.tolist()`](notes/pandas/columns2list.ipynb)
 - Sample rows: `df = df.sample(frac=1).reset_index(drop=True) `
-- [Referring to dataframe column by key or by string](notebooks/pandas/refer_column_name.ipynb)
-- [Concatenate dataframe](notebooks/pandas/concat_df.ipynb)
+- [Referring to dataframe column by key or by string](notes/pandas/refer_column_name.ipynb)
+- [Concatenate dataframe](notes/pandas/concat_df.ipynb)
   - Concatenate by adding rows
-- [Append string to all rows of a column](notebooks/pandas/append_value_to_row.ipynb)
+- [Append string to all rows of a column](notes/pandas/append_value_to_row.ipynb)
 - Reset index without creating new (index) column: `df.reset_index(drop=True)`
-- Assign df by copy instead of reference - [`df.copy()`](notebooks/pandas/copybyvalue.ipynb)
+- Assign df by copy instead of reference - [`df.copy()`](notes/pandas/copybyvalue.ipynb)
 - Shuffle rows of df: `df = df.sample(frac=1).reset_index(drop=True)`
-- [Pandas with multiple index](notebooks/pandas/pd_multiple_index.ipynb)
+- [Pandas with multiple index](notes/pandas/pd_multiple_index.ipynb)
 - Bytes to dataframe
   ```
     from io import BytesIO
@@ -440,63 +440,63 @@ import modin.pandas as pd
 - Sort values according to particular column
   ```df = df.sort_values(by=['frame'])```
   
-- [Rearrange dataframe column sequence](notebooks/pandas/arrange_cols_sequence.ipynb)  
+- [Rearrange dataframe column sequence](notes/pandas/arrange_cols_sequence.ipynb)  
 
 #### Panda Type
 
-- [Change column type](notebooks/pandas/change_column_type.ipynb)
-- [Rename column name if exist](notebooks/pandas/rename_column.ipynb)
-- [Compare column type](notebooks/pandas/comparecoltype.ipynb)
+- [Change column type](notes/pandas/change_column_type.ipynb)
+- [Rename column name if exist](notes/pandas/rename_column.ipynb)
+- [Compare column type](notes/pandas/comparecoltype.ipynb)
 
 #### Panda Series
 
-- [Series to value](notebooks/pandas/series_to_values.ipynb)
+- [Series to value](notes/pandas/series_to_values.ipynb)
 - Series/Dataframe to numpy array: `input.to_numpy()`
 - Series iteration: `for index, item in seriesf.items():`
 - Series to dict: `seriesf.to_dict()`
 
 #### Panda Assign values
 
-- [Create new column and assign value according to another column](notebooks/pandas/assign_column.ipynb)
-- [Assign values by lambda and df.assign](notebooks/pandas/dfassign.ipynb)
-- [Dataframe append rows](notebooks/pandas/df_append_rows.ipynb)
+- [Create new column and assign value according to another column](notes/pandas/assign_column.ipynb)
+- [Assign values by lambda and df.assign](notes/pandas/dfassign.ipynb)
+- [Dataframe append rows](notes/pandas/df_append_rows.ipynb)
 
 #### Panda Remove/drop values
 
-- [Drop duplicates for df / subset, keep one copy and remove all](notebooks/pandas/drop_duplicate.ipynb)
-- [Remove/drop rows where specific column matched value](notebooks/pandas/remove_with_matching_value.ipynb)
-- [Remove specific columns with column name](notebooks/pandas/remove_column.ipynb)
-- [Drop rows by index](notebooks/pandas/drop_row_by_index.ipynb)
+- [Drop duplicates for df / subset, keep one copy and remove all](notes/pandas/drop_duplicate.ipynb)
+- [Remove/drop rows where specific column matched value](notes/pandas/remove_with_matching_value.ipynb)
+- [Remove specific columns with column name](notes/pandas/remove_column.ipynb)
+- [Drop rows by index](notes/pandas/drop_row_by_index.ipynb)
 - Drop rows/columns with np.NaN: `df3 = df3.dropna(axis = 1) #row`
 
 #### Panda SQL-like functions
 
 - pivot table: `:TODO`
   - Drawback: Not able to do filtering selection
-- [Merge two dataframes based on certain column values](notebooks/pandas/pdmerge.ipynb)
+- [Merge two dataframes based on certain column values](notes/pandas/pdmerge.ipynb)
 
 #### Panda Filtering
 
-- [Filter with function isin()](notebooks/pandas/isin.ipynb)
-- [Filter df with item not in list](notebooks/pandas/filtervaluenotinlist.ipynb)
-- [Filter with function query()](notebooks/pandas/query.ipynb)
+- [Filter with function isin()](notes/pandas/isin.ipynb)
+- [Filter df with item not in list](notes/pandas/filtervaluenotinlist.ipynb)
+- [Filter with function query()](notes/pandas/query.ipynb)
 - Find with loc
   - `df.loc[df['address'].eq('johndoe@gmail.com')] #filter with one value`
   - `df.loc[df.a.eq(123) & df.b.eq("helloworld")] #filter with one value in multiple columns`
   - `df.loc[df.a.isin(valuelist)] #filter with a few values in a list`
   - Filter by substring: `df.loc[df['folder'].eq(folderkey) & df['id'].str.contains(videokey)]`
-- [Assign value to specific column(s) by matching value](notebooks/pandas/df_assign_col_values.ipynb)
+- [Assign value to specific column(s) by matching value](notes/pandas/df_assign_col_values.ipynb)
 - Get a subset of dataframe by rows - `df.iloc[<from_rows>:<to_rows>, :]`
-- [Count items and filter by counter values](notebooks/pandas/filter&valuecount.ipynb)
-- [Retrieve columns name which match specific str](notebooks/pandas/filterbysubsetname.ipynb)
+- [Count items and filter by counter values](notes/pandas/filter&valuecount.ipynb)
+- [Retrieve columns name which match specific str](notes/pandas/filterbysubsetname.ipynb)
 
 #### Panda Excel In/Out
 
 - Read in excel with specific sheet name: `pd.read_excel(<url>, sheet_name = "Sheet1", engine = "openpyxl")`
   - Note: Install engine by `pip install openpyxl`
-- [Read number of sheets in excel](notebooks/pandas/count_excel_sheets.ipynb)
+- [Read number of sheets in excel](notes/pandas/count_excel_sheets.ipynb)
 - Save excel: `df.to_excel('file_name', index = False) `
-- [Write to multiple sheets](notebooks/pandas/write_to_multiple_sheets_excel.ipynb)
+- [Write to multiple sheets](notes/pandas/write_to_multiple_sheets_excel.ipynb)
 
 #### Panda CSV In/Out
 
@@ -509,7 +509,7 @@ import modin.pandas as pd
 - Save to csv with encoding `df.to_csv('file name', encoding = 'utf-8')`
 - [Write list/dict to csv file](https://www.geeksforgeeks.org/writing-data-from-a-python-list-to-csv-row-wise/) (Note: to not affected by the comma in the collection)
   
-#### Panda [Parquet In/Out](notebooks/pandas/readwriteparquet.ipynb)
+#### Panda [Parquet In/Out](notes/pandas/readwriteparquet.ipynb)
 
 - Read in parquet: `pd.read_parquet(...)`
 - Write to parquet: `pd.to_parquet(...)`
@@ -542,42 +542,42 @@ import modin.pandas as pd
   
 ### Error Handling
 
-- [Native Catching Exception](notebooks/error_handling/catcherror.ipynb)
+- [Native Catching Exception](notes/error_handling/catcherror.ipynb)
   - Catch multiple error: `except (CompileError, ProgrammingError) as e:`
-- [Traceback](notebooks/error_handling/traceback)
-- [Suppress and log error](notebooks/error_handling/suppress_error)
+- [Traceback](notes/error_handling/traceback)
+- [Suppress and log error](notes/error_handling/suppress_error)
 
 #### [Types of Built-In Exceptions](https://docs.python.org/3/library/exceptions.html)
 
-- [ValueError: argument of the correct data type but an inappropriate value](notebooks/error_handling/error_types/valueerror.ipynb)
-- [TypeError: the data type of an object is incorrect](notebooks/error_handling/error_types/typeerror.ipynb)
-- [IndexError: Raised when a sequence subscript is out of range](notebooks/error_handling/error_types/indexerror.ipynb)
-- [KeyError: When key cannot be found](notebooks/error_handling/error_types/keyerror.ipynb)
-- [ZeroDivisionError: when a number is divided by zero](notebooks/error_handling/error_handling/error_types/zerodivisionerror.ipynb)
-- [OSError: error from an os-specific function](notebooks/error_handling/error_types/oserror.ipynb)
-- [FileNotFoundError: when a file or directory is requested but doesn’t exist](notebooks/error_handling/error_types/filenotfounderror.ipynb)
-- [NotImplementedError: commonly raised when an abstract method is not implemented in a derived class](notebooks/error_handling/error_types/notimplementederror.ipynb)
-- [NameError: reference to some name (variable, function, class) that hasn’t been defined](notebooks/error_handling/error_types/nameerror.ipynb)
-- [AttributeError: reference to certain attribute in a class which does not exist](notebooks/error_handling/error_types/attributeerror.ipynb)
-- [ImportError: Trouble loading a module](notebooks/error_handling/metadata/importerror.jpg)
+- [ValueError: argument of the correct data type but an inappropriate value](notes/error_handling/error_types/valueerror.ipynb)
+- [TypeError: the data type of an object is incorrect](notes/error_handling/error_types/typeerror.ipynb)
+- [IndexError: Raised when a sequence subscript is out of range](notes/error_handling/error_types/indexerror.ipynb)
+- [KeyError: When key cannot be found](notes/error_handling/error_types/keyerror.ipynb)
+- [ZeroDivisionError: when a number is divided by zero](notes/error_handling/error_handling/error_types/zerodivisionerror.ipynb)
+- [OSError: error from an os-specific function](notes/error_handling/error_types/oserror.ipynb)
+- [FileNotFoundError: when a file or directory is requested but doesn’t exist](notes/error_handling/error_types/filenotfounderror.ipynb)
+- [NotImplementedError: commonly raised when an abstract method is not implemented in a derived class](notes/error_handling/error_types/notimplementederror.ipynb)
+- [NameError: reference to some name (variable, function, class) that hasn’t been defined](notes/error_handling/error_types/nameerror.ipynb)
+- [AttributeError: reference to certain attribute in a class which does not exist](notes/error_handling/error_types/attributeerror.ipynb)
+- [ImportError: Trouble loading a module](notes/error_handling/metadata/importerror.jpg)
   - Submodule
     - ModuleNotFoundError: the module trying to import can’t be found or try to import something from a module that doesn’t exist in the module
 - AssertionError: Raise when run `assert`
   
-### [File System](notebooks/filesystem)
+### [File System](notes/filesystem)
 
 - The character used by the operating system to separate pathname components: `os.sep`
-- [Iterate through a path to get files/folders of all the subpaths](notebooks/filesystem/filewalk.ipynb)
+- [Iterate through a path to get files/folders of all the subpaths](notes/filesystem/filewalk.ipynb)
 - Write file: `f.write(str)`
 - print without new line: `print(..., end="")`
 - Get environment path (second param is optional): `import os; os.getenv(<PATH_NAME> : str, <alternative-return-value>: str)`
-- [Get and set environment path](notebooks/filesystem/environment_setting.ipynb)
+- [Get and set environment path](notes/filesystem/environment_setting.ipynb)
   - Set variable: `os.environ['redis'] = "localhost:6379"`
   - Get value with key: ```import os; os.environ["HOMEDIR"]```
   - Get value with default value: ```database_url = os.environ.get("DATABASE_URL", "default-value")```
-- [Flush out print](notebooks/filesystem/stdoutflush.ipynb)
+- [Flush out print](notes/filesystem/stdoutflush.ipynb)
 - Check if path is a folder: `os.path.isdir(<path>)`
-- [Get file size](notebooks/filesystem/getfilesize.ipynb)
+- [Get file size](notes/filesystem/getfilesize.ipynb)
   - `from pathlib import Path; outsize : int = Path(inputfilepath).stat().st_size`
   - `import os; outsize : int = os.path.getsize(inputfilepath)`
 - Create folder: `os.mkdir(<path>`
@@ -596,9 +596,9 @@ import modin.pandas as pd
 - Get size of current file in byte: `os.path.getsize(<path>)` or `from pathlib import Path; Path(<path>).stat().st_size`
 - Removes an empty directory: `os.rmdir()`
 - Deletes a directory and all its contents: `import shutil;shutil.rmtree(<path-to-directory>)`
-- [Copy a file to another path](notebooks/filesystem/copyfile.ipynb)
-- [Unzip file](notebooks/filesystem/uncompresszip.ipynb)
-- [Readfile](notebooks/filesystem/readfile.ipynb)
+- [Copy a file to another path](notes/filesystem/copyfile.ipynb)
+- [Unzip file](notes/filesystem/uncompresszip.ipynb)
+- [Readfile](notes/filesystem/readfile.ipynb)
   ```
   open(<path-to-file>, mode)
   ```
@@ -607,7 +607,7 @@ import modin.pandas as pd
   - `r`: Open for text file for reading text
   - `w`: Open a text file for writing text
   - `a`: Open a text file for appending text
-  - [`b`: Open to read/write as bytes](notebooks/cv/image_as_byte.ipynb)
+  - [`b`: Open to read/write as bytes](notes/cv/image_as_byte.ipynb)
     Read file has 3 functions
 
   - `read()` or `read(size)`: read all / size as one string.
@@ -621,122 +621,122 @@ import modin.pandas as pd
 
 ### System
 
-- [Get system input](notebooks/system/sysinput.py)
+- [Get system input](notes/system/sysinput.py)
 - Check operating system: `import platform; platform.system()`
-- [Check if port is open/close](notebooks/system/check_port_open.ipynb)
+- [Check if port is open/close](notes/system/check_port_open.ipynb)
 
 ### Time
 
-- [Measure time prior and after](notebooks/performance/count_time.ipynb)
+- [Measure time prior and after](notes/performance/count_time.ipynb)
 - Add delay to execution of the program by pausing: `import time;time.sleep(seconds)`
   - Note: stops the execution of current thread only
-- [Point to a later time from now](notebooks/performance/update_time.ipynb)
+- [Point to a later time from now](notes/performance/update_time.ipynb)
 
 ### Plotting
 - Matplotlib
-  - [Plot with lines & dots](notebooks/matplotlib/matplotlib_plotting.ipynb)
+  - [Plot with lines & dots](notes/matplotlib/matplotlib_plotting.ipynb)
   
 ## Advanced
 
 ### Class
 
-- [Effective way to view object address and object](notebooks/class/class_object_view.ipynb)
-- [Reserved methods in class](notebooks/class/reservedMethod.py)
-- [The magic variable \*args and \*\*kwargs](notebooks/class/kwargsimp.py)
-- [Check if object is of specified type](notebooks/class/isinstanceimp.ipynb): `isinstance(obj, MyClass)` / `isinstance(obj, (type1, type2) : tuple)`
-- [Deep Copy, Shallow Copy](notebooks/class/deepcopy_shallowcopy.ipynb)
+- [Effective way to view object address and object](notes/class/class_object_view.ipynb)
+- [Reserved methods in class](notes/class/reservedMethod.py)
+- [The magic variable \*args and \*\*kwargs](notes/class/kwargsimp.py)
+- [Check if object is of specified type](notes/class/isinstanceimp.ipynb): `isinstance(obj, MyClass)` / `isinstance(obj, (type1, type2) : tuple)`
+- [Deep Copy, Shallow Copy](notes/class/deepcopy_shallowcopy.ipynb)
   - Copy list by value: `list_cp = list_ori[:]` (Note: `list_cp = list_ori` copy by reference)
 - Define dataclass @dataclass
-  - [dataclass 1](notebooks/class/dataclass/dataclass_helloworld_1.ipynb)
-  - [dataclass 2](notebooks/class/dataclass/dataclass_helloworld_2.ipynb)
-  - [dataclass 3](notebooks/class/dataclass/dataclass3.ipynb)
+  - [dataclass 1](notes/class/dataclass/dataclass_helloworld_1.ipynb)
+  - [dataclass 2](notes/class/dataclass/dataclass_helloworld_2.ipynb)
+  - [dataclass 3](notes/class/dataclass/dataclass3.ipynb)
     - Compare normal class definition with dataclass definition
     - Layout output of __dict__ for dataclass class
-  - [dict as constructor input](notebooks/class/dict_as_constructor.ipynb)
+  - [dict as constructor input](notes/class/dict_as_constructor.ipynb)
 - Magic methods `__repr__` and `__dict__` are created when define class with dataclass
 - Enum
   - Enum get key: `obj.name`
   - Enum get value: `obj.value`
-  - [Implement Enum in Python](notebooks/class/enumimpl.ipynb)
+  - [Implement Enum in Python](notes/class/enumimpl.ipynb)
     - Compare enum: `value == EnumObject.OPTION1`
-    - [Enum with string](notebooks/class/enum_with_str.ipynb)
-    - [str to enum](notebooks/class/str2enum.ipynb)
+    - [Enum with string](notes/class/enum_with_str.ipynb)
+    - [str to enum](notes/class/str2enum.ipynb)
   - Get all the values of enum: `[e.value for e in Directions]`
-- [Serialize class object](notebooks/class/serialize_classobj.ipynb)
-- [Function/Module with error handling](notebooks/class/function_with error_handling.ipynb)
-- [Identify if function did not return object. TLDR: if not test1()](notebooks/class/test_if_function_returns_object.ipynb)
-- [Compare class object](notebooks/class/compare_class_object.ipynb)
+- [Serialize class object](notes/class/serialize_classobj.ipynb)
+- [Function/Module with error handling](notes/class/function_with error_handling.ipynb)
+- [Identify if function did not return object. TLDR: if not test1()](notes/class/test_if_function_returns_object.ipynb)
+- [Compare class object](notes/class/compare_class_object.ipynb)
 - [Static Variable](https://favtutor.com/blogs/static-variable-python)
   
 #### Magic Method
 
-- [`__dict__` return all attributes of an object(only those defined in __init__): `obj.__dict__`](notebooks/class/values_in_dict.ipynb)
+- [`__dict__` return all attributes of an object(only those defined in __init__): `obj.__dict__`](notes/class/values_in_dict.ipynb)
 - `__str__` return string representation of the obj: `def __str__(self):`
 - `__eq__` compare the instances of the class: `def __eq__(self, other):`
-  - [Define **eq** function in class 1](notebooks/class/eq_function.ipynb)
-  - [Define **eq** function in class 2](notebooks/class/dataclass/dataclass_helloworld_1.ipynb)
-- [`__repr__`: represent a class's objects as a string. Call object with `repr(obj)`](notebooks/class/magic_repr.ipynb)
+  - [Define **eq** function in class 1](notes/class/eq_function.ipynb)
+  - [Define **eq** function in class 2](notes/class/dataclass/dataclass_helloworld_1.ipynb)
+- [`__repr__`: represent a class's objects as a string. Call object with `repr(obj)`](notes/class/magic_repr.ipynb)
 
-## [Regular Expression (Regex)](notebooks/regex)
+## [Regular Expression (Regex)](notes/regex)
 
-- [Find matching word/character 1](notebooks/regex/charactermatch.ipynb)
+- [Find matching word/character 1](notes/regex/charactermatch.ipynb)
   - Introduction of functions in _re_ library
   - Square brackets for upper and lower case `[Ww]oodchuck`
-- [Find matching word/character 2](notebooks/regex/charactermatch2.ipynb)
+- [Find matching word/character 2](notes/regex/charactermatch2.ipynb)
   - Optional character with `?`
   - Optional 0 or more character with `*`
   - Optional 1 or more character with `+`
   - Any character with `.`
-- [Find matching word/character 3](notebooks/regex/charactermatch3.ipynb)
+- [Find matching word/character 3](notes/regex/charactermatch3.ipynb)
   - Whitespace character find with `\s`
   - Non-whitespace character find with `\S`
-- [Find matching word/character 4](notebooks/regex/charactermatch4.ipynb)
+- [Find matching word/character 4](notes/regex/charactermatch4.ipynb)
   - Caret before square bracket:`^[]` to indicate beginning
   - Dollar sign after square bracket:`[]$` to indicate ending
-- [Negation](notebooks/regex/negation.ipynb)
-- [Disjunction](notebooks/regex/disjunction.ipynb)
+- [Negation](notes/regex/negation.ipynb)
+- [Disjunction](notes/regex/disjunction.ipynb)
   - To match a series of patterns with parenthesis.
-- [Extract hashtags](notebooks/regex/filterhashtag.ipynb)
-- [Extract numbers from string](notebooks/regex/extractnumbersfromstr.ipynb)
+- [Extract hashtags](notes/regex/filterhashtag.ipynb)
+- [Extract numbers from string](notes/regex/extractnumbersfromstr.ipynb)
 
 ### Data Structure - Processing iterables with a functional style
 
-- yield instead of return [link1](notebooks/functional/yield/yieldimp.py) [yield, iterators, generators](notebooks/yield/yield_imp.ipynb)
-- [Produce a new iterable with map()](notebooks/functional/mapimp.ipynb)
-- [Generate a new iterable with Boolean-return function with filter()](notebooks/functional/filterimp.ipynb)
-- [Produce a single cumulative value from iterable with reduce()](notebooks/functional/reduceimp.ipynb)
-- [Condition checking with any(<iterable>)](notebooks/functional/anyimp.ipynb)
-- [Multiple function declaration with singledispatch)](notebooks/functional/singledispatchimp.ipynb)
+- yield instead of return [link1](notes/functional/yield/yieldimp.py) [yield, iterators, generators](notes/yield/yield_imp.ipynb)
+- [Produce a new iterable with map()](notes/functional/mapimp.ipynb)
+- [Generate a new iterable with Boolean-return function with filter()](notes/functional/filterimp.ipynb)
+- [Produce a single cumulative value from iterable with reduce()](notes/functional/reduceimp.ipynb)
+- [Condition checking with any(<iterable>)](notes/functional/anyimp.ipynb)
+- [Multiple function declaration with singledispatch)](notes/functional/singledispatchimp.ipynb)
 - Lambda function: `x = lambda a, b : a * b`
 _Note: Functional style can be replaced with **list comprehension** or **generator expressions**_
 
 ### Algorithm
-- [Number swapping](notebooks/algorithm/number_swapping.ipynb)
-- [Reverse value](notebooks/algorithm/reverse_value.ipynb)
-- [Fibonacci](notebooks/algorithm/fibonacci.ipynb)
+- [Number swapping](notes/algorithm/number_swapping.ipynb)
+- [Reverse value](notes/algorithm/reverse_value.ipynb)
+- [Fibonacci](notes/algorithm/fibonacci.ipynb)
 - Tree
-  - [Breadth First Print](notebooks/tree/breadth_depth_print.ipynb)
-  - [Depth First Print](notebooks/tree/breadth_depth_print.ipynb)
+  - [Breadth First Print](notes/tree/breadth_depth_print.ipynb)
+  - [Depth First Print](notes/tree/breadth_depth_print.ipynb)
   - 
 ### Inheritance
 
-- [from abs import ABC](notebooks/error_handling/error_types/notimplementederror.ipynb)
-- [from abs import ABCMeta](notebooks/designpatterns/decorator/built-in-decorators/abstractmethod.py)
+- [from abs import ABC](notes/error_handling/error_types/notimplementederror.ipynb)
+- [from abs import ABCMeta](notes/designpatterns/decorator/built-in-decorators/abstractmethod.py)
 - [Difference between importance ABC or ABCMeta](https://stackoverflow.com/questions/33335005/is-there-any-difference-between-using-abc-vs-abcmeta)
   - TLDR: ABC is a wrapper of ABCMeta, both serves the purpose where former easy to write.
 
 ### Passing variables in from command line
 
-- [Unnamed arguments](notebooks/command_line/sysarg.py)
+- [Unnamed arguments](notes/command_line/sysarg.py)
 - Named arguments: `:TODO`
-- [Filename as argument](notebooks/command_line/fileargparse.py)
+- [Filename as argument](notes/command_line/fileargparse.py)
 
 
 ### Environment Setting
 
-- [Read from config file](notebooks/configparser/testconfig.ipynb)
+- [Read from config file](notes/configparser/testconfig.ipynb)
    -  How to comment on config file(*.ini): Put `#` sign in front of an empty line
-- [Using .env Files for Environment Variables in Python Applications](notebooks/envsetting/envsetting_intro.ipynb)
+- [Using .env Files for Environment Variables in Python Applications](notes/envsetting/envsetting_intro.ipynb)
 
 ```
 When to use configparser? When to user .env?
@@ -754,17 +754,17 @@ Use .env to save string-variable value which should not at any cost being expose
 ```
 
 ### XML Parser
-- [Read from xml file](notebooks/xmlparser)
+- [Read from xml file](notes/xmlparser)
 
 ### URL
 
-- [Download URL to local file and checksum](notebooks/url/downloadurl.ipynb)
+- [Download URL to local file and checksum](notes/url/downloadurl.ipynb)
 
 ### Performance
 
-- [Dataframe - column-major, Numpy - row-major](notebooks/performance/df_numpy_major.ipynb)
-- [Memory Profiling](src/memory_profiling)
-- [Execution Time Profiling with line_profiler](src/time_profiling)
+- [Dataframe - column-major, Numpy - row-major](notes/performance/df_numpy_major.ipynb)
+- [Memory Profiling](notes/memory_profiling)
+- [Execution Time Profiling with line_profiler](notes/time_profiling)
 ### Multiprocessing
 ```
 Difference of pool(from multiprocessing) from thread:
@@ -772,10 +772,10 @@ pool spins up different processes while thread stay in the same process
   
 The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 ```
-- [Create workers according to number of cores](src/multiprocess_ops/readme.md)
-  - [Create worker with imap](src/multiprocess_ops/createworker.py)
-  - [Create worker with imap passing multiple parameters](src/multiprocess_ops/createworker_multipleparam.py)
-  - [Create worker with chunks of data](src/multiprocess_ops/imap_chunk.py)
+- [Create workers according to number of cores](notes/multiprocess_ops/readme.md)
+  - [Create worker with imap](notes/multiprocess_ops/createworker.py)
+  - [Create worker with imap passing multiple parameters](notes/multiprocess_ops/createworker_multipleparam.py)
+  - [Create worker with chunks of data](notes/multiprocess_ops/imap_chunk.py)
 
 ### Logging
 
@@ -787,51 +787,51 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
   logger = logging.getLogger(__name__)
   logging.basicConfig(stream=sys.stdout, level=logging.INFO)
   ```
-- [Advanced configuration log to stdout](notebooks/logging/builtinlogging/log2stdout.ipynb)
-- [Advanced configuration log to file](notebooks/logging/builtinlogging/log2file.ipynb)
+- [Advanced configuration log to stdout](notes/logging/builtinlogging/log2stdout.ipynb)
+- [Advanced configuration log to file](notes/logging/builtinlogging/log2file.ipynb)
 - Log with variables: `logging.error(f"Keys {a} is missing")`
-- [Log exception](notebooks/error_handling/suppress_error/urlcaller_logger.py)
-- [Logging write to both stdout and file](notebooks/logging/builtinlogging/write_2_multiple_outputs.py)
+- [Log exception](notes/error_handling/suppress_error/urlcaller_logger.py)
+- [Logging write to both stdout and file](notes/logging/builtinlogging/write_2_multiple_outputs.py)
 
 #### Logging Others
 
-- [Logging with module _icecream_](notebooks/logging/icecream)
+- [Logging with module _icecream_](notes/logging/icecream)
 
 ## Design Patterns
 
-- [Abstract Factory](notebooks/designpatterns/abstractfactory.py)
-- [Monkey Patching](notebooks/designpatterns/monkeypatching.py)
-- [Singleton](notebooks/designpatterns/singleton.py): A singleton is a class with only one instance.
-- [Decorator](notebooks/designpatterns/decorator)
+- [Abstract Factory](notes/designpatterns/abstractfactory.py)
+- [Monkey Patching](notes/designpatterns/monkeypatching.py)
+- [Singleton](notes/designpatterns/singleton.py): A singleton is a class with only one instance.
+- [Decorator](notes/designpatterns/decorator)
 
-### [Built-in Decorators](notebooks/designpatterns/decorator/built-in-decorators)
+### [Built-in Decorators](notes/designpatterns/decorator/built-in-decorators)
 
-- [Class Method @classmethod](notebooks/designpatterns/decorator/built-in-decorators/classmethod.py): take `cls` as first parameter (have access to internal fields and methods)
-- [Static Method @staticmethod](notebooks/designpatterns/decorator/built-in-decorators/staticmethod.py): can take no parameters, basically just a function
+- [Class Method @classmethod](notes/designpatterns/decorator/built-in-decorators/classmethod.py): take `cls` as first parameter (have access to internal fields and methods)
+- [Static Method @staticmethod](notes/designpatterns/decorator/built-in-decorators/staticmethod.py): can take no parameters, basically just a function
     - When to use @classmethod , @staticmethod
       - Class method can modify the class state,it bound to the class and it contain cls as parameter.  
         `def test(cls, ): self.variable = ?`
       - Static method can not modify the class state,it bound to the class and it does't know class or instance  
         `def test(variable): ...`
 - dataclass @dataclass
-  - [dataclass hello world](notebooks/designpatterns/decorator/built-in-decorators/dataclass_helloworld.ipynb)
-- [Abstract class with ABCMeta and @abstractmethod](notebooks/designpatterns/decorator/built-in-decorators/abstractmethod.ipynb)
-- [Property Setting](notebooks/designpatterns/decorator/built-in-decorators/property.ipynb)
-- [@property to prevent setting value](notebooks/designpatterns/decorator/built-in-decorators/property_notsetvalue.ipynb)
+  - [dataclass hello world](notes/designpatterns/decorator/built-in-decorators/dataclass_helloworld.ipynb)
+- [Abstract class with ABCMeta and @abstractmethod](notes/designpatterns/decorator/built-in-decorators/abstractmethod.ipynb)
+- [Property Setting](notes/designpatterns/decorator/built-in-decorators/property.ipynb)
+- [@property to prevent setting value](notes/designpatterns/decorator/built-in-decorators/property_notsetvalue.ipynb)
   1. Native Verbose Method
   2. Using built-in property function
   3. Using decorator
   - getter: @property
   - setter: @{variable}.setter
   - deleter: @{variable}.deleter
-- [@lru_cache](notebooks/designpatterns/decorator/built-in-decorators/lru_cache.ipynb)
+- [@lru_cache](notes/designpatterns/decorator/built-in-decorators/lru_cache.ipynb)
 ### Testing
 
 - Simple check, raise AssertionError if wrong: 
   - `assert a == 20`
   - `assert isinstance(a, int)`
 
-#### [Module _typing_: Type hint & annotations](notebooks/type_checking/typingimp.ipynb)
+#### [Module _typing_: Type hint & annotations](notes/type_checking/typingimp.ipynb)
 
 - List
 - Tuple
@@ -852,34 +852,34 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
   values : tuple[int, str, str]
   products : set[bytes]
   ```
-- [Any](notebooks/type_checking/anyimp.ipynb) : `from typing import Any; varible : Any`
-- [Union](notebooks/type_checking/unionimp.ipynb) / Optional
-  - [Simplification of Union from python 3.10 onwards](src/type_checking/union_evolution.py): `var1 : str | None`
-- [Annotated](notebooks/type_checking/typing_annotated.ipynb)
+- [Any](notes/type_checking/anyimp.ipynb) : `from typing import Any; varible : Any`
+- [Union](notes/type_checking/unionimp.ipynb) / Optional
+  - [Simplification of Union from python 3.10 onwards](notes/type_checking/union_evolution.py): `var1 : str | None`
+- [Annotated](notes/type_checking/typing_annotated.ipynb)
   - Before python 3.9: `from typing_extensions import Annotated`
   - Python 3.9 onwards: `from typing import Annotated`
     
 #### Pydantic : Data parsing and validation library 
 
-- [BaseModel to correctly declare type](notebooks/pydanticops/basemodel_helloworld.ipynb)
-- [Pydantic Settings](src/pydantic-settings/test.py)
+- [BaseModel to correctly declare type](notes/pydanticops/basemodel_helloworld.ipynb)
+- [Pydantic Settings](notes/pydantic-settings/test.py)
 
-#### [Email Validation](notebooks/email-validation)
+#### [Email Validation](notes/email-validation)
 
-- [Basic checking of domain existence and email constructed correctly](notebooks/email-validation/helloworld_validate_email.ipynb)
+- [Basic checking of domain existence and email constructed correctly](notes/email-validation/helloworld_validate_email.ipynb)
 
 #### Keywords
-- [continue](notebooks/condition/continue_keywords.ipynb)
-- [match<>case syntax (Supports after python 3.10)](notebooks/condition/match_case.ipynb)
+- [continue](notes/condition/continue_keywords.ipynb)
+- [match<>case syntax (Supports after python 3.10)](notes/condition/match_case.ipynb)
   
 ### Others
 
-- [Kill after x amount of time if process not complete](src/error_handling/timeout)
-- [Context Managers](notebooks/yield/context_manager.ipynb)
+- [Kill after x amount of time if process not complete](notes/error_handling/timeout)
+- [Context Managers](notes/yield/context_manager.ipynb)
 
 ### Webbrowser
 - Open url with webbrowser module
-  - [In script](notebooks/webbrowser/open_browser.ipynb)
+  - [In script](notes/webbrowser/open_browser.ipynb)
   - In command: `python -m webbrowser -t "https://www.python.org"`
 
 ### [Redis](https://redis.io/docs/connect/clients/python/)
@@ -897,16 +897,16 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 
 #### Built-in Concurrency Library: Asyncio
 
-- [Simple example with asyncio](notebooks/concurrency/asyncio/asyncio_wait.py)
+- [Simple example with asyncio](notes/concurrency/asyncio/asyncio_wait.py)
 
 ### Hashing 
  
-- [Password hashing with library bcrypt - saltround](notebooks/hashing/bcrypt_password_hashing.ipynb)
-- [Password hasing with passlib backed with bcrypt (Used in Fast API)](notebooks/hashing/passlib_password_hashing.ipynb)
+- [Password hashing with library bcrypt - saltround](notes/hashing/bcrypt_password_hashing.ipynb)
+- [Password hasing with passlib backed with bcrypt (Used in Fast API)](notes/hashing/passlib_password_hashing.ipynb)
 
 ### Web
 
-- [Webhook](src/web/webhook)
+- [Webhook](notes/web/webhook)
   
 ## Software Development  
 
@@ -914,48 +914,48 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 
 #### FastAPI
 
-- [Form Data](src/rest/fastapi/formdataexample)
-- [Send image via UploadFile](notebooks/postgresql-python/notebooks/image2postgres/server.py)
-- [Client upload file to FastAPI Uploadfile and get response](notebooks/rest/fastapi/clientsendfile.ipynb)
-- [Return content from url and write image](notebooks/postgresql-python/notebooks/image2postgres/client.py)
+- [Form Data](notes/rest/fastapi/formdataexample)
+- [Send image via UploadFile](notes/postgresql-python/notes/image2postgres/server.py)
+- [Client upload file to FastAPI Uploadfile and get response](notes/rest/fastapi/clientsendfile.ipynb)
+- [Return content from url and write image](notes/postgresql-python/notes/image2postgres/client.py)
 
 #### Requests
 
-- [Get data from url](notebooks/rest/requests/download_from_url.ipynb)
+- [Get data from url](notes/rest/requests/download_from_url.ipynb)
 
 ### Database
   
   
-- [Connect to db with sqlalchemy](notebooks/sqlalchemyops/readme.md)
+- [Connect to db with sqlalchemy](notes/sqlalchemyops/readme.md)
   - Silence the log: `create_engine(..., echo = False)`
-  - [SQLAlchemy query with name and value insertion](notebooks/sqlalchemyops/param_insertion.ipynb)
+  - [SQLAlchemy query with name and value insertion](notes/sqlalchemyops/param_insertion.ipynb)
 
-#### [PostgreSQL](notebooks/postgresql-python/readme.md)
+#### [PostgreSQL](notes/postgresql-python/readme.md)
 
-- [Postgres connect to AWS RDS](notebooks/postgresql-python/notebooks/aws-rds)
-- [Local Node](notebooks/postgresql-python/notebooks/local)
-- ~[Save and load image between REST and Postgres](notebooks/postgresql-python/notebooks/restimage2postgres)~ `Obsolete: large files (including image) should be saved to storage`
-- ~[Save and load video between REST and Postgres](notebooks/postgresql-python/notebooks/restvideo2postgres)~ `Obsolete: large files (including image) should be saved to storage`
+- [Postgres connect to AWS RDS](notes/postgresql-python/notes/aws-rds)
+- [Local Node](notes/postgresql-python/notes/local)
+- ~[Save and load image between REST and Postgres](notes/postgresql-python/notes/restimage2postgres)~ `Obsolete: large files (including image) should be saved to storage`
+- ~[Save and load video between REST and Postgres](notes/postgresql-python/notes/restvideo2postgres)~ `Obsolete: large files (including image) should be saved to storage`
 
 ### Cloud
 
 #### AWS
 
-- [Postgres connect to AWS RDS](notebooks/postgresql-python/notebooks/aws-rds)
+- [Postgres connect to AWS RDS](notes/postgresql-python/notes/aws-rds)
 
 #### [S3: Scalable Storage](https://docs.aws.amazon.com/AmazonS3/latest/userguide/tutorials.html)
 
-- [List name of buckets](notebooks/cloud/aws/getbucketlist.ipynb)
-- [List objects in a specific bucket](notebooks/cloud/aws/getobjectinbucketlist.ipynb)
-- [Upload file with function upload_file or upload_fileobj](notebooks/cloud/aws/upload2bucket.ipynb)
-  - [Upload video file](notebooks/cloud/aws/uploadvideo2bucket.ipynb)
-  - [Upload video file with progress counter](notebooks/cloud/aws/uploadvideo2bucketwithprogress.ipynb)
-- [Upload multipart](notebooks/cloud/aws/uploadmultipart.ipynb)
-- [Upload multipart with multiple workers](src/cloud/aws/uploadmultipart_withworkers.py)
-- [Get object from S3 with boto](notebooks/cloud/aws/get_s3_object_with_boto.ipynb)
-- [Download s3 public from url with requests](notebooks/cloud/aws/download_s3_file.ipynb)
-- [Create subfolder in bucket and upload file](notebooks/cloud/aws/create_subfolder_and_upload_file.ipynb)
-- [Delete S3 object, objects and/or folder](notebooks/cloud/aws/boto3_delete_object.ipynb)
+- [List name of buckets](notes/cloud/aws/getbucketlist.ipynb)
+- [List objects in a specific bucket](notes/cloud/aws/getobjectinbucketlist.ipynb)
+- [Upload file with function upload_file or upload_fileobj](notes/cloud/aws/upload2bucket.ipynb)
+  - [Upload video file](notes/cloud/aws/uploadvideo2bucket.ipynb)
+  - [Upload video file with progress counter](notes/cloud/aws/uploadvideo2bucketwithprogress.ipynb)
+- [Upload multipart](notes/cloud/aws/uploadmultipart.ipynb)
+- [Upload multipart with multiple workers](notes/cloud/aws/uploadmultipart_withworkers.py)
+- [Get object from S3 with boto](notes/cloud/aws/get_s3_object_with_boto.ipynb)
+- [Download s3 public from url with requests](notes/cloud/aws/download_s3_file.ipynb)
+- [Create subfolder in bucket and upload file](notes/cloud/aws/create_subfolder_and_upload_file.ipynb)
+- [Delete S3 object, objects and/or folder](notes/cloud/aws/boto3_delete_object.ipynb)
 **Note:**
 
 - **What is a bucket in S3**
@@ -971,7 +971,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 ### Pytorch
 
 - Check if cuda is available - `import torch; torch.cuda.is_available()`
-- [Softmax](notebooks/pytorch/torch_softmax.ipynb)
+- [Softmax](notes/pytorch/torch_softmax.ipynb)
 
 #### Torch Tensor
 
@@ -1004,14 +1004,14 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 - List to torch tensor - `torch.tensor(listimp)`
 - Numpy array to torch tensor - `torch.from_numpy(np_array)`
 - Torch tensor to numpy: `tensorarray.numpy()`
-- [Image to torch tensor](notebooks/pytorch/torchtensor2image.ipynb)
-- [Torch tensor to image](notebooks/pytorch/torchtensor2image.ipynb)
+- [Image to torch tensor](notes/pytorch/torchtensor2image.ipynb)
+- [Torch tensor to image](notes/pytorch/torchtensor2image.ipynb)
 
   
 **Torch Tensor Operation**
 
-- [Torch tensor value change by indexing and conditions](notebooks/pytorch/tensorvalue_manipulation.ipynb)
-- [Concatenate tensor according to dimension (0 for adding rows, 1 for adding columns)](notebooks/pytorch/tensorvalue_manipulation_0.ipynb):  
+- [Torch tensor value change by indexing and conditions](notes/pytorch/tensorvalue_manipulation.ipynb)
+- [Concatenate tensor according to dimension (0 for adding rows, 1 for adding columns)](notes/pytorch/tensorvalue_manipulation_0.ipynb):  
   `torch.cat([<tensor_1>, <tensor_2>, ...], dim = <dimension_number>`
 
 **Dataset Loader, Iterator**
@@ -1021,8 +1021,8 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 
 **Torch Tensor In/Out**
 
-- [Save torch tensor to file](notebooks/pytorch/save_write_torch.ipynb): `torch.save(x : torch.tensor, tensorfile :str)`
-- [Load torch tensor from file](notebooks/pytorch/save_write_torch.ipynb): `torch.load(tensorfile :str)`
+- [Save torch tensor to file](notes/pytorch/save_write_torch.ipynb): `torch.save(x : torch.tensor, tensorfile :str)`
+- [Load torch tensor from file](notes/pytorch/save_write_torch.ipynb): `torch.load(tensorfile :str)`
 
 #### Torch Dataset
 
@@ -1042,7 +1042,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 ### Huggingface
 
 - Send model to cuda - `model.to('cuda:0')` or `model.cuda()`
-- [Overview of DatasetDict](notebooks/huggingface/datasetdict_intro.ipynb)
+- [Overview of DatasetDict](notes/huggingface/datasetdict_intro.ipynb)
 - [DatasetDict from Pandas Dataframe](https://stackoverflow.com/questions/71618974/convert-pandas-dataframe-to-datasetdict)
 
 ### Computer Vision
@@ -1052,16 +1052,16 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 - Get image shape: `img.shape` (**Important:** shape[0] = height, shape[1] = width)
 - Create a color image: `image = np.zeros((h,w,3), np.uint8)`
 - Read/Write image:
-  - [As byte](notebooks/cv/image_as_byte.ipynb)
-  - [As Bytearray](notebooks/cv/image_as_bytearray.ipynb)
-  - [As base64](notebooks/cv/image_as_base64.ipynb)
-  - [From imageio (save with numpy array)](notebooks/cv/imageio_writeimage.ipynb)
+  - [As byte](notes/cv/image_as_byte.ipynb)
+  - [As Bytearray](notes/cv/image_as_bytearray.ipynb)
+  - [As base64](notes/cv/image_as_base64.ipynb)
+  - [From imageio (save with numpy array)](notes/cv/imageio_writeimage.ipynb)
     - Read only 3 channels: `im3d = imageio.imread('path/to/some/singlechannelimage.png', pilmode='RGB')`
 - Read image 
-  - [Read image from url](notebooks/cv/read_image_from_url.ipynb)
+  - [Read image from url](notes/cv/read_image_from_url.ipynb)
   - Read in image with Pillow
     - Pillow read in image from np.array: ```im = Image.fromarray(nprrayimage)```
-  - [Read in image from imageio](notebooks/cv/imageio_readinimage.ipynb)
+  - [Read in image from imageio](notes/cv/imageio_readinimage.ipynb)
 - Pause to display image or wait for an input: `cv2.waitKey(0)`
 - Save an image: `cv2.imwrite(pathtoimg : str, img : numpy.ndarray)`
 - Show an image in window: `cv2.imshow(windowname : str, frame : np.array)`
@@ -1084,46 +1084,46 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 - [Blur](https://docs.opencv.org/4.x/d4/d86/group__imgproc__filter.html#ga8c45db9afe636703801b0b2e440fce37) with averaging mask: `cv2.blur(img,(5,5))`
 - GaussianBlur: `blur = cv2.GaussianBlur(img,(5,5),0)`
   - Note: Kernel size `(5, 5)` to be positive and odd. Read more [here](https://plantcv.readthedocs.io/en/v2.0/gaussian_blur/) on how kernel size influence the degree of blurring.
-- [Blurring region of image](notebooks/cv/blur_region.ipynb)
+- [Blurring region of image](notes/cv/blur_region.ipynb)
 
 **Computer Vision - Video Stream**
-- [Play video in jupyter notebook/lab](notebooks/media/play_video.ipynb)
+- [Play video in jupyter notebook/lab](notes/media/play_video.ipynb)
 - Get total number of frames in the video: `int(cap.get(cv2.CAP_PROP_FRAME_COUNT))`
-- [change video frame curent count to desired frame count](src/cv/video_forward_to_frame_count.py)
-- Concat multiple video streams to show side by side: [2 video streams](src/cv/concat2windows.py) [3 video streams](src/cv/concat3windows.py)
+- [change video frame curent count to desired frame count](notes/cv/video_forward_to_frame_count.py)
+- Concat multiple video streams to show side by side: [2 video streams](notes/cv/concat2windows.py) [3 video streams](notes/cv/concat3windows.py)
 - Save stream to video output
-  - [opencv method](src/cv/opencv_save2video.py) (Face problem when replaying the video generated on AWS cloud services)
-  - [imageio method](notebooks/cv/imageio_readin_write_video.ipynb)
-- [Read in video stream from a file](src/cv/readvideostream.py)
-  - [Rread in video stream with imageio](notebooks/cv/imageio_readin_write_video.ipynb)
-- [Read in stream from camera](src/cv/save2video.py)
-- [video arrays (in opencv) -> bytes -> np.array -> video arrays (in opencv)](src/cv/video2bytes2nparray.py)
-- [Merge audio with video](src/cv/savevideowithaudio)
-- [Check if video comes with audio](notebooks/cv/check_video_with_audio.ipynb)
-- [Split audio from video](src/cv/splitaudiofromvideo.py)
+  - [opencv method](notes/cv/opencv_save2video.py) (Face problem when replaying the video generated on AWS cloud services)
+  - [imageio method](notes/cv/imageio_readin_write_video.ipynb)
+- [Read in video stream from a file](notes/cv/readvideostream.py)
+  - [Rread in video stream with imageio](notes/cv/imageio_readin_write_video.ipynb)
+- [Read in stream from camera](notes/cv/save2video.py)
+- [video arrays (in opencv) -> bytes -> np.array -> video arrays (in opencv)](notes/cv/video2bytes2nparray.py)
+- [Merge audio with video](notes/cv/savevideowithaudio)
+- [Check if video comes with audio](notes/cv/check_video_with_audio.ipynb)
+- [Split audio from video](notes/cv/splitaudiofromvideo.py)
 
 **Computer Vision - Other**
 
-- [Overlay image](src/cv/replaceroi.py)
+- [Overlay image](notes/cv/replaceroi.py)
 - Resizing frame: `outframe = cv2.resize(frame, (w, h))`
-- [Set color to rectangle region](notebooks/cv/setrectangle.ipynb)
+- [Set color to rectangle region](notes/cv/setrectangle.ipynb)
 - Color to gray image: `gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)`
 - Draw circle: `image = cv2.circle(image, center_coordinates: set, example: (50, 100), radius: int, color : set, example: (255, 255, 255), thickness : int)`
 - bgr to rgb channel: `img = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)`
-- [Draw rectangle and point on image with mouse activity](src/cv/mouseprompt.py)
+- [Draw rectangle and point on image with mouse activity](notes/cv/mouseprompt.py)
   - [Mouse Events](https://www.tutorialspoint.com/opencv_python/opencv_python_handling_mouse_events.htm)
-- [Draw rectangle on image in jupyter](notebooks/cv/draw_rectangle_on_image(jupyter).ipynb)
-- [Write text on image](src/cv/writetext.py)
-- [Remove background](notebooks/cv/remove_bg.ipynb)
-- [Weighted blend two image with `cv2.addWeighted`](notebooks/src/cv/weighted_blend_image.py)
+- [Draw rectangle on image in jupyter](notes/cv/draw_rectangle_on_image(jupyter).ipynb)
+- [Write text on image](notes/cv/writetext.py)
+- [Remove background](notes/cv/remove_bg.ipynb)
+- [Weighted blend two image with `cv2.addWeighted`](notes/notes/cv/weighted_blend_image.py)
 - [Add channel to image](https://stackoverflow.com/questions/32290096/python-opencv-add-alpha-channel-to-rgb-image)
-- [Draw contour](notebooks/cv/helloworld_contour.ipynb)
+- [Draw contour](notes/cv/helloworld_contour.ipynb)
 
-### [Audio](notebooks/audio)
+### [Audio](notes/audio)
 
-- [Audio of .wav -> .flac](notebooks/audio/wav2flac.ipynb)
-- [Get sampling rate of an audio file](notebooks/audio/getsamplingrate.ipynb)
-- [Audio file <> Numpy Array](notebooks/audio/audiofile2array.ipynb)
+- [Audio of .wav -> .flac](notes/audio/wav2flac.ipynb)
+- [Get sampling rate of an audio file](notes/audio/getsamplingrate.ipynb)
+- [Audio file <> Numpy Array](notes/audio/audiofile2array.ipynb)
   
 ## Good To Read
 - [Visual Studio Code Extension for Python](https://lightrun.com/vscode-python-extensions/)
@@ -1133,5 +1133,5 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 - [Ctrl + c, Ctrl + v — Replicating Data Science Conda Environment](https://codenamewei.medium.com/ctrl-c-ctrl-v-replicating-data-science-conda-environment-c190ad0d93fd)
   - [Conda Commands Cheatsheet](conda-guidelines.md)
 - [Displaying visuals with Markdown](https://medium.com/geekculture/displaying-visuals-with-markdown-c39f2495e146)
-  - [Examples of displaying image in readme.md](notebooks/markdown/readme.md)
-  - [Examples of displaying image in Jupyter](notebooks/markdown/markdown_guidelines.ipynb)
+  - [Examples of displaying image in readme.md](notes/markdown/readme.md)
+  - [Examples of displaying image in Jupyter](notes/markdown/markdown_guidelines.ipynb)
