@@ -27,3 +27,4 @@ def decorator(func):
 ## Sample Application
 
 - [Check time performance](time_perforamnce.ipynb)
+- [Debugging](debugging_code.ipynb)
