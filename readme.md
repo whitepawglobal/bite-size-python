@@ -627,7 +627,7 @@ import modin.pandas as pd
 
 ### Time
 
-- [Measure time prior and after](notebooks/performance/count_time.ipynb)
+- [Measure Time Performance with time.time() / time.perf_counter()](notebooks/performance/count_time.ipynb)
 - Add delay to execution of the program by pausing: `import time;time.sleep(seconds)`
   - Note: stops the execution of current thread only
 - [Point to a later time from now](notebooks/performance/update_time.ipynb)
