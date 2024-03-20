@@ -25,6 +25,7 @@ def decorator(func):
 <img src="sample.png">
 
 - [Decorator with argument](decorator_with_argument.ipynb)
+- [Decorator with optional argument](https://realpython.com/primer-on-python-decorators/#creating-decorators-with-optional-arguments)
 
 ## Sample Application
 
