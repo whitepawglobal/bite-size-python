@@ -801,7 +801,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 
 - [Abstract Factory](notebooks/designpatterns/abstractfactory.py)
 - [Monkey Patching](notebooks/designpatterns/monkeypatching.py)
-- [Singleton](notebooks/designpatterns/singleton.py)
+- [Singleton](notebooks/designpatterns/singleton.py): A singleton is a class with only one instance.
 - [Decorator](notebooks/designpatterns/decorator)
 
 ### [Built-in Decorators](notebooks/decorator/built-in-decorators.md)
