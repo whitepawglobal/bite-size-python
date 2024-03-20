@@ -721,7 +721,7 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 ### Inheritance
 
 - [from abs import ABC](notebooks/error_handling/error_types/notimplementederror.ipynb)
-- [from abs import ABCMeta](notebooks/decorator/abstractmethod.py)
+- [from abs import ABCMeta](notebooks/designpatterns/decorator/built-in-decorators/abstractmethod.py)
 - [Difference between importance ABC or ABCMeta](https://stackoverflow.com/questions/33335005/is-there-any-difference-between-using-abc-vs-abcmeta)
   - TLDR: ABC is a wrapper of ABCMeta, both serves the purpose where former easy to write.
 
@@ -804,27 +804,27 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 - [Singleton](notebooks/designpatterns/singleton.py): A singleton is a class with only one instance.
 - [Decorator](notebooks/designpatterns/decorator)
 
-### [Built-in Decorators](notebooks/decorator/built-in-decorators.md)
+### [Built-in Decorators](notebooks/designpatterns/decorator/built-in-decorators)
 
-- [Class Method @classmethod](notebooks/decorator/classmethod.py): take `cls` as first parameter (have access to internal fields and methods)
-- [Static Method @staticmethod](notebooks/decorator/staticmethod.py): can take no parameters, basically just a function
+- [Class Method @classmethod](notebooks/designpatterns/decorator/built-in-decorators/classmethod.py): take `cls` as first parameter (have access to internal fields and methods)
+- [Static Method @staticmethod](notebooks/designpatterns/decorator/built-in-decorators/staticmethod.py): can take no parameters, basically just a function
     - When to use @classmethod , @staticmethod
       - Class method can modify the class state,it bound to the class and it contain cls as parameter.  
         `def test(cls, ): self.variable = ?`
       - Static method can not modify the class state,it bound to the class and it does't know class or instance  
         `def test(variable): ...`
 - dataclass @dataclass
-  - [dataclass hello world](notebooks/decorator/dataclass_helloworld.ipynb)
-- [Abstract class with ABCMeta and @abstractmethod](notebooks/decorator/abstractmethod.ipynb)
-- [Property Setting](notebooks/decorator/property.ipynb)
-- [@property to prevent setting value](notebooks/decorator/property_notsetvalue.ipynb)
+  - [dataclass hello world](notebooks/designpatterns/decorator/built-in-decorators/dataclass_helloworld.ipynb)
+- [Abstract class with ABCMeta and @abstractmethod](notebooks/designpatterns/decorator/built-in-decorators/abstractmethod.ipynb)
+- [Property Setting](notebooks/designpatterns/decorator/built-in-decorators/property.ipynb)
+- [@property to prevent setting value](notebooks/designpatterns/decorator/built-in-decorators/property_notsetvalue.ipynb)
   1. Native Verbose Method
   2. Using built-in property function
   3. Using decorator
   - getter: @property
   - setter: @{variable}.setter
   - deleter: @{variable}.deleter
-- [@lru_cache](notebooks/decorator/lru_cache.ipynb)
+- [@lru_cache](notebooks/designpatterns/decorator/built-in-decorators/lru_cache.ipynb)
 ### Testing
 
 - Simple check, raise AssertionError if wrong: 
