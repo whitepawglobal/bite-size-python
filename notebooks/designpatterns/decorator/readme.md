@@ -28,3 +28,19 @@ def decorator(func):
 
 - [Check time performance](time_perforamnce.ipynb)
 - [Debugging](debugging_code.ipynb)
+- Authenticating Users
+  - Use wrapper to check whether user is authenticated , if yes proceed with `func`,
+  - Normally the decorators does not need to be own and its written by the web framework (Flask, FastAPI, ...)
+
+
+## Nesting Decorator
+- Executed in the order they are placed
+```
+>>> from decorators import debug, do_twice
+
+>>> @debug
+... @do_twice
+... def greet(name):
+...     print(f"Hello {name}")
+...
+```
