@@ -24,6 +24,8 @@ def decorator(func):
 
 <img src="sample.png">
 
+- [Decorator with argument](decorator_with_argument.ipynb)
+
 ## Sample Application
 
 - [Check time performance](time_perforamnce.ipynb)
