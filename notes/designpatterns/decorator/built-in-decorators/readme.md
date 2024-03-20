@@ -15,6 +15,49 @@ def f(...):
 - To contain logic pertaining to the class, but that logic should not have any need for specific class instance data.
 - [Decorator @staticmethod](staticmethod.py)
 
+#### When to use @staticmethod 
+- utility function
+  ```
+    class MathUtils:
+        @staticmethod
+        def add(x, y):
+            return x + y
+
+    # Using the static method
+    result = MathUtils.add(3, 4)  # Result: 7
+  ```
+- **Encapsulation:** 
+    - You need to encapsulate a function within a class for better code organization, but the function doesn't rely on instance or class variables. 
+    - Static methods provide a way to include such functions within a class without implying any dependency on instance state.
+    ```
+    class FileOperations:
+    @staticmethod
+    def read_file(filepath):
+        with open(filepath, 'r') as file:
+            return file.read()
+
+    # Using the static method
+    content = FileOperations.read_file("example.txt")
+    ```
+- **Namespace Organization**
+    - You want to group related functions within a class namespace without implying any specific instance or class dependency. Static methods help in organizing such utility functions within the context of a class.
+    ```
+    class ValidationUtils:
+    @staticmethod
+    def is_valid_email(email):
+        # Logic to validate email format
+        pass
+
+    @staticmethod
+    def is_valid_phone_number(phone_number):
+        # Logic to validate phone number format
+        pass
+
+    # Using static methods for validation
+    email_valid = ValidationUtils.is_valid_email("example@example.com")
+    phone_valid = ValidationUtils.is_valid_phone_number("123-456-7890")
+    ```
+
 ### Class Method 
 - Bound to the class instead of the function 
   - Example: `Student.from_string(...)` instead of `student.from_string(...)`
