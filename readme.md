@@ -716,11 +716,13 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 ### Algorithm
 - [Number swapping](notes/algorithm/number_swapping.ipynb)
 - [Reverse value](notes/algorithm/reverse_value.ipynb)
-- [Fibonacci](notes/algorithm/fibonacci.ipynb)
+- [Fibonacci](notes/algorithm/fibonacci.ipynb) [Memoization](notes/algorithm/memoization1.ipynb)
+- [Number of Pairs, Number of 3 value combination](notes/algorithm/memoization1.ipynb)
+- [Factorial](notes/algorithm/memoization1.ipynb)
 - Tree
   - [Breadth First Print](notes/tree/breadth_depth_print.ipynb)
   - [Depth First Print](notes/tree/breadth_depth_print.ipynb)
-  - 
+  
 ### Inheritance
 
 - [from abs import ABC](notes/error_handling/error_types/notimplementederror.ipynb)
