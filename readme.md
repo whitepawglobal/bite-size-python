@@ -220,7 +220,18 @@ and bytearray() returns an object that can be modified (mutable).
   - [time to str and reverse](notes/formatting/time_to_str.ipynb)
 - [find differences of two datetime: use divmod](https://stackoverflow.com/questions/1345827/how-do-i-find-the-time-difference-between-two-datetime-objects-in-python)
 - [date, datetime comparison](notes/formatting/datetime_comparison.ipynb))
-
+- datetime.timedelta
+  <details>
+    
+  ```
+  from datetime import timedelta
+  timediff : timedelta =  datetime.now() - before
+  print(timediff.microseconds)
+  print(timediff.seconds)
+  print(timediff.days)
+  ```
+  
+  </details>
   
 ### Data Structure
 
