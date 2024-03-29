@@ -233,7 +233,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Copy by value: `array.copy()` (to not impact changes in array after changing)
 - Sort an array in place: `arr.sort()` / Return a sorted array: `sorted(arr)`
   - Sort an array in reverse: `arr.sort(reverse = True)` / Return a sorted array: `sorted(arr, reverse = True)`
-- Get index of a value: `arr.index(value)`
+- Get index of a value: `arr.index(value)` (When not found will raise ValueError)
 - Add one more value to existing list: `arr.append(value)`
 - Insert at index: `arr.insert(index, value)`
 - Extend list with values in another list: `arr.extend(arr2)`
