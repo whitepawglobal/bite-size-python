@@ -240,7 +240,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Remove an item (the first item found) from the list: `arr.remove(item)`
 - Remove item by index: `del arr[index]` or `del arr[index-start: index-end]`
 - Check for empty list: `arr = []; if not arr: #empty list`
-- Clear a list: `arr.clear()`
+- Clear a list: `arr.clear()` 
 - Check all items in a list(subset) if exist in another list, returns boolean: `set(b).issubset(v)`
 - Check unordered list to have the same items, returns boolean: `set(a) == set(b)`
 - Change values of list with **List Comprehension**: `[func(a) for a in sample_list]`
