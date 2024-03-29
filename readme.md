@@ -231,6 +231,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Split str to list of str: `arr.split(" ")`
 - Find if a value in a list: `if value in mylist:` / `if value not in mylist:`
 - Sort an array in place: `arr.sort()` / Return a sorted array: `sorted(arr)`
+  - Sort an array in reverse: `arr.sort(reverse = True)` / Return a sorted array: `sorted(arr, reverse = True)`
 - Get index of a value: `arr.index(value)`
 - Add one more value to existing list: `arr.append(value)`
 - Insert at index: `arr.insert(index, value)`
