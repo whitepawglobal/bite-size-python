@@ -326,6 +326,9 @@ and bytearray() returns an object that can be modified (mutable).
 
 ### Polars
 
+<details>
+  
+
 - Import: `import polars as pl`
 
 #### View
@@ -384,7 +387,9 @@ and bytearray() returns an object that can be modified (mutable).
   
 #### Note
 - [Pandas to Polars Cheatsheet](https://www.rhosignal.com/posts/polars-pandas-cheatsheet/)
-  
+
+</details>
+
 ### Modin
 
 <details>
@@ -433,6 +438,7 @@ import modin.pandas as pd
   - Sample by percentage
   - Sample by # of rows specified
   - Sample by matching to a value
+- [Apply](notes/pandas/apply_helloworld.ipynb)
 - Column to list: [`df.columns.tolist()`](notes/pandas/columns2list.ipynb)
 - Sample rows: `df = df.sample(frac=1).reset_index(drop=True) `
 - [Referring to dataframe column by key or by string](notes/pandas/refer_column_name.ipynb)
