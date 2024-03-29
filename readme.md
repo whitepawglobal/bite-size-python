@@ -299,7 +299,8 @@ and bytearray() returns an object that can be modified (mutable).
 
 #### Tuple
 - Build a tuple: `var : tuple[bool, str | None] = tuple([True, "abc"])`
-  
+- List to tuple: `tuple([1,2])`
+    
 #### Named Tuple
 - [NamedTuple](notes/collections_imp/namedtupleimp.ipynb)
 
