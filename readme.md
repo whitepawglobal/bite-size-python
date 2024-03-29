@@ -289,8 +289,8 @@ and bytearray() returns an object that can be modified (mutable).
 - [defaultdict introduction](notes/default_dict/default_dict_intro.ipynb)
 
 #### Set
-- Set initialization: `setsample = {1,2,3,4,5}`
-- Add item: `setsample.add(<value>)`
+- Set initialization: `setsample = {1,2,3,4,5}`/ `setsample = set()`
+- Add item: `setsample.add(<value>)` example `setsample.add((1,2))` (has to be tuple, not list)
 - Add multiple items: `setsample.update(<another-set>)`
 - [Set with multiple-value input as set](notes/set/set_with_multiple_value_input.ipynb)
 - Remove value by index: `setsample.pop(<index>)`
