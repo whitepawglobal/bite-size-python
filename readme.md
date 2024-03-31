@@ -258,7 +258,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Iteration of list with index: `for index, value in enumerate(inlist):`
   - Enumerate with a beginning index: `for index, value in enumerate(inlist, 2):` (Index comes as second parameter)
 - Iteration over two lists: `[<operation> for item1, item2 in zip(list1, list2)]`
-- [Count occurence of items in list](notes/list/countoccurence.ipynb)
+- [Count occurence of items in list](notes/list/countoccurence.ipynb): `array.count(val)` 
 - Get maximum value in a list of numbers (even strings): `max(samplelist)`
 - [Get argument of minimum / maximum value](notes/list/argument_min_max.ipynb)
 - Reverse a list: `list(reversed([1, 2, 3, 4])` / `listinput.reverse()`
