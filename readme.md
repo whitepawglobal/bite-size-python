@@ -851,8 +851,9 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 - [@lru_cache](notes/designpatterns/decorator/built-in-decorators/lru_cache.ipynb)
 ### Testing
 
-- Simple check, raise AssertionError if wrong: 
-  - `assert a == 20`
+- Simple check, raise AssertionError if wrong:
+  format: `assert condition, message when error raised
+  - `assert a == 20, "val a == 20"`
   - `assert isinstance(a, int)`
 
 #### [Module _typing_: Type hint & annotations](notes/type_checking/typingimp.ipynb)
