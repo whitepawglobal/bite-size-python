@@ -295,6 +295,7 @@ and bytearray() returns an object that can be modified (mutable).
   - Use case: class declaration
 - [Reverse key value pair to build inverse key value pair with zip](notes/dictionary/reverse_dict_for_inverse_keyvaluepair.ipynb)
 - [Dictionary to decide class to call with class as value](notes/dictionary/dict_to_decide_class_to_call.ipynb)
+- [Change order of key value based on the key/value items](notes/dictionary/dict_reorder.ipynb)
 
 #### [collections.defaultdict]
 
