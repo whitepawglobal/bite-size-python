@@ -267,6 +267,7 @@ and bytearray() returns an object that can be modified (mutable).
   - Remove last value: `listarray.pop()`
     - [Stack Implementation with list](notes/list/stack.ipynb)
     - [Queue Implementation with list](notes/list/queue.ipynb)
+- [List Counter](notes/list/array_counter.ipynb)   
   
 **Build list**
 
