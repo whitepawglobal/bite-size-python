@@ -220,7 +220,18 @@ and bytearray() returns an object that can be modified (mutable).
   - [time to str and reverse](notes/formatting/time_to_str.ipynb)
 - [find differences of two datetime: use divmod](https://stackoverflow.com/questions/1345827/how-do-i-find-the-time-difference-between-two-datetime-objects-in-python)
 - [date, datetime comparison](notes/formatting/datetime_comparison.ipynb))
-
+- datetime.timedelta
+  <details>
+    
+  ```
+  from datetime import timedelta
+  timediff : timedelta =  datetime.now() - before
+  print(timediff.microseconds)
+  print(timediff.seconds)
+  print(timediff.days)
+  ```
+  
+  </details>
   
 ### Data Structure
 
@@ -233,21 +244,21 @@ and bytearray() returns an object that can be modified (mutable).
 - Copy by value: `array.copy()` (to not impact changes in array after changing)
 - Sort an array in place: `arr.sort()` / Return a sorted array: `sorted(arr)`
   - Sort an array in reverse: `arr.sort(reverse = True)` / Return a sorted array: `sorted(arr, reverse = True)`
-- Get index of a value: `arr.index(value)`
+- Get index of a value: `arr.index(value)` (When not found will raise ValueError)
 - Add one more value to existing list: `arr.append(value)`
 - Insert at index: `arr.insert(index, value)`
 - Extend list with values in another list: `arr.extend(arr2)`
 - Remove an item (the first item found) from the list: `arr.remove(item)`
 - Remove item by index: `del arr[index]` or `del arr[index-start: index-end]`
 - Check for empty list: `arr = []; if not arr: #empty list`
-- Clear a list: `arr.clear()`
+- Clear a list: `arr.clear()` 
 - Check all items in a list(subset) if exist in another list, returns boolean: `set(b).issubset(v)`
 - Check unordered list to have the same items, returns boolean: `set(a) == set(b)`
 - Change values of list with **List Comprehension**: `[func(a) for a in sample_list]`
 - Iteration of list with index: `for index, value in enumerate(inlist):`
   - Enumerate with a beginning index: `for index, value in enumerate(inlist, 2):` (Index comes as second parameter)
 - Iteration over two lists: `[<operation> for item1, item2 in zip(list1, list2)]`
-- [Count occurence of items in list](notes/list/countoccurence.ipynb)
+- [Count occurence of items in list](notes/list/countoccurence.ipynb): `array.count(val)` 
 - Get maximum value in a list of numbers (even strings): `max(samplelist)`
 - [Get argument of minimum / maximum value](notes/list/argument_min_max.ipynb)
 - Reverse a list: `list(reversed([1, 2, 3, 4])` / `listinput.reverse()`
@@ -256,6 +267,7 @@ and bytearray() returns an object that can be modified (mutable).
   - Remove last value: `listarray.pop()`
     - [Stack Implementation with list](notes/list/stack.ipynb)
     - [Queue Implementation with list](notes/list/queue.ipynb)
+- [List Counter](notes/list/array_counter.ipynb)   
   
 **Build list**
 
@@ -283,6 +295,7 @@ and bytearray() returns an object that can be modified (mutable).
   - Use case: class declaration
 - [Reverse key value pair to build inverse key value pair with zip](notes/dictionary/reverse_dict_for_inverse_keyvaluepair.ipynb)
 - [Dictionary to decide class to call with class as value](notes/dictionary/dict_to_decide_class_to_call.ipynb)
+- [Change order of key value based on the key/value items](notes/dictionary/dict_reorder.ipynb)
 
 #### [collections.defaultdict]
 
@@ -314,6 +327,9 @@ and bytearray() returns an object that can be modified (mutable).
 - [Read dict from json file](notes/json/write2json_readfromjson.ipynb)
 
 ### Polars
+
+<details>
+  
 
 - Import: `import polars as pl`
 
@@ -373,7 +389,9 @@ and bytearray() returns an object that can be modified (mutable).
   
 #### Note
 - [Pandas to Polars Cheatsheet](https://www.rhosignal.com/posts/polars-pandas-cheatsheet/)
-  
+
+</details>
+
 ### Modin
 
 <details>
@@ -422,6 +440,7 @@ import modin.pandas as pd
   - Sample by percentage
   - Sample by # of rows specified
   - Sample by matching to a value
+- [Apply](notes/pandas/apply_helloworld.ipynb)
 - Column to list: [`df.columns.tolist()`](notes/pandas/columns2list.ipynb)
 - Sample rows: `df = df.sample(frac=1).reset_index(drop=True) `
 - [Referring to dataframe column by key or by string](notes/pandas/refer_column_name.ipynb)
@@ -716,11 +735,13 @@ _Note: Functional style can be replaced with **list comprehension** or **generat
 ### Algorithm
 - [Number swapping](notes/algorithm/number_swapping.ipynb)
 - [Reverse value](notes/algorithm/reverse_value.ipynb)
-- [Fibonacci](notes/algorithm/fibonacci.ipynb)
+- [Fibonacci](notes/algorithm/fibonacci.ipynb) [Memoization](notes/algorithm/memoization1.ipynb)
+- [Number of Pairs, Number of 3 value combination](notes/algorithm/memoization1.ipynb)
+- [Factorial](notes/algorithm/memoization1.ipynb)
 - Tree
   - [Breadth First Print](notes/tree/breadth_depth_print.ipynb)
   - [Depth First Print](notes/tree/breadth_depth_print.ipynb)
-  - 
+  
 ### Inheritance
 
 - [from abs import ABC](notes/error_handling/error_types/notimplementederror.ipynb)
@@ -830,8 +851,9 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 - [@lru_cache](notes/designpatterns/decorator/built-in-decorators/lru_cache.ipynb)
 ### Testing
 
-- Simple check, raise AssertionError if wrong: 
-  - `assert a == 20`
+- Simple check, raise AssertionError if wrong:
+  format: `assert condition, message when error raised
+  - `assert a == 20, "val a == 20"`
   - `assert isinstance(a, int)`
 
 #### [Module _typing_: Type hint & annotations](notes/type_checking/typingimp.ipynb)
