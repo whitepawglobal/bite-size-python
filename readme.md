@@ -555,9 +555,9 @@ import modin.pandas as pd
 - Generate random integer within (min, max). Both bound included: `from random import randint; randint(0, 100) #within 0 and 100`
 - Generate random floating value: `from random import random; random()`
 - Randomly choosing an item out from a list: `import random; random.choice([123, 456, 378])`
+  - [Weighted Sampling](notes/sampling/weighted_sampling.ipynb)
 - Generate list with random number: `import random; random.sample(range(10, 30), 5)`
   - Example shown where 5 random numbers are generated in between 10 to 30
-- Choose a random value in an array: `random.choice([1,2,3]`
 - Shuffle an array: `random.shuffle(array)`
 
 ## Intermediate
