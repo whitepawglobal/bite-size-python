@@ -1150,7 +1150,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 - [Get sampling rate of an audio file](notes/audio/getsamplingrate.ipynb)
 - [Audio file <> Numpy Array](notes/audio/audiofile2array.ipynb)
 - [Play audio file in Jupyter](notes/audio/load_audio_and_show_waveform.ipynb)
-
+- [Show spectrogram, log mel spectrogram](notes/audio/load_audio_and_show_spectrogram.ipynb)
 
 #### [Librosa](I/O operations for audio files, including resampling)
 
