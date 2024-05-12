@@ -1149,10 +1149,14 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 - [Audio of .wav -> .flac](notes/audio/wav2flac.ipynb)
 - [Get sampling rate of an audio file](notes/audio/getsamplingrate.ipynb)
 - [Audio file <> Numpy Array](notes/audio/audiofile2array.ipynb)
+- [Play audio file in Jupyter](notes/audio/load_audio_and_show_waveform.ipynb)
+
 
 #### [Librosa](I/O operations for audio files, including resampling)
 
+- [Read an audio file](notes/audio/load_audio_and_show_waveform.ipynb): `array, sampling_rate = librosa.load(audiopath)`
 - [Get duration of audio](notes/audio/get_audio_duration.ipynb): `librosa.get_duration(path=x)`
+- [Show waveform](notes/audio/load_audio_and_show_waveform.ipynb)
   
 ## Good To Read
 - [Visual Studio Code Extension for Python](https://lightrun.com/vscode-python-extensions/)
