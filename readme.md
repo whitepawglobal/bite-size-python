@@ -1158,6 +1158,8 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 - [Show waveform](notes/audio/load_audio_and_show_waveform.ipynb)
 - [Show spectrogram, log mel spectrogram](notes/audio/load_audio_and_show_spectrogram.ipynb)
 
+#### Huggingface Datasets
+- [Upsample Datasets](notes/audio/upsample_with_hf_datasets.ipynb)
   
 ## Good To Read
 - [Visual Studio Code Extension for Python](https://lightrun.com/vscode-python-extensions/)
