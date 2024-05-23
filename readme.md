@@ -232,7 +232,7 @@ and bytearray() returns an object that can be modified (mutable).
   ```
   
   </details>
-  
+- [Convert datetime between different time zone](notes/formatting/convert_timezone.ipynb)
 ### Data Structure
 
 #### [List](notes/list)
