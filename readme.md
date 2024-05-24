@@ -664,7 +664,7 @@ import modin.pandas as pd
 
 - [Effective way to view object address and object](notes/class/class_object_view.ipynb)
 - [Reserved methods in class](notes/class/reservedMethod.py)
-- [The magic variable \*args and \*\*kwargs](notes/class/kwargsimp.py)
+- The magic variable \*args and \*\*kwargs: [Quick Review](notes/class/quick_review_args_kwargs.ipynb) [Elaborated Notes](notes/class/kwargsimp.py)
 - [Check if object is of specified type](notes/class/isinstanceimp.ipynb): `isinstance(obj, MyClass)` / `isinstance(obj, (type1, type2) : tuple)`
 - [Deep Copy, Shallow Copy](notes/class/deepcopy_shallowcopy.ipynb)
   - Copy list by value: `list_cp = list_ori[:]` (Note: `list_cp = list_ori` copy by reference)
