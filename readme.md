@@ -232,7 +232,7 @@ and bytearray() returns an object that can be modified (mutable).
   ```
   
   </details>
-  
+- [Convert datetime between different time zone](notes/formatting/convert_timezone.ipynb)
 ### Data Structure
 
 #### [List](notes/list)
@@ -555,9 +555,9 @@ import modin.pandas as pd
 - Generate random integer within (min, max). Both bound included: `from random import randint; randint(0, 100) #within 0 and 100`
 - Generate random floating value: `from random import random; random()`
 - Randomly choosing an item out from a list: `import random; random.choice([123, 456, 378])`
+  - [Weighted Sampling](notes/sampling/weighted_sampling.ipynb)
 - Generate list with random number: `import random; random.sample(range(10, 30), 5)`
   - Example shown where 5 random numbers are generated in between 10 to 30
-- Choose a random value in an array: `random.choice([1,2,3]`
 - Shuffle an array: `random.shuffle(array)`
 
 ## Intermediate
@@ -664,7 +664,7 @@ import modin.pandas as pd
 
 - [Effective way to view object address and object](notes/class/class_object_view.ipynb)
 - [Reserved methods in class](notes/class/reservedMethod.py)
-- [The magic variable \*args and \*\*kwargs](notes/class/kwargsimp.py)
+- The magic variable \*args and \*\*kwargs: [Quick Review](notes/class/quick_review_args_kwargs.ipynb) [Elaborated Notes](notes/class/kwargsimp.py)
 - [Check if object is of specified type](notes/class/isinstanceimp.ipynb): `isinstance(obj, MyClass)` / `isinstance(obj, (type1, type2) : tuple)`
 - [Deep Copy, Shallow Copy](notes/class/deepcopy_shallowcopy.ipynb)
   - Copy list by value: `list_cp = list_ori[:]` (Note: `list_cp = list_ori` copy by reference)
@@ -823,6 +823,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 
 ## Design Patterns
 
+- [Factory method](notes/designpatterns/factory_method.ipynb)
 - [Abstract Factory](notes/designpatterns/abstractfactory.py)
 - [Monkey Patching](notes/designpatterns/monkeypatching.py)
 - [Singleton](notes/designpatterns/singleton.py): A singleton is a class with only one instance.
@@ -830,9 +831,9 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 
 ### [Built-in Decorators](notes/designpatterns/decorator/built-in-decorators)
 
-- [Class Method @classmethod](notes/designpatterns/decorator/built-in-decorators/classmethod.py): take `cls` as first parameter (have access to internal fields and methods)
+- [Class Method @classmethod](notes/designpatterns/decorator/built-in-decorators/classmethod_imp.ipynb): take `cls` as first parameter (have access to internal fields and methods)
 - [Static Method @staticmethod](notes/designpatterns/decorator/built-in-decorators/staticmethod.py): can take no parameters, basically just a function
-    - When to use @classmethod , @staticmethod
+    - [When to use @classmethod](notes/designpatterns/decorator/built-in-decorators/classmethod_imp.ipynb), @staticmethod
       - Class method can modify the class state,it bound to the class and it contain cls as parameter.  
         `def test(cls, ): self.variable = ?`
       - Static method can not modify the class state,it bound to the class and it does't know class or instance  
@@ -1149,6 +1150,17 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 - [Audio of .wav -> .flac](notes/audio/wav2flac.ipynb)
 - [Get sampling rate of an audio file](notes/audio/getsamplingrate.ipynb)
 - [Audio file <> Numpy Array](notes/audio/audiofile2array.ipynb)
+- [Play audio file in Jupyter](notes/audio/load_audio_and_show_waveform.ipynb)
+
+#### [Librosa](I/O operations for audio files, including resampling)
+
+- [Read an audio file](notes/audio/load_audio_and_show_waveform.ipynb): `array, sampling_rate = librosa.load(audiopath)`
+- [Get duration of audio](notes/audio/get_audio_duration.ipynb): `librosa.get_duration(path=x)`
+- [Show waveform](notes/audio/load_audio_and_show_waveform.ipynb)
+- [Show spectrogram, log mel spectrogram](notes/audio/load_audio_and_show_spectrogram.ipynb)
+
+#### Huggingface Datasets
+- [Upsample Datasets](notes/audio/upsample_with_hf_datasets.ipynb)
   
 ## Good To Read
 - [Visual Studio Code Extension for Python](https://lightrun.com/vscode-python-extensions/)
