@@ -823,6 +823,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 
 ## Design Patterns
 
+- [Factory method](notes/designpatterns/factory_method.ipynb)
 - [Abstract Factory](notes/designpatterns/abstractfactory.py)
 - [Monkey Patching](notes/designpatterns/monkeypatching.py)
 - [Singleton](notes/designpatterns/singleton.py): A singleton is a class with only one instance.
@@ -830,9 +831,9 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 
 ### [Built-in Decorators](notes/designpatterns/decorator/built-in-decorators)
 
-- [Class Method @classmethod](notes/designpatterns/decorator/built-in-decorators/classmethod.py): take `cls` as first parameter (have access to internal fields and methods)
+- [Class Method @classmethod](notes/designpatterns/decorator/built-in-decorators/classmethod_imp.ipynb): take `cls` as first parameter (have access to internal fields and methods)
 - [Static Method @staticmethod](notes/designpatterns/decorator/built-in-decorators/staticmethod.py): can take no parameters, basically just a function
-    - When to use @classmethod , @staticmethod
+    - [When to use @classmethod](notes/designpatterns/decorator/built-in-decorators/classmethod_imp.ipynb), @staticmethod
       - Class method can modify the class state,it bound to the class and it contain cls as parameter.  
         `def test(cls, ): self.variable = ?`
       - Static method can not modify the class state,it bound to the class and it does't know class or instance  
