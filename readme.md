@@ -917,7 +917,8 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 
 ### Networking
   
-- Get IP from domain name: `import socket;socker.gethostbyname("www.google.com");`
+- Get IP from domain name: `import socket;socket.gethostbyname("www.google.com");`
+- Get host name of the machine: `socket.gethostname()`
   
 ### Concurrency
 
