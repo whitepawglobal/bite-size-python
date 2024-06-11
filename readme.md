@@ -325,6 +325,7 @@ and bytearray() returns an object that can be modified (mutable).
 #### JSON
 - [Write dict to json file](notes/json/write2json_readfromjson.ipynb)
 - [Read dict from json file](notes/json/write2json_readfromjson.ipynb)
+- [Str to json](notes/json/str2json.ipynb)
 
 ### Polars
 
