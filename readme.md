@@ -811,6 +811,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
   logger = logging.getLogger(__name__)
   logging.basicConfig(stream=sys.stdout, level=logging.INFO)
   ```
+- Logging Levels: DEBUG, INFO, WARN, ERROR, FATAL
 - [Advanced configuration log to stdout](notes/logging/builtinlogging/log2stdout.ipynb)
 - [Advanced configuration log to file](notes/logging/builtinlogging/log2file.ipynb)
 - Log with variables: `logging.error(f"Keys {a} is missing")`
