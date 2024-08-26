@@ -676,7 +676,6 @@ import modin.pandas as pd
     - Compare normal class definition with dataclass definition
     - Layout output of __dict__ for dataclass class
   - [dict as constructor input](notes/class/dict_as_constructor.ipynb)
-- Magic methods `__repr__` and `__dict__` are created when define class with dataclass
 - Enum
   - Enum get key: `obj.name`
   - Enum get value: `obj.value`
@@ -699,6 +698,7 @@ import modin.pandas as pd
   - [Define **eq** function in class 1](notes/class/eq_function.ipynb)
   - [Define **eq** function in class 2](notes/class/dataclass/dataclass_helloworld_1.ipynb)
 - [`__repr__`: represent a class's objects as a string. Call object with `repr(obj)`](notes/class/magic_repr.ipynb)
+- [`__call__`: to make class instance callable `classinstance(variable)`](notes/class/magic_call.ipynb)
 
 ## [Regular Expression (Regex)](notes/regex)
 
