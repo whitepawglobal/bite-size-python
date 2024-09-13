@@ -578,6 +578,7 @@ import modin.pandas as pd
 - [ZeroDivisionError: when a number is divided by zero](notes/error_handling/error_handling/error_types/zerodivisionerror.ipynb)
 - [OSError: error from an os-specific function](notes/error_handling/error_types/oserror.ipynb)
 - [FileNotFoundError: when a file or directory is requested but doesn’t exist](notes/error_handling/error_types/filenotfounderror.ipynb)
+- IsADirectoryError: when removing a file but it turns out is a directory with `os.remove(file)`
 - [NotImplementedError: commonly raised when an abstract method is not implemented in a derived class](notes/error_handling/error_types/notimplementederror.ipynb)
 - [NameError: reference to some name (variable, function, class) that hasn’t been defined](notes/error_handling/error_types/nameerror.ipynb)
 - [AttributeError: reference to certain attribute in a class which does not exist](notes/error_handling/error_types/attributeerror.ipynb)
