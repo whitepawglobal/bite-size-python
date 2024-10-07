@@ -325,6 +325,7 @@ and bytearray() returns an object that can be modified (mutable).
 #### JSON
 - [Write dict to json file](notes/json/write2json_readfromjson.ipynb)
 - [Read dict from json file](notes/json/write2json_readfromjson.ipynb)
+- [Str to json](notes/json/str2json.ipynb)
 
 ### Polars
 
@@ -344,11 +345,14 @@ and bytearray() returns an object that can be modified (mutable).
 - Read in csv: `pl.read_csv(...)`
   - read in csv changing column [file type](https://pola-rs.github.io/polars/py-polars/html/reference/datatypes.html)
     - `data_pl = pl.read_csv('file.csv').with_column_types({'col1': pl.Utf8, 'col2': pl.Utf8})`
+  - read_csv without header (to prevent value be the header name)
+    - `pd.read_csv(datapath, header = None)`
 - Write to csv: `write_csv(file : str, has_header: bool = True, separator : str = ",")`
 - Read excel: `pl.read_excel(source : str |..., sheet_name : str, engine = "openpyxl")
 
 
 #### Data Manipulation
+- Assign column name to dataframe: `df.columns = column_name`
 - Create empty data frame: `pl.DataFrame()`
 - Dataframe from dict: `df = pl.from_dict({"name": name_list, "id": id_list})`
 - Change header: `outdf = df.rename({"foo": "apple"}) # foo is previous title, apple is new title`
@@ -676,7 +680,6 @@ import modin.pandas as pd
     - Compare normal class definition with dataclass definition
     - Layout output of __dict__ for dataclass class
   - [dict as constructor input](notes/class/dict_as_constructor.ipynb)
-- Magic methods `__repr__` and `__dict__` are created when define class with dataclass
 - Enum
   - Enum get key: `obj.name`
   - Enum get value: `obj.value`
@@ -699,6 +702,7 @@ import modin.pandas as pd
   - [Define **eq** function in class 1](notes/class/eq_function.ipynb)
   - [Define **eq** function in class 2](notes/class/dataclass/dataclass_helloworld_1.ipynb)
 - [`__repr__`: represent a class's objects as a string. Call object with `repr(obj)`](notes/class/magic_repr.ipynb)
+- [`__call__`: to make class instance callable `classinstance(variable)`](notes/class/magic_call.ipynb)
 
 ## [Regular Expression (Regex)](notes/regex)
 
@@ -834,7 +838,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 ### [Built-in Decorators](notes/designpatterns/decorator/built-in-decorators)
 
 - [Class Method @classmethod](notes/designpatterns/decorator/built-in-decorators/classmethod_imp.ipynb): take `cls` as first parameter (have access to internal fields and methods)
-- [Static Method @staticmethod](notes/designpatterns/decorator/built-in-decorators/staticmethod.py): can take no parameters, basically just a function
+- [Static Method @staticmethod](notes/designpatterns/decorator/built-in-decorators/staticmethod_imp.ipynb): can take no parameters, basically just a function
     - [When to use @classmethod](notes/designpatterns/decorator/built-in-decorators/classmethod_imp.ipynb), @staticmethod
       - Class method can modify the class state,it bound to the class and it contain cls as parameter.  
         `def test(cls, ): self.variable = ?`
@@ -919,7 +923,8 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 
 ### Networking
   
-- Get IP from domain name: `import socket;socker.gethostbyname("www.google.com");`
+- Get IP from domain name: `import socket;socket.gethostbyname("www.google.com");`
+- Get host name of the machine: `socket.gethostname()`
   
 ### Concurrency
 
