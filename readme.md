@@ -345,11 +345,14 @@ and bytearray() returns an object that can be modified (mutable).
 - Read in csv: `pl.read_csv(...)`
   - read in csv changing column [file type](https://pola-rs.github.io/polars/py-polars/html/reference/datatypes.html)
     - `data_pl = pl.read_csv('file.csv').with_column_types({'col1': pl.Utf8, 'col2': pl.Utf8})`
+  - read_csv without header (to prevent value be the header name)
+    - `pd.read_csv(datapath, header = None)`
 - Write to csv: `write_csv(file : str, has_header: bool = True, separator : str = ",")`
 - Read excel: `pl.read_excel(source : str |..., sheet_name : str, engine = "openpyxl")
 
 
 #### Data Manipulation
+- Assign column name to dataframe: `df.columns = column_name`
 - Create empty data frame: `pl.DataFrame()`
 - Dataframe from dict: `df = pl.from_dict({"name": name_list, "id": id_list})`
 - Change header: `outdf = df.rename({"foo": "apple"}) # foo is previous title, apple is new title`
