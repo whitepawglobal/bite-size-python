@@ -896,6 +896,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 
 - [BaseModel to correctly declare type](notes/pydanticops/basemodel_helloworld.ipynb)
 - [Pydantic Settings](notes/pydantic-settings/test.py)
+  - Checking [HTTPUrl](notes/pydanticops/httpurltest.py)
 
 #### [Email Validation](notes/email-validation)
 
