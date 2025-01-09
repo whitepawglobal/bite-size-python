@@ -887,6 +887,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 - [Any](notes/type_checking/anyimp.ipynb) : `from typing import Any; varible : Any`
 - [Union](notes/type_checking/unionimp.ipynb) / Optional
   - [Simplification of Union from python 3.10 onwards](notes/type_checking/union_evolution.py): `var1 : str | None`
+- [Literal](notes/type_checking/literalimp.py)
 - [Annotated](notes/type_checking/typing_annotated.ipynb)
   - Before python 3.9: `from typing_extensions import Annotated`
   - Python 3.9 onwards: `from typing import Annotated`
@@ -895,6 +896,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 
 - [BaseModel to correctly declare type](notes/pydanticops/basemodel_helloworld.ipynb)
 - [Pydantic Settings](notes/pydantic-settings/test.py)
+  - Checking [HTTPUrl](notes/pydanticops/httpurltest.py)
 
 #### [Email Validation](notes/email-validation)
 
