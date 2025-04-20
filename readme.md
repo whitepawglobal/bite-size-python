@@ -883,6 +883,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 - [Any](notes/type_checking/anyimp.ipynb) : `from typing import Any; varible : Any`
 - [Union](notes/type_checking/unionimp.ipynb) / Optional
   - [Simplification of Union from python 3.10 onwards](notes/type_checking/union_evolution.py): `var1 : str | None`
+- [Literal](notes/type_checking/literalimp.py)
 - [Annotated](notes/type_checking/typing_annotated.ipynb)
   - Before python 3.9: `from typing_extensions import Annotated`
   - Python 3.9 onwards: `from typing import Annotated`
@@ -891,6 +892,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 
 - [BaseModel to correctly declare type](notes/pydanticops/basemodel_helloworld.ipynb)
 - [Pydantic Settings](notes/pydantic-settings/test.py)
+  - Checking [HTTPUrl](notes/pydanticops/httpurltest.py)
 
 #### [Email Validation](notes/email-validation)
 
@@ -1136,6 +1138,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 - [Overlay image](notes/cv/replaceroi.py)
 - Resizing frame: `outframe = cv2.resize(frame, (w, h))`
 - [Set color to rectangle region](notes/cv/setrectangle.ipynb)
+- [RGB value to color text](notes/cv/rgb_to_color.ipynb)
 - Color to gray image: `gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)`
 - Draw circle: `image = cv2.circle(image, center_coordinates: set, example: (50, 100), radius: int, color : set, example: (255, 255, 255), thickness : int)`
 - bgr to rgb channel: `img = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)`
