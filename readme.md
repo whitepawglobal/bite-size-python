@@ -153,6 +153,12 @@ and bytearray() returns an object that can be modified (mutable).
 - [Numpy array to image](notes/pytorch/torchtensor2image.ipynb)
 - Numpy array to Torch tensor: `torch.from_numpy(nparray)`
 - [Numpy <> Binary File(.npy)](notes/numpy/np2binary.ipynb)
+- Print numpy array without scientific notation (e-2)
+  # Set numpy print options to suppress scientific notation
+    ```
+    np.set_printoptions(suppress=True, precision=10)
+    print(predictions)
+    ```
 - [Use of `numpy.where`](notes/cv/blur_region.ipynb)
 - Get minimum value of numpy array: `np.amin(array)` 
 - Get maximum value of numpy array: `np.amax(array)`
