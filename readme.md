@@ -154,7 +154,7 @@ and bytearray() returns an object that can be modified (mutable).
 - Numpy array to Torch tensor: `torch.from_numpy(nparray)`
 - [Numpy <> Binary File(.npy)](notes/numpy/np2binary.ipynb)
 - Print numpy array without scientific notation (e-2)
-  # Set numpy print options to suppress scientific notation
+- Set numpy print options to suppress scientific notation
     ```
     np.set_printoptions(suppress=True, precision=10)
     print(predictions)
