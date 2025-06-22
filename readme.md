@@ -909,7 +909,7 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
 - [match<>case syntax (Supports after python 3.10)](notes/condition/match_case.ipynb)
   
 ### Others
-
+- Jinja: Template Engine for Python. TLDR: Use text-based templates to tranformer `Hello, {{ user_name }}!` to `Hello, John!`
 - [Kill after x amount of time if process not complete](notes/error_handling/timeout)
 - [Context Managers](notes/yield/context_manager.ipynb)
 
