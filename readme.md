@@ -606,6 +606,7 @@ import modin.pandas as pd
   - Get value with default value: ```database_url = os.environ.get("DATABASE_URL", "default-value")```
 - [Flush out print](notes/filesystem/stdoutflush.ipynb)
 - Check if path is a folder: `os.path.isdir(<path>)`
+- Get root path: `root_path = os.path.expanduser("~/.root")`
 - [Get file size](notes/filesystem/getfilesize.ipynb)
   - `from pathlib import Path; outsize : int = Path(inputfilepath).stat().st_size`
   - `import os; outsize : int = os.path.getsize(inputfilepath)`
