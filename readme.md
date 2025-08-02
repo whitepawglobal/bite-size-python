@@ -930,7 +930,11 @@ The goal of pool (multiprocessing) is to maximize the use of cpu cores.
   
 - Get IP from domain name: `import socket;socket.gethostbyname("www.google.com");`
 - Get host name of the machine: `socket.gethostname()`
-  
+
+### Stock
+
+- [Get stock price](notes/stock/get_stock_price.py)
+
 ### Concurrency
 
 #### Built-in Concurrency Library: Asyncio
