@@ -431,6 +431,7 @@ import modin.pandas as pd
 - [Get rows by finding matching values from a specific column](notes/pandas/df_find_rows.ipynb)
 - Check if a column name exist in dataframe - `if 'code' in df.columns:`
 - [Iteration of each rows in a dataframe](notes/pandas/iterrows.ipynb)
+- Unique counts of a column: `df["prediction"].value_counts()`
 
 #### Panda Operations
 
