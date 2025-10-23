@@ -393,6 +393,7 @@ and bytearray() returns an object that can be modified (mutable).
 #### Panda Type
 
 - [Change column type](notes/pandas/change_column_type.ipynb)
+  - change type: `df['your_column'] = df['your_column'].astype(int)`
 - [Rename column name if exist](notes/pandas/rename_column.ipynb)
 - [Compare column type](notes/pandas/comparecoltype.ipynb)
 
