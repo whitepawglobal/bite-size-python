@@ -416,7 +416,7 @@ and bytearray() returns an object that can be modified (mutable).
 - [Remove specific columns with column name](notes/pandas/remove_column.ipynb)
 - [Drop rows by index](notes/pandas/drop_row_by_index.ipynb)
 - Drop rows/columns with np.NaN: `df3 = df3.dropna(axis = 1) #row`
-
+- Drop columns based on specific column with NaN: `df = df.dropna(subset=['your_column_name'])`
 #### Panda SQL-like functions
 
 - pivot table: `:TODO`
